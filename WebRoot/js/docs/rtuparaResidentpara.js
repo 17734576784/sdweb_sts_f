@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$("#tianjia").click(function(){
 		var rtuId = $("#rtuId").val();
 		if(rtuId == -1){
-			alert("Please select the terminal before add！");
+			alert("Veuillez sélectionner le terminal avant d'ajouter！");
 			return;
 		}
 		redoOnRowDblClicked("," + rtuId);//逗号之前为居民id,后边为终端id。
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 function initGrid() {
 
-	gridopt.gridHeader           = "<img src='"+def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Serial No.,Name,Terminal Name,Consumer ID,Address,Post Code,Téléphone,Téléphone portable,Fax,E-mail,&nbsp;";
+	gridopt.gridHeader           = "<img src='"+def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Numéro de série.,Nom,Nom du terminal,ID consommateur,Adresse,Code postal,Téléphone,Téléphone portable,Fax,Email,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,center,left,left,left,left,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,120,200,120,100,100,80,100,90,100,*";

@@ -54,15 +54,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      	<script type="text/javascript" src="<%=basePath%>js/css.js"></script>
   	<table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
 		<tr>
-			<td width=50>&nbsp;Name:</td>
+			<td width=50>&nbsp;Nom:</td>
 			<td>
 			<input type="text" name="search_condition" value="" id="search_condition" style="width: 110px;">
-			<input type="button" name="search" value="Inquiry" id="search" onclick='search();' />
+			<input type="button" name="search" value="Enquête" id="search" onclick='search();' />
 			<jsp:include page="../inc/btn_pldel.jsp"></jsp:include>
 			
 			<jsp:include page="../inc/btn_tianjia.jsp"></jsp:include>
 			&nbsp;&nbsp;
-			Terminal:&nbsp;<select id="rtuId"><option value="-1">---Select---</option></select>
+			Terminal:&nbsp;<select id="rtuId"><option value="-1">---Sélectionner---</option></select>
 			</td>
 <!-- 			<td align="right"> -->
 <!--				<form style="display: inline;" method="post" action="<%=basePath%>/excel/docExcel.action" name="toxls">-->

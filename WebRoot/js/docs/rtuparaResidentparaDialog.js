@@ -34,12 +34,12 @@ function addOrEdit(flag){
 		success  : function(data) {								    	//回传函数
 			if (data.result == "fail") {
 				if(flag == 'add'){
-					alert("Failed to add！");
+					alert("Échec de l'ajout de！");
 				}else{
-					alert("Failed to modify！");
+					alert("Impossible de modifier modify");
 				}
 			}else if(data.result == "exist"){
-				alert("Consumer ID is existing！");
+				alert("L'identifiant du consommateur existe！");
 			}else{
 				if(flag == 'add'){
 					window.returnValue = "1" + data.result + "," + $("#describe").val();

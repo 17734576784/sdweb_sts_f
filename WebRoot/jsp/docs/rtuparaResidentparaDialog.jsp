@@ -48,22 +48,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Resident Archive</td></tr></table>
     	</td></tr>
     	<tr>
-	    	<td><font color=red>*</font>Name:</td><td><input type="text" name="residentpara.describe" id="describe" /></td>
-	    	<td><font color=red>*</font>Consumer ID:</td><td><input type="text" name="residentpara.consNo" id="consNo"/></td>
-			<td>Terminal Name:</td><td><input type="text" name="rtu_describe" id="rtu_describe" readonly="readonly" style="background-color:#DCDCDC;border: 1px solid #808080;"/></td>
+	    	<td><font color=red>*</font>Nom:</td><td><input type="text" name="residentpara.describe" id="describe" /></td>
+	    	<td><font color=red>*</font>ID consommateur:</td><td><input type="text" name="residentpara.consNo" id="consNo"/></td>
+			<td>Nom du terminal:</td><td><input type="text" name="rtu_describe" id="rtu_describe" readonly="readonly" style="background-color:#DCDCDC;border: 1px solid #808080;"/></td>
 	    </tr>	
 	    <tr>	
-	    	<td>Address:</td><td><input type="text" name="residentpara.address" id="address"/></td>
-	    	<td>Post Code:</td><td><input type="text" name="residentpara.post" id="post"/></td>
+	    	<td>Adresse:</td><td><input type="text" name="residentpara.address" id="address"/></td>
+	    	<td>Code postal:</td><td><input type="text" name="residentpara.post" id="post"/></td>
 	    	<td>Téléphone portable:</td><td><input type="text" name="residentpara.mobile" id="mobile"/></td>
 	    </tr>
 	    <tr>
 			<td>Téléphone:</td><td><input type="text" name="residentpara.phone" id="phone"/></td>	    
 	    	<td>Fax:</td><td><input type="text" name="residentpara.fax" id="fax"/></td>
-	    	<td>E-mail:</td><td><input type="text" name="residentpara.mail" id="mail" /></td>
+	    	<td>Email:</td><td><input type="text" name="residentpara.mail" id="mail" /></td>
 	    </tr>
 	    <tr>
-		    <td>Interface Code:</td>
+		    <td>Code d'interface:</td>
 	    	<td>
 	    		<input type="text" name="residentpara.infCode1" id="infCode1" />
 	    		<input type="hidden" id="id" name="residentpara.id" />

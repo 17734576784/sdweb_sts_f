@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$("#tianjia").click(function(){
 		var rtuId = $("#rtuId").val();
 		if(rtuId == -1){
-			alert("Please select the terminal before add！");
+			alert("Veuillez sélectionner le terminal avant d'ajouter！");
 			return;
 		}
 		redoOnRowDblClicked("," + rtuId + "," + $("#rtuId").find("option:selected").text());//逗号之前为居民id,后边为终端id,下拉框选择的终端名称
@@ -82,8 +82,8 @@ function onFresh() {
 
 function getYffState(){
 	gridopt.gridHeader           = "<img src='"+def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />," +
-	"								Serial No.,Name,Terminal Name,Resident Name,Meter ID,Manufacturer,Factory Number,Meter Type,Billing Mode," +
-	"								Cost Control Mode,Overdraw Amount,Tariff Index,&nbsp;";
+	"								Numéro de série.,Nom,Nom du terminal,Nom résident,ID du compteur,Constructeur,Numéro d'usine,Type de compteur,Mode de facturation," +
+	"								Mode de contrôle des coûts,Montant à découvert,Index tarifaire,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,left,left,left,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,100,100,100,100,120,120,200,100,160,100,100,*";

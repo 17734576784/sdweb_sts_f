@@ -46,21 +46,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
 	<tr>
-		<td>&nbsp;Name: 
+		<td>&nbsp;Nom: 
 			<input type="text" name="search_condition" value="" id="search_condition" style="width: 110px;">
-			<input type="button" name="search" value="Inquiry" id="search" onclick='doSearch();' />
+			<input type="button" name="search" value="Enquête" id="search" onclick='doSearch();' />
 			<jsp:include page="../inc/btn_pldel.jsp"></jsp:include>
-			<input type="button" name="tianjia" value="Add" id="tianjia"  />
+			<input type="button" name="tianjia" value="Ajouter" id="tianjia"  />
 			&nbsp;&nbsp;&nbsp;Terminal Name:<select id="rtuId"><option value="-1">---Select---</option></select>
 		</td>
 		<td style="font-size: 12px;" >
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pre-paid Flag: 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drapeau prépayé: 
 			<select id="yffState">
-				<option value=0>All</option>
-				<option value=1 selected>Yes</option>
-				<option value=2>No</option>
+				<option value=0>Tous</option>
+				<option value=1 selected>Oui</option>
+				<option value=2>non</option>
 			</select>
-			<input type="button" value="Refresh" id="freshid" onclick="onFresh();" />  						
+			<input type="button" value="Rafraîchir" id="freshid" onclick="onFresh();" />  						
 		</td>
 		<td align="right">
 		
