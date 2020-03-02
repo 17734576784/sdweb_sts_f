@@ -48,7 +48,7 @@
 					<table cellpadding="0" cellspacing="0">
 						<tr>
 							<td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;" /></td>
-							<td width="100%" style="border: 0px; font-size: 12px;">Debug tool download</td>
+							<td width="100%" style="border: 0px; font-size: 12px;">Téléchargement de l'outil de débogage</td>
 						</tr>
 					</table>
 				</td>
@@ -58,13 +58,13 @@
 					<%=i++%>
 				</td>
 				<td width="30%">
-					Serialport debugging assistant V2.2 
+					Assistant de débogage Serialport V2.2
 				</td>
 				<td>
-					Serialport debugging assistant V2.2 
+					Assistant de débogage Serialport V2.2
 				</td>
 				<td width="20%">
-					<a href="<%=basePath%>download.jsp?fileName=V2.2.rar" target="_blank"	>Click download</a>
+					<a href="<%=basePath%>download.jsp?fileName=V2.2.rar" target="_blank"	>Cliquez sur télécharger</a>
 				</td>
 			</tr>
 			<tr>
@@ -72,13 +72,13 @@
 					<%=i++%>
 				</td>
 				<td>
-					TCP&UDP test tool
+					Outil de test TCP UDP
 				</td>
 				<td>
-					TCP&UDP test tool
+					Outil de test TCP UDP
 				</td>
 				<td width="20%">
-					<a href="<%=basePath%>download.jsp?fileName=TCPUDP.rar" target="_blank">Click download</a>
+					<a href="<%=basePath%>download.jsp?fileName=TCPUDP.rar" target="_blank">Cliquez sur télécharger</a>
 				</td>
 			</tr>
 		</table>

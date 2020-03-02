@@ -46,7 +46,7 @@
     			out = pageContext.pushBody();
     		} else {
     			
-    			out.println("文件不存在！");
+    			out.println("Le fichier n'existe pas！");
     		}
     	}
     }catch(Exception e){

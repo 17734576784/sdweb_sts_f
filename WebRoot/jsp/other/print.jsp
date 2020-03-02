@@ -56,8 +56,8 @@
     	<div style="display:<%=WebConfig.getShowFlag("dy_leftmenu0")%>">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x; " ><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >Resident-Transfer Credit</td>
-          	<td style="text-align: right;"><button class="btn" id="preview1">Preview</button>&nbsp;&nbsp;<button class="btn" id="default1">Set to default</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Crédit de transfert pour résident</td>
+          	<td style="text-align: right;"><button class="btn" id="preview1">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default1">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox1 class="gridbox"></DIV></center>
@@ -66,8 +66,8 @@
     	<div style="display:<%=WebConfig.getShowFlag("dy_leftmenu1")%>">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >居民-本地费控(远程)</td>
-          	<td style="text-align: right;"><button class="btn" id="preview10">预览</button>&nbsp;&nbsp;<button class="btn" id="default10">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle des frais des résidents locaux (à distance)</td>
+          	<td style="text-align: right;"><button class="btn" id="preview10">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default10">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox10 class="gridbox"></DIV></center>
@@ -76,8 +76,8 @@
     	<div style="display:<%=WebConfig.getShowFlag("dy_leftmenu1")%>">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >居民-主站费控</td>
-          	<td style="text-align: right;"><button class="btn" id="preview3">预览</button>&nbsp;&nbsp;<button class="btn" id="default3">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle des frais de la gare résidente principale</td>
+          	<td style="text-align: right;"><button class="btn" id="preview3">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default3">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox3 class="gridbox"></DIV></center>
@@ -86,8 +86,8 @@
     	<div style="display:none">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >专变-本地费控(卡式)-智能表</td>
-          	<td style="text-align: right;"><button class="btn" id="preview4">预览</button>&nbsp;&nbsp;<button class="btn" id="default4">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Changement dédié - contrôle des frais locaux (type de carte) - montre intelligente</td>
+          	<td style="text-align: right;"><button class="btn" id="preview4">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default4">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox4 class="gridbox"></DIV></center>
@@ -96,8 +96,8 @@
     	<div style="display:none">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >专变-本地费控(卡式)-6103</td>
-          	<td style="text-align: right;"><button class="btn" id="preview5">预览</button>&nbsp;&nbsp;<button class="btn" id="default5">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle spécial des frais de changement local (type de carte) -6103</td>
+          	<td style="text-align: right;"><button class="btn" id="preview5">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default5">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox5 class="gridbox"></DIV></center>
@@ -106,8 +106,8 @@
     	<div style="display:none">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >专变-本地费控(远程表底)</td>
-          	<td style="text-align: right;"><button class="btn" id="preview7">预览</button>&nbsp;&nbsp;<button class="btn" id="default7">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle exclusif des frais de changement local (bas du tableau distant)</td>
+          	<td style="text-align: right;"><button class="btn" id="preview7">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default7">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox7 class="gridbox"></DIV></center>
@@ -116,8 +116,8 @@
     	<div style="display:none">
 	  	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >专变-本地费控(远程金额)</td>
-          	<td style="text-align: right;"><button class="btn" id="preview6">预览</button>&nbsp;&nbsp;<button class="btn" id="default6">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle exclusif des frais de changement local (montant à distance)</td>
+          	<td style="text-align: right;"><button class="btn" id="preview6">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default6">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox6 class="gridbox"></DIV></center>
@@ -126,8 +126,8 @@
     	<div style="display:none">
 	 	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >专变-主站费控</td>
-          	<td style="text-align: right;"><button class="btn" id="preview8">预览</button>&nbsp;&nbsp;<button class="btn" id="default8">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle spécial des frais de la station principale</td>
+          	<td style="text-align: right;"><button class="btn" id="preview8">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default8">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox8 class="gridbox"></DIV></center>
@@ -136,8 +136,8 @@
     	<div style="display:none">
 	 	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >农排-本地费控(卡式)</td>
-          	<td style="text-align: right;"><button class="btn" id="preview9">预览</button>&nbsp;&nbsp;<button class="btn" id="default9">设为默认</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Contrôle des frais de ligne locale de ferme (type de carte)</td>
+          	<td style="text-align: right;"><button class="btn" id="preview9">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default9">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox9 class="gridbox"></DIV></center>
@@ -147,8 +147,8 @@
     	<div style="display:<%=WebConfig.getShowFlag("dy_leftmenu8")%>">
     	<table class="mytbl" cellpadding="0" cellspacing="0" align="center" style="width:98%;font-size: 12px;height:22px;background: url('<%=basePath%>images/bg22.gif') repeat-x;"><tr>
        		<td style="width:30px; "><img src="<%=basePath%>images/doctitle.png" style="margin-top: 3px;margin-left: 5px;"/></td>
-          	<td class="tdm" >Resident-Opening an Account</td>
-          	<td style="text-align: right;"><button class="btn" id="preview2">Preview</button>&nbsp;&nbsp;<button class="btn" id="default2">Set to default</button>&nbsp;&nbsp;</td>      		          	
+          	<td class="tdm" >Ouverture d'un compte par un résident</td>
+          	<td style="text-align: right;"><button class="btn" id="preview2">Aperçu</button>&nbsp;&nbsp;<button class="btn" id="default2">Définir par défaut</button>&nbsp;&nbsp;</td>      		          	
           	<td>&nbsp;</td></tr>
        	</table> 	
  		<center><DIV id=gridbox2 class="gridbox"></DIV></center>

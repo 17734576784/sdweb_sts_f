@@ -1,7 +1,7 @@
 
 var gridparam = {
 	ImagePath	: def.basePath + "images/grid/imgs/",
-	Header 		: "ID,Use Flag,Name,TemplateFile Name,Describe,Default",	// 
+	Header 		: "ID,Utiliser le drapeau,Nom,Nom du fichier modèle,Décris,Défaut",	// 
 	InitWidths	: "80,80,150,200,*,100",//300,
 	ColAlign	: "center,center,left,left,left,center", 
 	ColTypes	: "ro,coro,ro,ro,ro,ro" 
@@ -28,7 +28,7 @@ function preview(id){
 	var idx = id.substring(id.length-1);	
 	var selId = mygridlist[idx].getSelectedId();
 	if(selId==null){
-		alert("Please select one record!");	
+		alert("Veuillez sélectionner un enregistrement!");	
 		return;
 	}
 	
@@ -52,7 +52,7 @@ function setdefault(id){
 	var idx = id.substring(id.length-1);	
 	var selId = mygridlist[idx].getSelectedId();
 	if(selId==null){
-		alert("Please select one record.");	
+		alert("Veuillez sélectionner un enregistrement.");	
 		return;
 	}
 	var filename = mygridlist[idx].cells(selId,3).getValue();
@@ -62,9 +62,9 @@ function setdefault(id){
 			mygridlist[idx].cells2(j,5).setValue("")
 		}
 		mygridlist[idx].cells(selId,5).setValue("Currently in use.")
-		alert("Set successfully.");		
+		alert("Définir avec succès.");		
 	}else{
-		alert("Setup failed, please reset.");		
+		alert("L'installation a échoué, veuillez réinitialiser.");		
 	}
 	
 }
