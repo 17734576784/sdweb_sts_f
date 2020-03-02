@@ -50,39 +50,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <br/>
     <table class="tabsty" align="center">
     	<tr>
-	    	<td><font color=red>*</font>Name: </td><td colspan="3"><input type="text" name="yffratepara.describe" id="describe" style=" width:280px;" /></td>
-	    	<td style="display:none"> Tariff Index(TI) :  </td><td style="display:none"><input type="text" name="yffratepara.rateId" value="1" id="rateId"/></td>
-	    	<td>Activation date :  </td><td><input type="text" id="activdateF" readonly onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',lang:'zh-cn',isShowClear:'false',readOnly:'true',position:{top:'above'}});"/>
+	    	<td><font color=red>*</font>nom : </td><td colspan="3"><input type="text" name="yffratepara.describe" id="describe" style=" width:280px;" /></td>
+	    	<td style="display:none"> Indice tarifaire (TI) :  </td><td style="display:none"><input type="text" name="yffratepara.rateId" value="1" id="rateId"/></td>
+	    	<td>Date d'activation :  </td><td><input type="text" id="activdateF" readonly onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',lang:'zh-cn',isShowClear:'false',readOnly:'true',position:{top:'above'}});"/>
 	    	<input type="hidden" name="yffratepara.activdate" id="activdate"/>	    	
 	    	</td>	    	
-	    	<td>Tariff Type: </td><td><select name="yffratepara.feeType" id="feeType" onChange="changefeeType(this.value)" style=" width:150px;"></select>  </td>
-            <td>Max Credit Limit: </td><td><input type="text" name="yffratepara.moneyLimit" id="moneyLimit" /></td>	    	
+	    	<td>Type de tarif : </td><td><select name="yffratepara.feeType" id="feeType" onChange="changefeeType(this.value)" style=" width:150px;"></select>  </td>
+            <td>Limite de crédit maximale : </td><td><input type="text" name="yffratepara.moneyLimit" id="moneyLimit" /></td>	    	
 	    </tr>
 	  
 	    <tr id="dan">
-	    	<td>Total Tariff: </td><td><input type="text" name="yffratepara.ratedZ" id="ratedZ"/></td>
+	    	<td>Tarif total : </td><td><input type="text" name="yffratepara.ratedZ" id="ratedZ"/></td>
 	    	<td colspan="10"></td>
 	    		
 	   	</tr>
 	   	<tr id="fu" style='display:none;'>
- 	   	   	<td>Peak Tariff: </td><td><input type="text" name="yffratepara.ratefF" id="ratefF"/></td>	
-	    	<td>Off Tariff: </td><td><input type="text" name="yffratepara.ratefG" id="ratefG"/></td>
+ 	   	   	<td>Tarif de pointe : </td><td><input type="text" name="yffratepara.ratefF" id="ratefF"/></td>	
+	    	<td>Hors tarif : </td><td><input type="text" name="yffratepara.ratefG" id="ratefG"/></td>
 	  	 	<td colspan="8"></td>
 	   	</tr>
 	   	<tr id="hh1"  style='display:none;'>
-	   		<td>Mix Tariff1: </td><td><input type="text" name="yffratepara.rateh1" id="rateh1"/></td>
-        	<td>Mix Tariff2: </td><td><input type="text" name="yffratepara.rateh2" id="rateh2"/></td>	
-	    	<td>Mix Tariff3: </td><td><input type="text" name="yffratepara.rateh3" id="rateh3"/></td>
-	    	<td>Mix Tariff4: </td><td><input type="text" name="yffratepara.rateh4" id="rateh4"/></td>
+	   		<td>Tarif mixte1: </td><td><input type="text" name="yffratepara.rateh1" id="rateh1"/></td>
+        	<td>Tarif mixte2: </td><td><input type="text" name="yffratepara.rateh2" id="rateh2"/></td>	
+	    	<td>Tarif mixte3: </td><td><input type="text" name="yffratepara.rateh3" id="rateh3"/></td>
+	    	<td>Tarif mixte4: </td><td><input type="text" name="yffratepara.rateh4" id="rateh4"/></td>
 	   	</tr>
 	   	<tr id="hh2"  style='display:none;'> 
-	   		<td>混合比例1: </td><td><input type="text" name="yffratepara.ratehBl1" id="ratehBl1"/></td>
-        	<td>混合比例2: </td><td><input type="text" name="yffratepara.ratehBl2" id="ratehBl2"/></td>	
-	    	<td>混合比例3: </td><td><input type="text" name="yffratepara.ratehBl3" id="ratehBl3"/></td>
-	    	<td>混合比例4: </td><td><input type="text" name="yffratepara.ratehBl4" id="ratehBl4"/></td>
+	   		<td>Ratio mixte1: </td><td><input type="text" name="yffratepara.ratehBl1" id="ratehBl1"/></td>
+        	<td>Ratio mixte2: </td><td><input type="text" name="yffratepara.ratehBl2" id="ratehBl2"/></td>	
+	    	<td>Ratio mixte3: </td><td><input type="text" name="yffratepara.ratehBl3" id="ratehBl3"/></td>
+	    	<td>Ratio mixte4: </td><td><input type="text" name="yffratepara.ratehBl4" id="ratehBl4"/></td>
 	   	</tr>	  
 	   	<tr id="jt1"  style='display:none;'>
-			<td>Step Tariff Num:    </td><td>
+			<td>Numéro de tarif de l'étape :    </td><td>
 											<select name="yffratepara.ratejNum" id="ratejNum">
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -92,57 +92,57 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												<option value="7">7</option>
 											</select>
 										</td>
-	   		<td>Step Tariff1: </td><td><input type="text" name="yffratepara.ratejR1" id="ratejR1"/></td>
-        	<td>Step Tariff2: </td><td><input type="text" name="yffratepara.ratejR2" id="ratejR2"/></td>	
-	    	<td>Step Tariff3: </td><td><input type="text" name="yffratepara.ratejR3" id="ratejR3"/></td>
-	    	<td>Step Tariff4: </td><td><input type="text" name="yffratepara.ratejR4" id="ratejR4"/></td>
-	   		<td>Step Tariff5: </td><td><input type="text" name="yffratepara.ratejR5" id="ratejR5"/></td>
+	   		<td>Tarif par étapes1: </td><td><input type="text" name="yffratepara.ratejR1" id="ratejR1"/></td>
+        	<td>Tarif par étapes2: </td><td><input type="text" name="yffratepara.ratejR2" id="ratejR2"/></td>	
+	    	<td>Tarif par étapes3: </td><td><input type="text" name="yffratepara.ratejR3" id="ratejR3"/></td>
+	    	<td>Tarif par étapes4: </td><td><input type="text" name="yffratepara.ratejR4" id="ratejR4"/></td>
+	   		<td>Tarif par étapes5: </td><td><input type="text" name="yffratepara.ratejR5" id="ratejR5"/></td>
 	   	</tr>
 	   	<tr id="jt2"  style='display:none;'>
-        	<td>Step Tariff6: </td><td><input type="text" name="yffratepara.ratejR6" id="ratejR6"/></td>
-	   		<td>Step Tariff7: </td><td><input type="text" name="yffratepara.ratejR7" id="ratejR7"/></td>
-	    	<td>Step Gradient1(kWh): </td><td><input type="text" name="yffratepara.ratejTd1" id="ratejTd1"/></td>
-        	<td>Step Gradient2(kWh): </td><td><input type="text" name="yffratepara.ratejTd2" id="ratejTd2"/></td>	
-	    	<td>Step Gradient3(kWh): </td><td><input type="text" name="yffratepara.ratejTd3" id="ratejTd3"/></td>
-	    	<td>Step Gradient4(kWh): </td><td><input type="text" name="yffratepara.ratejTd4" id="ratejTd4"/></td>
+        	<td>Tarif par étapes6: </td><td><input type="text" name="yffratepara.ratejR6" id="ratejR6"/></td>
+	   		<td>Tarif par étapes7: </td><td><input type="text" name="yffratepara.ratejR7" id="ratejR7"/></td>
+	    	<td>Gradient de pas1(kWh): </td><td><input type="text" name="yffratepara.ratejTd1" id="ratejTd1"/></td>
+        	<td>Gradient de pas2(kWh): </td><td><input type="text" name="yffratepara.ratejTd2" id="ratejTd2"/></td>	
+	    	<td>Gradient de pas3(kWh): </td><td><input type="text" name="yffratepara.ratejTd3" id="ratejTd3"/></td>
+	    	<td>Gradient de pas4(kWh): </td><td><input type="text" name="yffratepara.ratejTd4" id="ratejTd4"/></td>
 	   	</tr>	  
 	   	<tr id="jt3"  style='display:none;'>
-	  		<td>Step Gradient5(kWh): </td><td><input type="text" name="yffratepara.ratejTd5" id="ratejTd5"/></td>
-        	<td>Step Gradient6(kWh): </td><td><input type="text" name="yffratepara.ratejTd6" id="ratejTd6"/></td>	
+	  		<td>Gradient de pas5(kWh): </td><td><input type="text" name="yffratepara.ratejTd5" id="ratejTd5"/></td>
+        	<td>Gradient de pas6(kWh): </td><td><input type="text" name="yffratepara.ratejTd6" id="ratejTd6"/></td>	
 	    	<td colspan="9"></td>
 	   	</tr>
         <tr id="hjt1" style="display: none;">        	 
 	    	
-	    	<td>Step Price Type:</td><td><select id="ratehjType" name="yffratepara.ratehjType" ></select> </td>	
-	    	<td>Step Num:</td><td><select id="ratehjNum" name="yffratepara.ratehjNum" >
+	    	<td>Étape Type de prix:</td><td><select id="ratehjType" name="yffratepara.ratehjType" ></select> </td>	
+	    	<td>Numéro de l'étape:</td><td><select id="ratehjNum" name="yffratepara.ratehjNum" >
 	    	<option value=2 >2</option>
 	    	<option value=3 selected="selected">3</option>
 	    	<option value=4 >4</option>
 	    	</select></td>	
-	    	<td>Meter FeeRate Type:</td><td><select id="meterfeehjType" name="yffratepara.meterfeehjType" > </select></td>	
-	    	<td>Meter Price:</td><td><input type="text" name="yffratepara.meterfeehjR" id="meterfeehjR"/></td>
+	    	<td>Type de tarif:</td><td><select id="meterfeehjType" name="yffratepara.meterfeehjType" > </select></td>	
+	    	<td>Prix au mètre:</td><td><input type="text" name="yffratepara.meterfeehjR" id="meterfeehjR"/></td>
 	   	</tr>
 	   	<tr id="hjt2" style="display: none;">
-	   		<td>StepRate1:</td><td><input type="text" name="yffratepara.ratehjHr1R1" id="ratehjHr1R1"/></td>
-	   		<td>Step gradient1(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td1" id="ratehjHr1Td1"/></td>
-	    	<td>StepRate4:</td><td><input type="text" name="yffratepara.ratehjHr1R4" id="ratehjHr1R4"/></td>
-	    	<td>Mixed proportion1(%):</td><td><input type="text" name="yffratepara.ratehjBl1" id="ratehjBl1"/></td>	    	
+	   		<td>Taux de pas1:</td><td><input type="text" name="yffratepara.ratehjHr1R1" id="ratehjHr1R1"/></td>
+	   		<td>Gradient de pas1(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td1" id="ratehjHr1Td1"/></td>
+	    	<td>Taux de pas4:</td><td><input type="text" name="yffratepara.ratehjHr1R4" id="ratehjHr1R4"/></td>
+	    	<td>Proportion mixte1(%):</td><td><input type="text" name="yffratepara.ratehjBl1" id="ratehjBl1"/></td>	    	
        	</tr>
 	   	<tr id="hjt3" style="display: none;">
-        	<td>StepRate2:</td><td><input type="text" name="yffratepara.ratehjHr1R2" id="ratehjHr1R2"/></td>	
-        	<td>Step gradient2(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td2" id="ratehjHr1Td2"/></td>	
-	    	<td>gradient2 Price:</td><td><input type="text" name="yffratepara.ratehjHr2" id="ratehjHr2"/></td>
-	    	<td>Mixed proportion2(%):</td><td><input type="text" name="yffratepara.ratehjBl2" id="ratehjBl2"/></td>	
+        	<td>Taux de pas2:</td><td><input type="text" name="yffratepara.ratehjHr1R2" id="ratehjHr1R2"/></td>	
+        	<td>Gradient de pas2(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td2" id="ratehjHr1Td2"/></td>	
+	    	<td>pente2 Prix:</td><td><input type="text" name="yffratepara.ratehjHr2" id="ratehjHr2"/></td>
+	    	<td>Proportion mixte2(%):</td><td><input type="text" name="yffratepara.ratehjBl2" id="ratehjBl2"/></td>	
 	   	</tr>
 	   	<tr id="hjt4" style="display: none;">
-	    	<td>StepRate3:</td><td><input type="text" name="yffratepara.ratehjHr1R3" id="ratehjHr1R3"/></td>
-	    	<td>Step gradient3(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td3" id="ratehjHr1Td3"/></td>
-	   		<td>gradient3 Price:</td><td><input type="text" name="yffratepara.ratehjHr3" id="ratehjHr3"/></td>
-	    	<td>Mixed proportion3(%):</td><td><input type="text" name="yffratepara.ratehjBl3" id="ratehjBl3"/></td>	    	
+	    	<td>Taux de pas3:</td><td><input type="text" name="yffratepara.ratehjHr1R3" id="ratehjHr1R3"/></td>
+	    	<td>Gradient de pas3(kWh):</td><td><input type="text" name="yffratepara.ratehjHr1Td3" id="ratehjHr1Td3"/></td>
+	   		<td>pente3 Prix:</td><td><input type="text" name="yffratepara.ratehjHr3" id="ratehjHr3"/></td>
+	    	<td>Proportion mixte3(%):</td><td><input type="text" name="yffratepara.ratehjBl3" id="ratehjBl3"/></td>	    	
 	   	</tr>        
 	   	<tr>
-        	<td>Interface Code 1: </td><td><input type="text" name="yffratepara.infCode1" id="infCode1"/></td>	
-	    	<td>Interface Code 2: </td><td><input type="text" name="yffratepara.infCode2" id="infCode2"/>
+        	<td>Code d'interface 1: </td><td><input type="text" name="yffratepara.infCode1" id="infCode1"/></td>	
+	    	<td>Code d'interface 2: </td><td><input type="text" name="yffratepara.infCode2" id="infCode2"/>
 	    	
 	    	<input type="hidden" id="id" name="yffratepara.id" />
 	    	<input type="hidden" id="ratejType" name="yffratepara.ratejType" />	  
