@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.OrgStsPara" table="org_stspara">
+		<id name="OrgId" column="org_id" type="short">
+			<generator class="assigned"></generator>
+		</id>
+			
+		<property name="KT" column="key_type" type="byte"></property>
+		<property name="DKGA" column="dkga" type="byte"></property>
+		<property name="ET" column="encrypt_type" type="byte"></property>
+		<property name="KR" column="key_regno" type="byte"></property>
+		<property name="VK1" column="vk1" type="string"></property>
+		<property name="VK2" column="vk2" type="string"></property>
+		<property name="VK3" column="vk3" type="string"></property>
+		<property name="VK4" column="vk4" type="string"></property>
+		<property name="KMF" column="kmf" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+	</class>
+
+</hibernate-mapping>

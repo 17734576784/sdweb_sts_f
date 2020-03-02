@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.Diction" table="diction">
+		<composite-id>
+			<key-property name="typeName" column="type_name" type="string"></key-property>
+			<key-property name="itemName" column="item_name" type="string"></key-property>
+		</composite-id>
+		<property name="typeNo" column="type_no" type="short"></property>
+		<property name="value" column="value" type="integer"></property>
+	</class>
+</hibernate-mapping>

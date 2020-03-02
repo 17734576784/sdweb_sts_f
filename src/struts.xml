@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/> 
+	
+	<package name="ajax" extends="json-default" namespace="/ajax">
+		<action name="actLogin" class="com.kesd.action.ActLoginfo">
+		    <result type="json" />
+		</action>
+		<action name="actCommon" class="com.kesd.action.ActCommon">
+		    <result type="json" />
+		</action>
+		<action name="actTree" class="com.kesd.action.ActTreePara">
+		    <result type="json" />
+		</action>
+		<action name="actPrint" class="com.kesd.action.ActPrint">
+		    <result type="json" />
+		</action>
+		<action name="actImportMeterData" class="com.kesd.action.ActImportMeterData">
+		    <interceptor-ref name ="fileUpload">
+			<param name="maximumSize">4000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+<!--			<result type="json" />-->
+			<result name ="input">/jsp/docs/importMeterArchive.jsp</result>
+			<result name ="success">/jsp/docs/importMeterArchive.jsp</result>
+		</action>
+		<action name="actImportResidentData" class="com.kesd.action.ActImportResidentData">
+		    <interceptor-ref name ="fileUpload">
+			<param name="maximumSize">4000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+<!--			<result type="json" />-->
+			<result name ="input">/jsp/docs/importResidentArchive.jsp</result>
+			<result name ="success">/jsp/docs/importResidentArchive.jsp</result>
+		</action>				
+		<action name="actLogPara" class="com.kesd.action.ActLogPara">
+		    <result type="json" />
+		</action>
+		
+	</package>
+	
+	<package name="docs" extends="json-default" namespace="/ajaxdocs">
+		<action name="actYffAlarmPara" class="com.kesd.action.docs.ActYffAlarmPara">
+			<result type="json" />
+		</action>
+		<action name="actYffRatePara" class="com.kesd.action.docs.ActYffRatePara">
+		    <result type="json" />
+		</action>
+		
+		<action name="actOrgStsPara" class="com.kesd.action.docs.ActOrgStsPara">
+		    <result type="json" />
+		</action>
+		
+		<action name="actYffManDef" class="com.kesd.action.docs.ActYffManDef">
+		    <result type="json" />
+		</action>
+		<action name="actGloProtect" class="com.kesd.action.docs.ActGloProtect">
+		    <result type="json" />
+		</action>
+		<action name="actYffPara" class="com.kesd.action.docs.ActYffPara">
+		    <result type="json" />
+		</action>
+		<action name="actRtuPayCtrlPara" class="com.kesd.action.docs.ActRtuPayCtrlPara">
+			<result type="json" />
+		</action>
+		<action name="actYffParaZ" class="com.kesd.action.docs.ActYffParaZ">
+		    <result type="json" />
+		</action>
+		<action name="actYffParaExt" class="com.kesd.action.docs.ActYffParaExt">
+		    <result type="json" />
+		</action>		
+		<action name="actCsStand" class="com.kesd.action.docs.ActCsStand">
+		    <result type="json" />
+		</action>
+		<action name="actYffParaNP" class="com.kesd.action.docs.ActYffParaNP">
+		    <result type="json" />
+		</action>
+		<action name="actAreaPara" class="com.kesd.action.docs.ActAreapara">
+		    <result type="json" />
+		</action>
+		<action name="actYffDocModel" class="com.kesd.action.docs.ActYffDocModel">
+		    <result type="json" />
+		</action>
+<!--gbj20150305		-->
+		
+		<action name="actHoLiDayDef" class="com.kesd.action.docs.ActHoLiDayDef">
+		    <result type="json" />
+		</action>
+		<action name="actHoLiDayGroup" class="com.kesd.action.docs.ActHoLiDayGroup">
+		    <result type="json" />
+		</action>
+		
+		
+		 
+		<!-- 低压集抄新增居民区档案   zp-->
+		<action name="actConsPara" class="com.kesd.action.docs.ActConsPara">
+		    <result type="json" />
+		</action>
+		
+		<!-- 低压集抄新增终端档案   zp-->
+		<action name="actRtuPara" class="com.kesd.action.docs.ActRtuPara">
+		    <result type="json" />
+		</action>
+		
+		<!-- 低压集抄新增居民档案 -->
+		<action name="actResidentPara" class="com.kesd.action.docs.ActResidentPara">
+		    <result type="json" />
+		</action>
+		
+	</package>
+
+	<package name="dyjc" extends="json-default" namespace="/ajaxdyjc">
+		<action name="actConsPara" class="com.kesd.action.dyjc.ActConsPara">
+		    <result type="json" />
+		</action>
+		<action name="actImportBD" class="com.kesd.action.dyjc.ActImportBD">
+		    <result type="json" />
+		</action>
+		<action name="actChgMeter" class="com.kesd.action.dyjc.ActChangeMeter">
+		    <result type="json" />
+		</action>
+		<action name="actChgRate" class="com.kesd.action.dyjc.ActChangeRate">
+		    <result type="json" />
+		</action>
+		<action name="actCardReadInfo" class="com.kesd.action.dyjc.ActCardReadInfo">
+		    <result type="json" />
+		</action>
+		<action name="actSearch" class="com.kesd.action.dyjc.ActSearch">
+		    <result type="json" />
+		</action>
+		<action name="actReport" class="com.kesd.action.dyjc.ActReport">
+		    <result type="json" />
+		</action>
+		<action name="actUpdateState" class="com.kesd.action.dyjc.ActUpdateState">
+		    <result type="json" />
+		</action>
+		<!-- 增加 对账查询的映射文件 -->
+		<action name="actCheckSearch" class="com.kesd.action.dyjc.ActCheckSearch">
+		    <result type="json"/>
+		</action>
+		<!-- 增加发行电费action映射 -->
+		<action name="actPublishRate" class="com.kesd.action.dyjc.ActPublishRate">
+		    <result type="json"/>
+		</action>
+	    <!-- 增加 补发发票功能 supply again bill-->
+		<action name="actSupplyBill" class="com.kesd.action.dyjc.ActSupplyBill">
+		    <result type="json" />
+		</action>
+		<!-- 结算补差-->
+		<action name="actSG186JSExcel" class="com.kesd.action.dyjc.Act186JSExcel">
+		    <result type="json" />
+		</action>
+		<!-- 阶梯电量结算补差-->
+		<action name="actSG186DlJs" class="com.kesd.action.dyjc.Act186DlJsRecord">
+		    <result type="json" />
+		</action>
+		<!--		 抄表卡-->
+		<action name="actReadMeter" class="com.kesd.action.dyjc.ActReadMeter">
+		    <result type="json" />
+		</action>
+		
+		<!-- 开户等操作进行查询时，直接从库中获取，不走消息  -->
+		<action name="actLoadUserInfoDB" class="com.kesd.action.dyjc.ActGetInfoFromDB">
+		    <result type="json" />
+		</action>
+		<!--gbj20150307	制作工具卡	-->
+		<action name="actMakeTools" class="com.kesd.action.dyjc.ActMakeTools">
+		    <result type="json" />
+		</action>
+		
+		<action name="actMakeTokens" class="com.kesd.action.dyjc.ActMakeTokens">
+		    <result type="json" />
+		</action>
+
+	</package>
+	
+	<package name="np" extends="json-default" namespace="/ajaxnp">
+		<action name="actConsPara" class="com.kesd.action.np.ActConsPara">
+		    <result type="json" />
+		</action>
+		<action name="actImportBD" class="com.kesd.action.np.ActImportBD">
+		    <result type="json" />
+		</action>
+		<action name="actChgMeter" class="com.kesd.action.np.ActChangeMeter">
+		    <result type="json" />
+		</action>
+		<action name="actChgRate" class="com.kesd.action.np.ActChangeRate">
+		    <result type="json" />
+		</action>
+		<action name="actCardReadInfo" class="com.kesd.action.np.ActCardReadInfo">
+		    <result type="json" />
+		</action>
+		<action name="actSearch" class="com.kesd.action.np.ActSearch">
+		    <result type="json" />
+		</action>
+		<action name="actReport" class="com.kesd.action.np.ActReport">
+		    <result type="json" />
+		</action>
+		<action name="actUpdateState" class="com.kesd.action.np.ActUpdateState">
+		    <result type="json" />
+		</action>
+		<!-- 增加 对账查询的映射文件 -->
+		<action name="actCheckSearch" class="com.kesd.action.np.ActCheckSearch">
+		    <result type="json"/>
+		</action>
+		<!-- 增加发行电费action映射 -->
+		<action name="actPublishRate" class="com.kesd.action.np.ActPublishRate">
+		    <result type="json"/>
+		</action>
+	    <!-- 增加 补发发票功能 supply again bill-->
+		<action name="actSupplyBill" class="com.kesd.action.np.ActSupplyBill">
+		    <result type="json" />
+		</action>
+		<!-- 结算补差-->
+		<action name="actSG186JSExcel" class="com.kesd.action.np.Act186JSExcel">
+		    <result type="json" />
+		</action>
+	</package>
+	
+	<package name="spec" extends="json-default" namespace="/ajaxspec">
+		<action name="actConsPara" class="com.kesd.action.spec.ActConsPara">
+		    <result type="json" />
+		</action>
+		<action name="actImportBD" class="com.kesd.action.spec.ActImportBD">
+		    <result type="json" />
+		</action>
+		<action name="actSearch" class="com.kesd.action.spec.ActSearch">
+		    <result type="json" />
+		</action>
+		<action name="actReport" class="com.kesd.action.spec.ActReport">
+		    <result type="json" />
+		</action>
+		<!-- 增加 补发发票功能 supply again bill-->
+		<action name="actSupplyBill" class="com.kesd.action.spec.ActSupplyBill">
+		    <result type="json" />
+		</action>
+		<!-- 增加高压特殊修正的action-->
+		<action name="actUpdateState" class="com.kesd.action.spec.ActUpdateState">
+		    <result type="json" />
+		</action>
+		<!-- 结算补差-->
+		<action name="actSG186JSExcel" class="com.kesd.action.spec.Act186JSExcel">
+		    <result type="json" />
+		</action>
+	</package>
+	
+	<package name="oper" extends="json-default" namespace="/ajaxoper">
+		<action name="actCommDy" class="com.kesd.action.oper.ActCommDy">
+		    <result type="json" />
+		</action>
+		<action name="actSysCtrl" class="com.kesd.action.oper.ActSysCtrl">
+		    <result type="json" />
+		</action>
+		<action name="actCommGy" class="com.kesd.action.oper.ActCommGy">
+		    <result type="json" />
+		</action>
+		<action name="actOperDy" class="com.kesd.action.oper.ActOperDy">
+		    <result type="json" />
+		</action>
+		<action name="actOperGy" class="com.kesd.action.oper.ActOperGy">
+		    <result type="json" />
+		</action>
+		<action name="actOperNp" class="com.kesd.action.oper.ActOperNp">
+		    <result type="json" />
+		</action>
+		<action name="actCommNp" class="com.kesd.action.oper.ActCommNp">
+		    <result type="json" />
+		</action>
+		<action name="actMisGy" class="com.kesd.action.oper.ActMisGy">
+		    <result type="json" />
+		</action>
+		<action name="actMisDy" class="com.kesd.action.oper.ActMisDy">
+		    <result type="json" />
+		</action>
+		<action name="actWebCard" class="com.kesd.action.oper.ActWebCard">
+		    <result type="json" />
+		</action>
+		<action name="actMisDyGS" class="com.kesd.action.oper.ActMisDyGS">
+		    <result type="json" />
+		</action>
+		<action name="actMisGyGS" class="com.kesd.action.oper.ActMisGyGS">
+		    <result type="json" />
+		</action>
+		<action name="actMisCheck" class="com.kesd.action.oper.ActMisCheck">
+		    <result type="json" />
+		</action>
+		
+		<!-- 低压操作 -->
+		<action name="actOperDyBengal" class="com.kesd.action.oper.ActOperDyBengal">
+		    <result type="json" />
+		</action>	
+		<!-- 低压操作存库 -->
+		<action name="actSaveDBBengal" class="com.kesd.action.oper.ActOperDBDy">
+		    <result type="json" />
+		</action>	
+			
+	</package>
+	
+	<!-- 上传快速建档模板文件 -->
+	<package name="impOrexp" extends="struts-default" namespace="/impExp">
+		<action name="export" class="com.kesd.action.ActImpExpData">
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputName">txtStream</param>
+				<param name="contentDisposition">attachment;filename=${filename}</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+		<action name="import" class="com.kesd.action.ActImpExpData">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/docs/impModel.jsp</result>
+			<result name ="success">/jsp/docs/impModel.jsp
+			</result>
+		</action>
+	</package>
+	
+	<package name="excelStream" extends="struts-default" namespace="/excel">
+		<action name="dataExcel" class="com.kesd.action.ActDataExcel">
+			<result name="excel" type="stream">
+				<param name="contentType">application/vnd.ms-excel</param>
+	            <param name="inputName">excelStream</param>
+	            <param name="contentDisposition">filename=${filename}</param>
+	            <param name="bufferSize">1024</param>
+			</result>
+			<result name="fail">/err_excel.jsp</result>
+		</action>
+		<action name ="SG186JSExcelGy" class ="com.kesd.action.spec.Act186JSExcel">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/spec/dialog/uploadSG186BdYe.jsp</result>
+			<result name ="success">/jsp/spec/dialog/uploadSG186BdYe.jsp</result>
+		</action>
+		
+		<action name ="SG186JSExcelDy" class ="com.kesd.action.dyjc.Act186JSExcel">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/dyjc/dialog/uploadSG186BdYe.jsp</result>
+			<result name ="success">/jsp/dyjc/dialog/uploadSG186BdYe.jsp</result>
+		</action>
+		
+		<!--低压卡表量控阶梯结算-->
+		<action name ="SG186JSExcelDyDl" class ="com.kesd.action.dyjc.Act186JSExcelDl">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/dyjc/dialog/uploadSG186TotDl.jsp</result>
+			<result name ="success">/jsp/dyjc/dialog/uploadSG186TotDl.jsp</result>
+		</action>
+		
+		<!--  批量结算-->
+		<action name ="SG186JSExcelGyPl" class ="com.kesd.action.spec.Act186JSExcelPl">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/spec/dialog/uploadSG186BdYe.jsp</result>
+			<result name ="success">/jsp/spec/dialog/uploadSG186BdYe.jsp</result>
+		</action>
+		
+		<action name ="SG186JSExcelDyPl" class ="com.kesd.action.dyjc.Act186JSExcelPl">
+			<interceptor-ref name ="fileUpload"> 
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack" />
+			<result name ="input">/jsp/dyjc/dialog/uploadSG186BdYe.jsp</result>
+			<result name ="success">/jsp/dyjc/dialog/uploadSG186BdYe.jsp</result>
+		</action>
+		
+		<!-- 上传农排表档案 -->
+		<action name ="fileUploadNPB" class ="com.kesd.action.ActImpExcel2Web">
+			<interceptor-ref name ="fileUpload">
+				<param name="maximumSize">4000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+			<result name ="input">/jsp/docs/yffparapl_npb.jsp</result>
+			<result name ="success">/jsp/docs/yffparapl_npb.jsp</result>
+		</action>
+		
+		<!-- 上传农排表档案 -->
+		<action name ="fileUploadNPK" class ="com.kesd.action.ActImpExcel2Web">
+			<interceptor-ref name ="fileUpload">
+				<param name="maximumSize">4000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"/>
+			<result name ="input">/jsp/docs/yffparapl_npk.jsp</result>
+			<result name ="success">/jsp/docs/yffparapl_npk.jsp</result>
+		</action>
+		
+	</package>
+</struts>

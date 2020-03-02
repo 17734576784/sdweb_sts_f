@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web_cfg>
+	
+	<app_locale value="cn"/>	<!-- 中文：cn,英文：en -->
+	
+	<!-- c++ saleman_service IP地址和端口号-->
+  <saleman_service_addr   ip="192.168.11.5" 	port="17008" />	
+	
+	<login_single value="1" />					<!-- 1:同一用户只能在一处登录,0:可多处登录-->
+	
+	<cop_name name="石家庄科林电气股份有限公司"/> <!-- 公司名称  -->
+	
+	<cop_logo name="logo_ke.gif"/> 			<!-- 公司图标  -->
+	
+	<tree_global name="抚宁县供电公司" />		<!-- 树根节点名称 -->
+	
+	<logo name="河南" />						<!-- 首页logo图片(省市名称) -->
+	
+	<yzje> <!-- 预置金额 -->
+		<item value="0" text="居民预置金额0元" ></item>
+		<item value="30" text="居民预置金额30元" ></item>
+		<item value="100" text="工商业预置金额100元" ></item>
+		<item value="200" text="排浇预置金额200元" ></item>
+	</yzje>
+	
+	<menu>
+		<!--低压    菜单ID，是否显示：0不显示；1显示 -->
+		<item menuid="dy_leftmenu0" showflag="1"></item>	<!-- 本地费控（卡式） -->
+		<item menuid="dy_leftmenu1" showflag="0"></item>	<!-- 本地费控（远程表底） -->
+		<item menuid="dy_leftmenu2" showflag="0"></item>	<!-- 主站费控-->
+		<item menuid="dy_leftmenu3" showflag="0"></item>	<!-- 本地费控（外接卡式）-->
+		<item menuid="dy_leftmenu4" showflag="1"></item>	<!-- 查询 -->
+		<item menuid="dy_leftmenu5" showflag="1"></item>	<!-- 报表-->
+		<item menuid="dy_leftmenu6" showflag="1"></item>	<!-- 工具-->
+		<item menuid="dy_leftmenu7" showflag="1"></item>	<!-- 打印-->
+		<item menuid="dy_leftmenu8" showflag="1"></item>	<!-- 本地费控（开户）-->
+		
+		
+		<!--高压    菜单ID，是否显示：0不显示；1显示 -->
+		<item menuid="gy_leftmenu0" showflag="1"></item>	<!-- 本地费控（卡式） -->
+		<item menuid="gy_leftmenu1" showflag="1"></item>	<!-- 本地费控（远程表底） -->
+		<item menuid="gy_leftmenu2" showflag="1"></item>	<!-- 本地费控（远程金额） -->
+		<item menuid="gy_leftmenu3" showflag="1"></item>	<!-- 主站费控-->
+		<item menuid="gy_leftmenu4" showflag="1"></item>	<!-- 查询 -->
+		<item menuid="gy_leftmenu5" showflag="1"></item>	<!-- 报表-->
+		<item menuid="gy_leftmenu6" showflag="1"></item>	<!-- 工具-->
+		<item menuid="gy_leftmenu7" showflag="1"></item>	<!-- 打印-->
+		
+		<!--农排    菜单ID，是否显示：0不显示；1显示 -->
+		<item menuid="np_leftmenu0" showflag="1"></item>	<!-- 本地费控（卡式） -->
+		<item menuid="np_leftmenu1" showflag="1"></item>	<!-- 查询 -->
+		<item menuid="np_leftmenu2" showflag="1"></item>	<!-- 报表-->
+		<item menuid="np_leftmenu3" showflag="1"></item>	<!-- 工具-->
+		<item menuid="np_leftmenu4" showflag="1"></item>	<!-- 打印-->
+		
+		<!--档案   菜单ID，是否显示：0不显示；1显示 -->
+		<item menuid="da_leftmenu0" showflag="1"></item>	<!-- 公共档案 -->
+		<item menuid="da_leftmenu1" showflag="1"></item>	<!-- 专变费控档案 -->
+		<item menuid="da_leftmenu2" showflag="1"></item>	<!-- 低压缴费档案 -->
+		<item menuid="da_leftmenu3" showflag="1"></item>	<!-- 农排缴费档案 -->
+		
+		<!--其他   菜单ID，是否显示：0不显示；1显示 -->
+		<item menuid="other_leftmenu0" showflag="1"></item>	<!-- 系统控制 -->
+		<item menuid="other_leftmenu1" showflag="1"></item>	<!-- 下载专区-->	
+		<item menuid="other_leftmenu2" showflag="1"></item>	<!-- 扩展功能-->	
+	</menu>
+	
+	<provinceMisFlag value="HN"/>	<!-- MIS接口省份   HB:河北省,HN:河南省,GS:甘肃  -->
+	
+	<!-- 高压文件结算  -->
+	<gyjs_file type="hbsg186">
+		<!-- 河北SG186 -->
+		<hbsg186>
+			<!-- 表底文件参数  use_factnof:是否使用出厂编号  title_lineno:标题行号-->
+			<bd cons_no="用户编号" cons_desc="用户名称" factory_no="出厂编号" data_type="示数类型" cur_data="本次示数" use_factnof="1" title_lineno="1" />
+			
+			<!-- 余额文件参数 -->
+			<ye cons_no="用户编号" cons_desc="用户名称" remain="预收金额" title_lineno="0" />
+		</hbsg186>
+		
+		<!-- 其他mis -->
+		<other_mis>
+		</other_mis>
+	</gyjs_file>
+	
+	<!-- 低压文件结算  -->
+	<dyjs_file type="hbsg186">
+		<!-- 河北SG186 -->
+		<hbsg186>
+			<!-- 表底文件参数   title_lineno:标题行号-->
+			<bd cons_no="用户编号" cons_desc="用户名称" factory_no="出厂编号" data_type="示数类型" cur_data="本次示数" title_lineno="1" />
+			
+			<!-- 余额文件参数 -->
+			<ye cons_no="用户编号" cons_desc="用户名称" remain="预收金额" dbremain="电表余额" title_lineno="0" />
+		</hbsg186>
+		
+		<!-- 其他mis -->
+		<other_mis>
+		</other_mis>
+	</dyjs_file>
+	
+	<dydljs_file type="hndlsg186">
+		<!-- dlSG186 -->
+		<hndlsg186>
+			<!-- 电量参数   title_lineno:标题行号-->
+			<dl cons_no="用户编号" cons_desc="用户名称" tot_dl="累计电量" title_lineno="0" />
+		</hndlsg186>
+		
+		<!-- 其他mis -->
+		<otherdl_mis>
+		</otherdl_mis>
+	</dydljs_file>
+	
+	<!-- 专变金额为负数操作  0表示此类金额不能为负数  1表示此类金额可以为负数-->
+	<gynegativemoney>
+		<gycard 	payflag="0" totflag="0" remainflag="0"></gycard>
+		<gylocbd 	payflag="0" totflag="0" remainflag="0"></gylocbd>
+		<gylocmny 	payflag="0" totflag="1" remainflag="0"></gylocmny>
+		<gymain		payflag="0" totflag="0" remainflag="0"></gymain>
+	</gynegativemoney>
+	<!-- 集抄金额为负数操作  0表示此类金额不能为负数  1表示此类金额可以为负数-->
+	<dynegativemoney>
+		<dycard 	payflag="0" totflag="0" remainflag="0"></dycard>
+		<dylocmny 	payflag="0" totflag="0" remainflag="0"></dylocmny>
+		<dymain		payflag="0" totflag="1" remainflag="1"></dymain>
+	</dynegativemoney>
+	<!-- 农排金额为负数操作  0表示此类金额不能为负数  1表示此类金额可以为负数-->
+	<npnegativemoney>
+		<npcard 	payflag="0" totflag="0" remainflag="0"></npcard>
+	</npnegativemoney>
+
+	<gycard_repairpay_flag value="1"/> <!-- 高压补卡  0补卡不能同时缴费, 1补卡可以缴费-->
+	<dycard_repairpay_flag value="1"/> <!-- 低压补卡  0补卡不能同时缴费, 1补卡可以缴费-->
+	<dylkcard_jtzbjs_flag  value="1"/> <!-- 低压量控卡表 追补结算启用标志  0 不启用, 1启用-->
+
+	<np_monylimit value="2000" /> <!-- 农排的购电金额限值 -->
+
+	<nptool_whitelist_showflag value="0" /> <!-- 农排工具-远程操作页面 白名单   1显示,0隐藏 -->
+	<nptool_blacklist_showflag value="1" /> <!-- 农排工具-远程操作页面 黑名单   1显示,0隐藏-->
+
+	<!-- 数据是否自动显示参数配置 -->
+	<data_autoview>
+		<!-- 查询与报表部分,费控档案(低压、专变、农排)部分页面加载是否自动显示  -->
+		<!-- autoshow控制查询与报表部分: "1"显示，"0"不显示 -->
+		<!-- 费控档案部分根据左侧树节点位置，细分为：grade_1:全局数据 grade_2:变电站、供电所 grade_3:线路、线路负责人 grade_4:用户 grade_5:终端 -->
+		<!-- grade_n控制费控档案部分树节点:零或负值不自动显示 -->
+		
+		<!-- 低压部分具体配置 -->
+		<item type="dy_show" autoshow="1">
+			<paydoc	grade_1="1" grade_2="1" grade_3="1" grade_4="1" grade_5="1"></paydoc>
+		</item>
+		
+		<!--  专变部分具体配置 -->
+		<item type="spec_show" autoshow="1">
+			<paydoc	grade_1="1" grade_2="1" grade_3="1" grade_4="1" grade_5="1"></paydoc>
+		</item>
+		
+		<!-- 农排部分具体配置 -->
+		<item type="np_show" autoshow="1">
+			<paydoc	grade_1="1" grade_2="1" grade_3="1" grade_4="1" grade_5="1"></paydoc>
+		</item>
+	</data_autoview>
+	
+	<!-- 农排写卡异常时重新写卡最大次数  1-3次-->
+	<rewrite_maxnum_np value="3"/>
+	<!-- 农排读卡异常时重新读卡最大次数  1-3次-->
+	<reread_maxnum_np value="2"/>
+	<session timeout="30" />				<!-- 登录过期时间(分钟) -->
+	<!--qjl add 20150313 复费率峰时段时间start-->
+	<peaktime time1 = "8" time2 = "17" />
+	<!--qjl add 20150313 复费率峰时段时间end-->
+	
+	<EncryptModule commport="COM4" useflag="1" baudrate="9600" checkflag="0" databit="8" stopbit="1"></EncryptModule> 
+	<!-- 返回TokenIdentifier分钟数 1=STS_BASEDATE_1993, 2=STS_BASEDATE_2014, 3=STS_BASEDATE_2035 -->
+	<sts_basedate value="1"/>
+
+</web_cfg>

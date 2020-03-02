@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.YffAlarmPara" table="yffalarmpara">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		<property name="describe" column="describe" type="string"></property>
+		<property name="type" column="type" type="byte"></property>
+		<property name="alarm1" column="alarm1" type="integer"></property>
+		<property name="alarm2" column="alarm2" type="integer"></property>
+		<property name="alarm3" column="alarm3" type="integer"></property>
+		<property name="payalmFlag" column="payalm_flag" type="byte"></property>
+		<property name="hzalmFlag" column="hzalm_flag" type="byte"></property>
+		<property name="tzalmFlag" column="tzalm_flag" type="byte"></property>
+		<property name="dxalmFlag" column="dxalm_flag" type="byte"></property>
+		<property name="syalmFlag" column="syalm_flag" type="byte"></property>
+		<property name="dxalmcgkFlag" column="dxalmcgk_flag" type="byte"></property>
+		<property name="syalmcgkFlag" column="syalmcgk_flag" type="byte"></property>
+		<property name="reserve1" column="reserve1" type="double"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+	</class>
+</hibernate-mapping>

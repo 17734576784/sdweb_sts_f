@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.RtuCommPara" table="rtucomm_para">
+		<id name="rtuId" column="id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+	
+		<property name="rtuIpaddr" column="rtu_ipaddr" type="string"></property>
+		<property name="rtuIpmask" column="rtu_ipmask" type="string"></property>
+		<property name="rtuIpport" column="rtu_ipport" type="integer"></property>
+		<property name="telno" column="telno" type="string"></property>
+
+		<property name="authCode" column="auth_code" type="string"></property>
+		<property name="authCodelen" column="auth_codelen" type="byte"></property>
+		<property name="authCodeFano" column="auth_code_fano" type="integer"></property>
+		<property name="authCodeFacs" column="auth_code_facs" type="integer"></property>
+
+		<property name="safeInter" column="safe_inter" type="byte"></property>
+		<property name="onlineType" column="online_type" type="byte"></property>
+		<property name="nettcpType" column="nettcp_type" type="byte"></property>
+
+		<property name="proxyType" column="proxy_type" type="byte"></property>
+		<property name="proxyIpaddr" column="proxy_ipaddr" type="string"></property>
+		<property name="proxyIpport" column="proxy_ipport" type="integer"></property>
+		<property name="proxyLinktype" column="proxy_linktype" type="byte"></property>
+		<property name="proxyUsername" column="proxy_username" type="string"></property>
+		<property name="proxyUserpwd" column="proxy_userpwd" type="string"></property>
+
+		<property name="apnName" column="apn_name" type="string"></property>
+		<property name="vpnUser" column="vpn_user" type="string"></property>
+		<property name="vpnPwd" column="vpn_pwd" type="string"></property>
+
+		<property name="masterIpaddr1" column="master_ipaddr1" type="string"></property>
+		<property name="masterIpport1" column="master_ipport1" type="integer"></property>
+		<property name="masterIpaddr2" column="master_ipaddr2" type="string"></property>
+		<property name="masterIpport2" column="master_ipport2" type="integer"></property>
+		<property name="gatewayIpaddr" column="gateway_ipaddr" type="string"></property>
+		<property name="gatewayIpport" column="gateway_ipport" type="integer"></property>
+		
+		<property name="mstTelno" column="mst_telno" type="string"></property>
+		<property name="scaNo" column="sca_no" type="string"></property>		
+
+		<property name="relayFlag" column="relay_flag" type="byte"></property>
+		<property name="relayType" column="relay_type" type="byte"></property>
+	</class>
+</hibernate-mapping>

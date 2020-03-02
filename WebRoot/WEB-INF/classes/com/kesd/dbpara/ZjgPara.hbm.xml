@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.ZjgPara" table="zjgpara">
+		<composite-id>
+			<key-property name="zjgId" column="zjg_id" type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+		</composite-id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		<property name="yffFlag" column="yff_flag" type="byte"></property>
+		<property name="clpNum" column="clp_num" type="byte"></property>
+		
+		<property name="clpIds" column="clp_ids" type="string"></property>
+		<property name="zfFlag" column="zf_flag" type="string"></property>
+		<property name="asFlag" column="as_flag" type="string"></property>
+	
+		<property name="gkPollFlag" column="gk_poll_flag" type="byte"></property>
+		<property name="dkPollFlag" column="dk_poll_flag" type="byte"></property>
+		
+		<property name="rtupollId1" column="rtupoll_id1" type="byte"></property>
+		<property name="rtupollId2" column="rtupoll_id2" type="byte"></property>
+		<property name="rtupollId3" column="rtupoll_id3" type="byte"></property>
+		<property name="rtupollId4" column="rtupoll_id4" type="byte"></property>
+		<property name="rtupollId5" column="rtupoll_id5" type="byte"></property>
+		<property name="rtupollId6" column="rtupoll_id6" type="byte"></property>
+		<property name="rtupollId7" column="rtupoll_id7" type="byte"></property>
+		<property name="rtupollId8" column="rtupoll_id8" type="byte"></property>
+
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+	</class>
+</hibernate-mapping>

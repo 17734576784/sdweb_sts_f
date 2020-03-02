@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MeterPara" table="meterpara">
+		<composite-id>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+			<key-property name="mpId" column="mp_id" type="short"></key-property>
+		</composite-id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		<property name="residentId" column="resident_id" type="short"></property>
+		<property name="metermodelId" column="metermodel_id" type="short"></property>
+		<property name="equipIdx" column="equip_idx" type="byte"></property>
+		<property name="commSpeed" column="comm_speed" type="integer"></property>
+		<property name="commPort" column="comm_port" type="byte"></property>
+		<property name="commAddr" column="comm_addr" type="string"></property>
+		<property name="commProt" column="comm_prot" type="byte"></property>
+		<property name="commPwd" column="comm_pwd" type="string"></property>
+		<property name="meterId" column="meter_id" type="string"></property>
+		<property name="flNum" column="fl_num" type="byte"></property>
+		<property name="dndataInt" column="dndata_int" type="byte"></property>
+		<property name="dndataDec" column="dndata_dec" type="byte"></property>
+		<property name="dataBit" column="data_bit" type="byte"></property>
+		<property name="stopBit" column="stop_bit" type="byte"></property>
+		<property name="checkBit" column="check_bit" type="byte"></property>
+		<property name="pOffset" column="p_offset" type="short"></property>
+		<property name="qOffset" column="q_offset" type="short"></property>
+		<property name="substId" column="subst_id" type="short"></property>
+		<property name="lineId" column="line_id" type="short"></property>
+		<property name="madeNo" column="made_no" type="string"></property>
+		<property name="assetNo" column="asset_no" type="string"></property>
+		<property name="barCode" column="bar_code" type="string"></property>
+		<property name="jsCode" column="js_code" type="string"></property>
+		<property name="factory" column="factory" type="byte"></property>
+		<property name="prepayflag" column="prepayflag" type="byte"></property>
+		<property name="status" column="status" type="byte"></property>
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+	</class>
+</hibernate-mapping>

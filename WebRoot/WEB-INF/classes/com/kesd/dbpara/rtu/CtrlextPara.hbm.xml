@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.CtrlextPara" table="ctrlext_para">
+		<id name="rtuId" column="rtu_id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="safevalue" column="safevalue" type="double"></property>
+		<property name="protectTime" column="protect_time" type="byte"></property>
+		<property name="disconnTime" column="disconn_time" type="byte"></property>
+		<property name="pollalarmTime" column="pollalarm_time" type="string"></property>
+		<property name="soundalarmFlag" column="soundalarm_flag" type="string"></property>
+		<property name="feealarmFlag" column="feealarm_flag" type="string"></property>
+		<property name="eventrecFlag" column="eventrec_flag" type="string"></property>
+		<property name="eventimpFlag" column="eventimp_flag" type="string"></property>
+		<property name="ctrlLogic" column="ctrllogic" type="byte"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+		
+		</class>
+</hibernate-mapping>

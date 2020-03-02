@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.RtuModel" table="rtumodel">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="dataCap" column="data_cap" type="short"></property>
+		<property name="factory" column="factory" type="short"></property>
+		<property name="chanType1" column="chan_type1" type="byte"></property>
+		<property name="chanType2" column="chan_type2" type="byte"></property>
+		<property name="meterPort" column="meter_port" type="byte"></property>
+		<property name="safeInter" column="safe_inter" type="short"></property>
+		<property name="prot" column="prot" type="byte"></property>
+		<property name="pwdFlag" column="pwd_flag" type="byte"></property>
+		<property name="eveReport" column="eve_report" type="byte"></property>
+		<property name="taskReport" column="task_report" type="byte"></property>
+		<property name="addrJz" column="addr_jz" type="byte"></property>
+		<property name="pwdId" column="pwd_id" type="byte"></property>
+		<property name="keyId" column="key_id" type="short"></property>
+		<property name="jcFlag" column="jc_flag" type="byte"></property>
+		<property name="ycFlag" column="yc_flag" type="byte"></property>
+		<property name="dyjcFlag" column="dyjc_flag" type="byte"></property>
+		<property name="xbjcFlag" column="xbjc_flag" type="byte"></property>
+		<property name="pbjcFlag" column="pbjc_flag" type="byte"></property>
+		<property name="bdzjcFlag" column="bdzjc_flag" type="byte"></property>
+		<property name="jcId" column="jc_id" type="byte"></property>
+		<property name="jcflNum" column="jcfl_num" type="byte"></property>
+		<property name="dndataInt" column="dndata_int" type="byte"></property>
+		<property name="dndataDec" column="dndata_dec" type="byte"></property>
+		<property name="meterNum" column="meter_num" type="short"></property>
+		<property name="dayDataCap" column="day_datacap" type="byte"></property>
+		<property name="monDataCap" column="mon_datacap" type="byte"></property>
+	</class>
+</hibernate-mapping>

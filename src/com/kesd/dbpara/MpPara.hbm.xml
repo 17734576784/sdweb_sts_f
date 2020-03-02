@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MpPara" table="mppara">
+		<composite-id>
+			<key-property name="id" column="id" type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+		</composite-id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		<property name="mpType" column="mp_type" type="byte"></property>
+		<property name="consType" column="cons_type" type="byte"></property>
+		<property name="ptNumerator" column="pt_numerator" type="integer"></property>
+		<property name="ptDenominator" column="pt_denominator" type="integer"></property>
+		<property name="ptRatio" column="pt_ratio" type="double"></property>
+		<property name="ctNumerator" column="ct_numerator" type="integer"></property>
+		<property name="ctDenominator" column="ct_denominator" type="integer"></property>
+		<property name="ctRatio" column="ct_ratio" type="double"></property>
+		<property name="rv" column="rv" type="double"></property>
+		<property name="ri" column="ri" type="double"></property>
+		<property name="rp" column="rp" type="double"></property>
+		<property name="mi" column="mi" type="double"></property>	
+		<property name="wiringMode" column="wiring_mode" type="byte"></property>
+		<property name="bakFlag" column="bak_flag" type="byte"></property>
+		<property name="mainId" column="main_id" type="short"></property>
+		<property name="bdFactor" column="bd_factor" type="short"></property>
+		<property name="vfactor" column="v_factor" type="short"></property>
+		<property name="ifactor" column="i_factor" type="short"></property>
+		<property name="pfactor" column="p_factor" type="short"></property>
+		<property name="csFactory" column="cs_factory" type="short"></property>
+		<property name="clFa" column="cl_fa" type="short"></property>
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+	</class>
+</hibernate-mapping>

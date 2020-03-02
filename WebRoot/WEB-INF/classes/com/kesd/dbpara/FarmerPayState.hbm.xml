@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.FarmerPayState" table="farmerpay_state">
+		<composite-id>
+			<key-property name="areaId" column="area_id" type="integer"></key-property>
+			<key-property name="farmerId" column="farmer_id" type="integer"></key-property>
+		</composite-id>
+	
+		
+		<property name="cusState" 	column="cus_state" type="byte"></property>
+		<property name="opType" 	column="op_type" 	type="byte"></property>
+		<property name="opDate" 	column="op_date" 	type="integer"></property>
+		<property name="opTime" 	column="op_time" 	type="integer"></property>
+		
+		<property name="payMoney" 		column="pay_money" 		type="double"></property>
+		<property name="othjsMoney" 	column="othjs_money" 	type="double"></property>
+		<property name="zbMoney" 		column="zb_money" 		type="double"></property>
+		<property name="allMoney" 		column="all_money" 		type="double"></property>
+
+		<property name="lsRemain" 	column="ls_remain" type="double"></property>
+		<property name="curRemain" column="cur_remain" type="double"></property>
+						
+		<property name="totalGdz" 	column="total_gdz" 	type="double"></property>
+		
+		<property name="totbuyTimes" 	column="totbuy_times" 	type="integer"></property>
+		<property name="buyTimes" 	column="buy_times" 	type="integer"></property>
+
+		<property name="alarm1" column="alarm1" type="double"></property>
+		<property name="alarm2" column="alarm2" type="double"></property>
+
+		<property name="khDate" 	column="kh_date" 	type="integer"></property>
+		<property name="xhDate" 	column="xh_date" 	type="integer"></property>
+
+		<property name="jsBcYmd" 		column="js_bc_ymd" 			type="integer"></property>
+
+	</class>
+</hibernate-mapping>

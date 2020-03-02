@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MpPayState" table="mppay_state">
+		<composite-id>
+			<key-property name="mpId" column="mp_id" type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+		</composite-id>
+		
+		<property name="cusState" 	column="cus_state" type="byte"></property>
+		<property name="opType" 	column="op_type" 	type="byte"></property>
+		<property name="opDate" 	column="op_date" 	type="integer"></property>
+		<property name="opTime" 	column="op_time" 	type="integer"></property>
+		
+		<property name="payMoney" 		column="pay_money" 		type="double"></property>
+		<property name="othjsMoney" 	column="othjs_money" 	type="double"></property>
+		<property name="zbMoney" 		column="zb_money" 		type="double"></property>
+		<property name="allMoney" 		column="all_money" 		type="double"></property>
+		<property name="shutdownVal" 	column="shutdown_val" 	type="double"></property>
+		<property name="shutdownVal2" 	column="shutdown_val2" 	type="double"></property>
+		
+		<property name="jsbdZyz" 	column="jsbd_zyz" 	type="double"></property>
+		<property name="jsbdZyj" 	column="jsbd_zyj" 	type="double"></property>
+		<property name="jsbdZyf" 	column="jsbd_zyf" 	type="double"></property>
+		<property name="jsbdZyp" 	column="jsbd_zyp" 	type="double"></property>
+		<property name="jsbdZyg" 	column="jsbd_zyg" 	type="double"></property>
+		
+		<property name="jsbd1Zyz" 	column="jsbd1_zyz" 	type="double"></property>
+		<property name="jsbd1Zyj" 	column="jsbd1_zyj" 	type="double"></property>
+		<property name="jsbd1Zyf" 	column="jsbd1_zyf" 	type="double"></property>
+		<property name="jsbd1Zyp" 	column="jsbd1_zyp" 	type="double"></property>
+		<property name="jsbd1Zyg" 	column="jsbd1_zyg" 	type="double"></property>
+		
+		<property name="jsbd2Zyz" 	column="jsbd2_zyz" 	type="double"></property>
+		<property name="jsbd2Zyj" 	column="jsbd2_zyj" 	type="double"></property>
+		<property name="jsbd2Zyf" 	column="jsbd2_zyf" 	type="double"></property>
+		<property name="jsbd2Zyp" 	column="jsbd2_zyp" 	type="double"></property>
+		<property name="jsbd2Zyg" 	column="jsbd2_zyg" 	type="double"></property>
+		
+		<property name="jsbdYmd" 	column="jsbd_ymd" 	type="integer"></property>
+		<property name="buyTimes" 	column="buy_times" 	type="integer"></property>
+		
+		<property name="calcMdhmi" 	column="calc_mdhmi" type="integer"></property>
+		<property name="calcBdymd" 	column="calc_bdymd" type="integer"></property>
+		
+		<property name="calcZyz" 	column="calc_zyz" 	type="double"></property>
+		<property name="calcZyj" 	column="calc_zyj" 	type="double"></property>
+		<property name="calcZyf" 	column="calc_zyf" 	type="double"></property>
+		<property name="calcZyp" 	column="calc_zyp" 	type="double"></property>
+		<property name="calcZyg" 	column="calc_zyg" 	type="double"></property>
+		
+		<property name="calc1Zyz" 	column="calc1_zyz" 	type="double"></property>
+		<property name="calc1Zyj" 	column="calc1_zyj" 	type="double"></property>
+		<property name="calc1Zyf" 	column="calc1_zyf" 	type="double"></property>
+		<property name="calc1Zyp" 	column="calc1_zyp" 	type="double"></property>
+		<property name="calc1Zyg" 	column="calc1_zyg" 	type="double"></property>
+		
+		<property name="calc2Zyz" 	column="calc2_zyz" 	type="double"></property>
+		<property name="calc2Zyj" 	column="calc2_zyj" 	type="double"></property>
+		<property name="calc2Zyf" 	column="calc2_zyf" 	type="double"></property>
+		<property name="calc2Zyp" 	column="calc2_zyp" 	type="double"></property>
+		<property name="calc2Zyg" 	column="calc2_zyg" 	type="double"></property>
+		
+		<property name="nowRemain" 	column="now_remain" type="double"></property>
+		<property name="nowRemain2" column="now_remain2" type="double"></property>
+		<property name="bjBd" 		column="bj_bd" 		type="double"></property>
+		<property name="tzBd" 		column="tz_bd" 		type="double"></property>
+		
+		<property name="csAl1State" column="cs_al1_state" type="byte"></property>
+		<property name="csAl2State" column="cs_al2_state" type="byte"></property>
+		<property name="csFhzState" column="cs_fhz_state" type="byte"></property>
+		
+		<property name="al1Mdhmi" 	column="al1_mdhmi" 	type="integer"></property>
+		<property name="al2Mdhmi" 	column="al2_mdhmi" 	type="integer"></property>
+		<property name="fhzMdhmi" 	column="fhz_mdhmi" 	type="integer"></property>
+		
+		<property name="fzZyz" 		column="fz_zyz" 	type="double"></property>
+		<property name="fz1Zyz" 	column="fz1_zyz" 	type="double"></property>
+		<property name="fz2Zyz" 	column="fz2_zyz" 	type="double"></property>
+		
+		<property name="ycFlag1" 	column="yc_flag1" 	type="integer"></property>
+		<property name="ycFlag2" 	column="yc_flag2" 	type="integer"></property>
+		<property name="ycFlag3" 	column="yc_flag3" 	type="integer"></property>
+		
+		<property name="hbDate" 	column="hb_date" 	type="integer"></property>
+		<property name="hbTime" 	column="hb_time" 	type="integer"></property>
+		
+		<property name="khDate" 	column="kh_date" 	type="integer"></property>
+		<property name="xhDate" 	column="xh_date" 	type="integer"></property>
+		
+		<property name="totalGdz" 	column="total_gdz" 	type="double"></property>
+		
+		<property name="jtTotalZbdl" 	column="jt_total_zbdl" 		type="double"></property>
+		<property name="jtTotalDl" 	column="jt_total_dl" 		type="double"></property>
+		<property name="jtResetYmd" 	column="jt_reset_ymd" 		type="integer"></property>
+		
+		<property name="fxdfIallMoney" 	column="fxdf_iall_money" 	type="double"></property>
+		<property name="fxdfRemain" 	column="fxdf_remain" 		type="double"></property>
+		<property name="fxdfRemain2" 	column="fxdf_remain2" 		type="double"></property>
+		
+		<property name="fxdfYm" 		column="fxdf_ym" 			type="integer"></property>
+		<property name="fxdfDataYmd" 	column="fxdf_data_ymd" 		type="integer"></property>
+		<property name="fxdfCalcMdhmi"	column="fxdf_calc_mdhmi" 	type="integer"></property>
+		
+		<property name="jsBcYmd" 		column="js_bc_ymd" 			type="integer"></property>
+		
+		<property name="reserve1" column="reserve1" type="integer"></property>
+	</class>
+</hibernate-mapping>

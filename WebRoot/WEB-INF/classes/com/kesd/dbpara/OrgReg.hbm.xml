@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.OrgReg" table="org_reg">
+		<id name="orgId" column="org_id" type="short">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="regType" 	column="reg_type" 	type="short"></property>
+		<property name="regUser" 	column="reg_user" 	type="string"></property>
+		<property name="regCode" 	column="reg_code" 	type="string"></property>
+		<property name="useFlag" 	column="use_flag" 	type="short"></property>
+	</class>
+</hibernate-mapping>

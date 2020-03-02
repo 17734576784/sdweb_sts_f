@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.YffManDef" table="yffmandef">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="name" column="name" type="string"></property>
+		<property name="describe" column="describe" type="string"></property>
+		<property name="passwd" column="passwd" type="string"></property>
+		<property name="apptype" column="apptype" type="byte"></property>
+		<property name="ctrlFlag" column="ctrlflag" type="byte"></property>
+		<property name="openflag" column="openflag" type="byte"></property>
+		<property name="payflag" column="payflag" type="byte"></property>
+		<property name="paraflag" column="paraflag" type="byte"></property>
+		<property name="viewflag" column="viewflag" type="byte"></property>
+		<property name="rese1_flag" column="rese1_flag" type="byte"></property>
+		<property name="rese2_flag" column="rese2_flag" type="byte"></property>
+		<property name="rese3_flag" column="rese3_flag" type="byte"></property>
+		<property name="rese4_flag" column="rese4_flag" type="byte"></property>	
+		<property name="rank" column="rank" type="byte"></property>
+		<property name="orgId" column="org_id" type="short"></property>
+		<property name="fzmanId" column="fzman_id" type="short"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<session-factory>
+	<property name="show_sql">true</property>
+
+	<property name="dialect">
+		org.hibernate.dialect.SQLServerDialect
+	</property>
+
+	<property name="connection.url">jdbc:sqlserver://192.168.19.4:1433;SelectMethod=cursor;DatabaseName=ydparaben</property>
+
+	<property name="connection.username">sa</property>
+	<property name="connection.password">keyd*%@#1095</property>
+	<property name="connection.driver_class">
+		com.microsoft.sqlserver.jdbc.SQLServerDriver
+	</property>
+	<mapping resource="com/kesd/dbpara/YffAlarmPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/YffRatePara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/YffManDef.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/LineFZMan.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/OrgPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/GloProtect.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/MpPayPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/ConsPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/MpPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/RtuPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/MeterPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/MpPayAlmState.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/RtuPayCtrl.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/ZjgPaypara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/ZjgPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/Diction.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/RtuModel.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/LinePara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/AreaPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/NppayPara.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/FarmerPayState.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/MeterExtparaNP.hbm.xml" />
+<!--gbj20150305	-->
+	<mapping resource="com/kesd/dbpara/HoLiDayDef.hbm.xml"/>
+	
+	<mapping resource="com/kesd/dbpara/MeterStsPara.hbm.xml"/>
+	
+
+	<!-- qjl add 20150306 添加居民档案 start-->
+	<mapping resource="com/kesd/dbpara/rtu/ResidentPara.hbm.xml"/>	
+	<!-- qjl add 20150306 添加居民档案 end-->
+
+	<mapping resource="com/kesd/dbpara/HoLiDayGroup.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/HoLigItem.hbm.xml"/>
+	
+	<mapping resource="com/kesd/dbpara/OrgStsPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/OrgReg.hbm.xml"/>
+
+	<!-- 低压档案新增相关 zp -->
+	<mapping resource="com/kesd/dbpara/MpPayState.hbm.xml" />
+	<mapping resource="com/kesd/dbpara/rtu/CtrlextPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/JRtucportPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/JrturunPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuCommextPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuCommPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuExtPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuLinkcomPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuRelayPara.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/SimCard.hbm.xml"/>
+	<mapping resource="com/kesd/dbpara/rtu/RtuLimitPara.hbm.xml"/>
+	 
+	<mapping resource="com/kesd/dbpara/Userrankbound.hbm.xml"/>
+	
+	
+	
+</session-factory>
+
+</hibernate-configuration>

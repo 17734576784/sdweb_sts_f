@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MeterStsPara" table="meter_stspara">
+		<composite-id>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+			<key-property name="mpId" column="mp_id" type="short"></key-property>
+		</composite-id>
+		
+		<property name="keychange" 		column="keychange" 		type="byte"></property>
+		<property name="meterKey" 		column="meter_key" 		type="string"></property>
+		<property name="oldmtKey" 		column="oldmt_key" 		type="string"></property>
+		<property name="token1" 		column="token1" 		type="string"></property>
+		<property name="token2" 		column="token2" 		type="string"></property>
+		<property name="token3" 		column="token3" 		type="string"></property>
+		<property name="token4" 		column="token4" 		type="string"></property>
+		<property name="reserve1" 		column="reserve1" 		type="string"></property>
+		<property name="reserve2" 		column="reserve2" 		type="string"></property>
+		
+		<property name="ken" 		column="ken" 	type="integer"></property>
+		<property name="oldKen" 	column="old_ken" 	type="integer"></property>
+		<property name="krn" 		column="krn" 		type="byte"></property>
+		<property name="oldKrn" 	column="old_krn" 	type="byte"></property>
+		<property name="kt" 		column="kt" 		type="byte"></property>
+		<property name="oldKt"  	column="old_kt" 	type="byte"></property>
+		<property name="ti" 		column="ti" 		type="byte"></property>
+		<property name="oldTi"  	column="old_ti" 	type="byte"></property>
+		<property name="regno" 		column="regno" 		type="byte"></property>		
+		<property name="oldRegno" 	column="old_regno" 	type="byte"></property>
+		<property name="drn" 		column="drn" 		type="string"></property>
+		<property name="oldDrn" 	column="old_drn" 	type="string"></property>
+		<property name="sgc" 		column="sgc" 		type="string"></property>
+		<property name="oldSgc" 	column="old_sgc" 	type="string"></property>		
+				
+
+	</class>
+</hibernate-mapping>

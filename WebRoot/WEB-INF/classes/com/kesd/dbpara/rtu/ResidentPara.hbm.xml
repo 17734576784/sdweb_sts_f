@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.ResidentPara" table="Residentpara">
+		<composite-id>
+			<key-property name="id" column="id" type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+		</composite-id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="consNo" column="cons_no" type="string"></property>
+		<property name="address" column="address" type="string"></property>
+		<property name="post" column="post" type="string"></property>
+		<property name="phone" column="phone" type="string"></property>
+		<property name="mobile" column="mobile" type="string"></property>
+		<property name="fax" column="fax" type="string"></property>
+		<property name="mail" column="mail" type="string"></property>
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+	</class>
+</hibernate-mapping>

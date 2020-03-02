@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.RtuCommExtPara" table="rtucomm_extpara">
+		<id name="rtuId" column="id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="jcCommport" column="jc_commport" type="byte"></property>
+		<property name="jcCtlstr" column="jc_ctlstr" type="string"></property>
+		<property name="pubcommMode" column="pubcomm_mode" type="byte"></property>
+		<property name="altmRecalltime" column="altm_recalltime" type="short"></property>
+	</class>
+</hibernate-mapping>

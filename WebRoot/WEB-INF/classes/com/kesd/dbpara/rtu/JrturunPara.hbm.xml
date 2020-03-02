@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.JrturunPara" table="jrturun_para">
+		<id name="id" column="id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="jcCommport" column="jc_commport" type="byte"></property>
+		<property name="cbTimes" column="cb_times" type="byte"></property>
+		<property name="runCtrl" column="run_ctrl" type="short"></property>
+		<property name="cbDays" column="cb_days" type="string"></property>
+		<property name="cbTime" column="cb_time" type="short"></property>
+		<property name="cbInterTm" column="cb_inter_tm" type="byte"></property>
+		<property name="brcastTm" column="brcast_tm" type="integer"></property>
+		<property name="allowNum" column="allow_num" type="byte"></property>
+		<property name="allowBeg1" column="allow_beg1" type="short"></property>
+		<property name="allowEnd1" column="allow_end1" type="short"></property>
+		<property name="allowBeg2" column="allow_beg2" type="short"></property>
+		<property name="allowEnd2" column="allow_end2" type="short"></property>
+		
+		</class>
+</hibernate-mapping>

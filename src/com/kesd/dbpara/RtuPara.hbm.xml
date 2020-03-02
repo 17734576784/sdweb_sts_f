@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.RtuPara" table="rtupara">
+		<id name="id" column="id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		<property name="appType" column="app_type" type="byte"></property>
+		<property name="rtuModel" column="rtu_model" type="short"></property>
+		<property name="protType" column="prot_type" type="byte"></property>
+		<property name="rtuAddr" column="rtu_addr" type="integer"></property>
+		<property name="chanMain" column="chan_main" type="short"></property>
+		<property name="chanBak" column="chan_bak" type="short"></property>
+		<property name="simcardId" column="simcard_id" type="short"></property>
+		<property name="taskNum" column="task_num" type="byte"></property>
+		<property name="residentNum" column="resident_num" type="short"></property>
+		<property name="jlpNum" column="jlp_num" type="short"></property>
+		<property name="zjgNum" column="zjg_num" type="short"></property>
+		<property name="yffFlag" column="yff_flag" type="byte"></property>
+		<property name="consId" column="cons_id" type="short"></property>
+		<property name="substId" column="subst_id" type="short"></property>
+		<property name="subprojId" column="subproj_id" type="short"></property>
+		<property name="areaCode" column="area_code" type="string"></property>
+		<property name="factory" column="factory" type="byte"></property>
+		<property name="rv" column="rv" type="byte"></property>
+		<property name="ctrlType" column="ctrl_type" type="byte"></property>
+		<property name="runStatus" column="run_status" type="byte"></property>
+		<property name="instSite" column="inst_site" type="byte"></property>
+		<property name="instMan" column="inst_man" type="byte"></property>
+		<property name="instDate" column="inst_date" type="integer"></property>
+		<property name="stopDate" column="stop_date" type="integer"></property>
+		<property name="runDate" column="run_date" type="integer"></property>
+		<property name="madeNo" column="made_no" type="string"></property>
+		<property name="assetNo" column="asset_no" type="string"></property>
+		<property name="barCode" column="bar_code" type="string"></property>
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+		<property name="fzcbId" column="fzcb_id" type="short"></property>
+		
+	</class>
+</hibernate-mapping>

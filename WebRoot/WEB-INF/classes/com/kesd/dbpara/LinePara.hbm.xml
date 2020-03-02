@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.LinePara" table="linepara">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="type" column="type" type="byte"></property>
+		<property name="voltGrade" column="volt_grade" type="byte"></property>
+		<property name="lineLength" column="line_length" type="double"></property>
+		<property name="subsId" column="subs_id" type="short"></property>
+	</class>
+</hibernate-mapping>

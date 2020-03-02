@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.ZjgPaypara" table="zjgpay_para">
+		<composite-id>
+			<key-property name="zjgId" column="zjg_id" 		type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" 		type="integer"></key-property>
+		</composite-id>
+	
+	
+	<property name="useFlag" 		column="use_flag" 		type="byte"></property>
+	<property name="feectrlType" 	column="feectrl_type" 	type="byte"></property>
+	<property name="payType" 		column="pay_type" 		type="byte"></property>
+	<property name="writecardNo" 	column="writecard_no" 	type="string"></property>
+	<property name="cardmeterType" 	column="cardmeter_type" type="byte"></property>
+	<property name="yffctrlType" 	column="yffctrl_type" 	type="byte"></property>
+	<property name="caclType" 		column="cacl_type" 		type="byte"></property>
+	<property name="feeprojId" 		column="feeproj_id" 	type="short"></property>
+	<property name="feeproj1Id" 	column="feeproj1_id" 	type="short"></property>
+	<property name="feeproj2Id" 	column="feeproj2_id" 	type="short"></property>
+	<property name="yffalarmId" 	column="yffalarm_id" 	type="short"></property>
+	<property name="feeBegindate"	column="fee_begindate" 	type="integer"></property>
+
+    
+    <property name="protSt"			column="prot_st" 		type="byte"></property>     																								   	                    
+	<property name="protEd"			column="prot_ed" 		type="byte"></property>
+	<property name="ngloprotFlag"	column="ngloprot_flag" 	type="byte"></property>
+	<property name="keyVersion"		column="key_version" 	type="byte"></property>     																								   	                    
+	<property name="cryplinkId"		column="cryplink_id" 	type="byte"></property>
+		
+	<property name="payAdd1" 		column="pay_add1" 		type="double"></property>
+	<property name="payAdd2" 		column="pay_add2" 		type="double"></property>
+	<property name="payAdd3" 		column="pay_add3" 		type="double"></property>
+	
+	<property name="tzVal"			column="tz_val" 		type="integer"></property>
+	   																									                         
+	<property name="plusTime" 		column="plus_time" 		type="short"></property>																												                         
+	<property name="useGfh" 		column="use_gfh" 		type="byte"></property>    																																																								                         
+	<property name="hfhTime"		column="hfh_time" 		type="short"></property>    			   																																																							                         
+	<property name="hfhShutdown"	column="hfh_shutdown" 	type="integer"></property>   	   																																																							                         
+	<property name="csStand" 		column="cs_stand" 		type="byte"></property>
+	
+	<!-- 增加力调 start-->
+	<property name="powrateFlag" 	column="powrate_flag" 	type="byte"></property>
+	<property name="prizeFlag" 		column="prize_flag" 	type="byte"></property>
+	<property name="stopFlag" 		column="stop_flag" 		type="byte"></property>
+	<property name="stopBegdate" 	column="stop_begdate" 	type="integer"></property>
+	<property name="stopEnddate" 	column="stop_enddate" 	type="integer"></property>
+	<!-- 增加力调 end-->
+	
+	<property name="feeChgf" 		column="fee_chgf" 		type="byte"></property>
+	<property name="feeChgid"		column="fee_chgid" 		type="short"></property>
+	<property name="feeChgid1"		column="fee_chgid1" 	type="short"></property>
+	<property name="feeChgid2"		column="fee_chgid2" 	type="short"></property>
+	<property name="feeChgdate"		column="fee_chgdate" 	type="integer"></property>
+	<property name="feeChgtime"		column="fee_chgtime" 	type="integer"></property>
+
+	<property name="jbfChgf" 		column="jbf_chgf" 		type="byte"></property>
+	<property name="jbfChgval" 		column="jbf_chgval" 	type="double"></property>
+	<property name="jbfChgdate"		column="jbf_chgdate" 	type="integer"></property>
+	<property name="jbfChgtime"		column="jbf_chgtime" 	type="integer"></property>
+	
+	<property name="cbCycleType" 	column="cb_cycle_type" 	type="byte"></property>
+	<property name="cbDayhour"		column="cb_dayhour" 	type="short"></property>
+	<property name="jsDay" 			column="js_day" 		type="byte"></property>
+	<property name="cbjsFlag" 		column="cbjs_flag" 		type="byte"></property>
+	<property name="fxdfFlag" 		column="fxdf_flag" 		type="byte"></property>
+	<property name="fxdfBegindate"	column="fxdf_begindate" type="integer"></property>
+	<property name="localMaincalcf" column="local_maincalcf" type="byte"></property>
+	
+	<property name="reserve1"		column="reserve1" 		type="string"></property>
+
+	</class>
+</hibernate-mapping>

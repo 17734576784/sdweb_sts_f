@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.RtuPayCtrl" table="rtupayctrl">
+		<id name="rtuId" column="rtu_id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+	
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		
+		<property name="yffbgDate" column="yffbg_date" type="integer"></property>	
+		<property name="yffbgTime" column="yffbg_time" type="integer"></property>
+		
+		<property name="sg186bgDate" column="sg186bg_date" type="integer"></property>	
+		<property name="sg186bgTime" column="sg186bg_time" type="integer"></property>
+		
+		<property name="reserve1Date" column="reserve1_date" type="integer"></property>
+		<property name="reserve1Time" column="reserve1_time" type="integer"></property>
+		
+		<property name="reserve2Date" column="reserve2_date" type="integer"></property>
+		<property name="reserve2Time" column="reserve2_time" type="integer"></property>
+		
+		<property name="reserve3Date" column="reserve3_date" type="integer"></property>
+		<property name="reserve3Time" column="reserve3_time" type="integer"></property>
+	</class>
+</hibernate-mapping>

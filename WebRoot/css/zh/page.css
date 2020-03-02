@@ -1,0 +1,20 @@
+.tbl table {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+.tbl td {
+	border:1px solid #B8C0BD;
+	padding: 1px 3px;
+	height: 20px;
+	font-size: 12px;
+}
+.btn{
+	background : url(../images/btnbg1.gif);
+ 	border-style:none;
+ 	width:80px;
+ 	color: #274E4E;
+ 	background-repeat:no-repeat;
+ 	font-size: 12px;
+ 	padding-top: 5px;
+ 	letter-spacing:3px;
+}

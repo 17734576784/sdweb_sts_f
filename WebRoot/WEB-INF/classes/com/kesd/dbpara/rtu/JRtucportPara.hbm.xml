@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.JRtucportPara" table="jrtucport_para">
+		<composite-id>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+			<key-property name="jcCommport" column="jc_commport" type="byte"></key-property>
+		</composite-id>
+		
+		<property name="jcCtlstr" column="jc_ctlstr" type="string"></property>
+		<property name="wtfFmTime" column="wtf_fm_time" type="byte"></property>
+		<property name="wtfBtTime" column="wtf_bt_time" type="byte"></property>
+		<property name="cvfRsTimes" column="cvf_rs_times" type="byte"></property>
+	</class>
+</hibernate-mapping>

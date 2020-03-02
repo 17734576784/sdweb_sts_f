@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MpPayAlmState" table="mppay_almstate">
+		<composite-id>
+			<key-property name="mpId" column="mp_id" type="short"></key-property>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+		</composite-id>
+		
+		<property name="qrAl11State" column="qr_al1_1_state" type="byte"></property>
+		<property name="qrAl12State" column="qr_al1_2_state" type="byte"></property>
+		<property name="qrAl13State" column="qr_al1_3_state" type="byte"></property>
+		
+		<property name="qrAl21State" column="qr_al2_1_state" type="byte"></property>
+		<property name="qrAl22State" column="qr_al2_2_state" type="byte"></property>
+		<property name="qrAl23State" column="qr_al2_3_state" type="byte"></property>
+		
+		<property name="qrFhzState" column="qr_fhz_state" type="byte"></property>
+		<property name="qrFhzRf1State" column="qr_fhz_rf1_state" type="byte"></property>
+		<property name="qrFhzRf2State" column="qr_fhz_rf2_state" type="byte"></property>
+		<property name="qrFzTimes" column="qr_fz_times" type="byte"></property>
+		<property name="qrFzRf1Times" column="qr_fz_rf1_times" type="byte"></property>
+		<property name="qrFzRf2Times" column="qr_fz_rf2_times" type="byte"></property>
+
+		<property name="qrAl11Mdhmi" column="qr_al1_1_mdhmi" type="integer"></property>
+		<property name="qrAl12Mdhmi" column="qr_al1_2_mdhmi" type="integer"></property>
+		<property name="qrAl13Mdhmi" column="qr_al1_3_mdhmi" type="integer"></property>
+		
+		<property name="qrAl21Mdhmi" column="qr_al2_1_mdhmi" type="integer"></property>
+		<property name="qrAl22Mdhmi" column="qr_al2_2_mdhmi" type="integer"></property>
+		<property name="qrAl23Mdhmi" column="qr_al2_3_mdhmi" type="integer"></property>
+		
+		<property name="qrFhzMdhmi" column="qr_fhz_mdhmi" type="integer"></property>
+		<property name="cgFhzMdhmi" column="cg_fhz_mdhmi" type="integer"></property>
+
+		<property name="qrAl11Uuid" column="qr_al1_1_uuid" type="integer"></property>
+		<property name="qrAl21Uuid" column="qr_al2_1_uuid" type="integer"></property>
+		
+		<property name="outInfo" column="out_info" type="string"></property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.rtu.RtuLimitPara" table="rtu_limitpara">
+		<id name="rtuId" column="rtu_id" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+	<property name="xbVLimit" column="xb_v_limit" type="double"></property>
+	<property name="xboddVLimit" column="xbodd_v_limit" type="double"></property>
+		
+	<property name="xbevenVLimit" column="xbeven_v_limit" type="double"></property>
+	<property name="xbILimit" column="xb_i_limit" type="double"></property>
+	<property name="xb2vLimit" column="xb_2v_limit" type="double"></property>
+	<property name="xb4vLimit" column="xb_4v_limit" type="double"></property>
+	<property name="xb6vLimit" column="xb_6v_limit" type="double"></property>
+	<property name="xb8vLimit" column="xb_8v_limit" type="double"></property>
+	<property name="xb10vLimit" column="xb_10v_limit" type="double"></property>
+	<property name="xb12vLimit" column="xb_12v_limit" type="double"></property>
+	<property name="xb14vLimit" column="xb_14v_limit" type="double"></property>
+	<property name="xb16vLimit" column="xb_16v_limit" type="double"></property>
+	<property name="xb18vLimit" column="xb_18v_limit" type="double"></property>
+	<property name="xb3vLimit" column="xb_3v_limit" type="double"></property>
+	<property name="xb5vLimit" column="xb_5v_limit" type="double"></property>
+	<property name="xb7vLimit" column="xb_7v_limit" type="double"></property>
+	<property name="xb9vLimit" column="xb_9v_limit" type="double"></property>
+	<property name="xb11vLimit" column="xb_11v_limit" type="double"></property>
+	<property name="xb13vLimit" column="xb_13v_limit" type="double"></property>
+	<property name="xb15vLimit" column="xb_15v_limit" type="double"></property>
+	<property name="xb17vLimit" column="xb_17v_limit" type="double"></property>
+	<property name="xb19vLimit" column="xb_19v_limit" type="double"></property>
+	<property name="xb2iLimit" column="xb_2i_limit" type="double"></property>
+	<property name="xb4iLimit" column="xb_4i_limit" type="double"></property>
+	<property name="xb6iLimit" column="xb_6i_limit" type="double"></property>
+	<property name="xb8iLimit" column="xb_8i_limit" type="double"></property>
+	<property name="xb10iLimit" column="xb_10i_limit" type="double"></property>
+	<property name="xb12iLimit" column="xb_12i_limit" type="double"></property>
+	<property name="xb14iLimit" column="xb_14i_limit" type="double"></property>
+	<property name="xb16iLimit" column="xb_16i_limit" type="double"></property>
+	<property name="xb18iLimit" column="xb_18i_limit" type="double"></property>
+	<property name="xb3iLimit" column="xb_3i_limit" type="double"></property>
+	<property name="xb5iLimit" column="xb_5i_limit" type="double"></property>
+	<property name="xb7iLimit" column="xb_7i_limit" type="double"></property>
+	<property name="xb9iLimit" column="xb_9i_limit" type="double"></property>
+	<property name="xb11iLimit" column="xb_11i_limit" type="double"></property>
+	<property name="xb13iLimit" column="xb_13i_limit" type="double"></property>
+	<property name="xb15iLimit" column="xb_15i_limit" type="double"></property>
+	<property name="xb17iLimit" column="xb_17i_limit" type="double"></property>
+	<property name="xb19iLimit" column="xb_19i_limit" type="double"></property>
+	
+	</class>
+</hibernate-mapping>

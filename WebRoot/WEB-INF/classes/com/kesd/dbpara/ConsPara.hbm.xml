@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.ConsPara" table="conspara">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="importantf" column="importantf" type="byte"></property>
+		<property name="busiNo" column="busi_no" type="string"></property>
+		<property name="addr" column="addr" type="string"></property>
+		<property name="postalCode" column="postalcode" type="string"></property>
+		<property name="fzMan" column="fz_man" type="string"></property>
+		<property name="telNo1" column="tel_no1" type="string"></property>
+		<property name="telNo2" column="tel_no2" type="string"></property>
+		<property name="telNo3" column="tel_no3" type="string"></property>
+		<property name="powerType" column="power_type" type="byte"></property>
+		<property name="voltGrade" column="volt_grade" type="byte"></property>
+		<property name="trade1" column="trade1" type="byte"></property>
+		<property name="trade2" column="trade2" type="byte"></property>
+		<property name="trade3" column="trade3" type="byte"></property>
+		<property name="trade4" column="trade4" type="byte"></property>
+		<property name="appType" column="app_type" type="byte"></property>
+		<property name="substId" column="subst_id" type="short"></property>
+		<property name="lineId" column="line_id" type="short"></property>
+		<property name="orgId" column="org_id" type="short"></property>
+		<property name="lineFzManId" column="line_fzman_id" type="short"></property>
+		<property name="trModel" column="tr_model" type="byte"></property>
+		<property name="dataSrc" column="data_src" type="byte"></property>
+		<property name="contCap" column="cont_cap" type="double"></property>
+		<property name="zgCap" column="zg_cap" type="double"></property>
+		<property name="bakCap" column="bak_cap" type="double"></property>
+		<property name="selfCap" column="self_cap" type="double"></property>
+		<property name="safeLoad" column="safe_load" type="double"></property>
+		<property name="cosStd" column="cos_std" type="double"></property>
+		<property name="kjcLoad" column="kjc_load" type="double"></property>
+		<property name="kkLoad" column="kk_load" type="double"></property>
+		<property name="cbDay" column="cb_day" type="byte"></property>
+		<property name="vjcPoint" column="vjc_point" type="byte"></property>
+		<property name="kcfFlag" column="kcf_flag" type="byte"></property>
+		<property name="kbfFlag" column="kbf_flag" type="byte"></property>
+		<property name="kxhFlag" column="kxh_flag" type="byte"></property>
+		<property name="kzdFlag" column="kzd_flag" type="byte"></property>
+		<property name="kjhFlag" column="kjh_flag" type="byte"></property>
+		<property name="remark" column="remark" type="string"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,211 @@
+/* grid selected color */
+div.gridbox table.obj tr.rowselected td{
+	font-family:arial;
+	font-size:12px;
+	background-color: #49a7a4;
+	color:black;
+}
+
+body {
+	font-family:arial;
+	font-size:12px;
+	padding: 0px;
+	margin: 0px;
+	overflow : auto;
+	background: #eaeeef;
+	scrollbar-face-color: #dce9e7;
+	scrollbar-highlight-color: white;
+	scrollbar-shadow-color: white;
+	scrollbar-arrow-color: #0B7166;
+	scrollbar-base-color: #white;
+	scrollbar-dark-shadow-color: #0B7166;
+}
+.gridbox {
+	font-family:arial;
+	font-size:12px;
+	border-collapse: collapse;
+	border:1px solid #B8C0BD;
+	width:99%;
+}
+/*��������Ժ�input text �Ҷ���ʱ���������
+* {
+	padding: 0;
+	margin: 0;
+}*/
+.tabinfo {
+	border-collapse: collapse;
+	font-family:arial;
+	font-size:12px;
+	width:99%;
+}
+.tabinfo td {
+	border:1px solid #B8C0BD;
+	padding: 1px 3px;
+	height: 20px;
+	font-family:arial;
+	font-size:12px;
+}
+.tabsty {
+	margin: 10px auto;
+	border-collapse: collapse;
+	font-family:arial;
+	font-size:12px;
+}
+
+.tabsty td {
+	font-family:arial;
+	font-size:12px;
+	border: 1px solid #808080;
+	padding: 1px 3px;
+	height: 22px;
+	text-align: left;
+}
+.page_tbl{
+	font-family:arial;
+	font-size:12px;
+	background: url('../../images/showmore.gif') repeat-x bottom;
+	height:26px;
+}
+.tdr{
+	font-family:arial;
+	font-size:12px;
+	text-align: right;	
+}
+.inner_tbl{
+		font-family:arial;
+		font-size:12px;
+		width: 95%;
+		height: 100%;
+		border-bottom: 1px solid #389494;
+		border-left: 1px solid #389494;
+		border-right: 1px solid #389494;
+}
+.inner_tbl_td{
+	font-family:arial;
+	font-size:12px;
+	background:url('../../images/bg_table_center_top1.gif') repeat-x ;
+	/*border:1px solid red;*/
+	padding-top:2px; 
+	padding-left:4px;
+	padding-right :4px;
+	color:#00;
+	height: 28px;
+}
+.roinput{
+	font-family:arial;
+	font-size:12px;
+	border :1px solid #B9B9B9;
+	background: #E7F5F5;
+	readonly:expression(this.readOnly=true);
+	color: #464646;
+	vertical-align: middle;
+}
+.btn{
+	/*background:url(../../images/btnbg1.gif);*/
+ 	/*border-style:none;*/		 	
+ 	/*color: #274E4E;*/	
+ 	/*font-weight:bold;*/		 	
+ 	/*background-repeat:no-repeat;*/
+ 	font-family:arial;
+	font-size:12px;
+ 	/*
+ 	padding-top: 2px;
+ 	padding-left: 5px;
+ 	padding-right: 5px;
+ 	letter-spacing:5px;*/
+ 	height:22px;			 		
+}	
+.td_lable{
+	font-family:arial;
+	font-size:12px;
+	text-align:center;
+	background: url('../../images/bg22.gif') repeat-x;
+ }
+.tdrn{
+	font-family:arial;
+	font-size:12px;
+	/*text-align:right;*/
+}
+.tdrn input{
+	font-family:arial;
+	font-size:12px;
+	font-weight: bold;
+	/*text-align:right;*/				
+}
+.tdrn span{
+	font-family:arial;
+	font-size:12px;
+	font-weight: bold;
+	/*text-align:right;*/				
+}
+.buy_times{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.buy_times span{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.page_tbl_bg22{
+	background: url('../../images/bg22.gif') repeat-x;
+	height:24px;
+	font-family:arial;
+	font-size:12px;
+}
+
+.titlel{
+	font-family:arial;
+	font-size:12px;
+	background: url("../../images/lable_left.gif");
+	width: 5px;
+}
+.titlem{
+	background: url("../../images/lable_center.gif");
+	vertical-align: bottom; 
+	color: #000000; 
+	font-family:arial;
+	font-size:12px;
+	height: 22px; 
+	padding-left: 5px; 
+	padding-right: 5px;
+	text-align:center;
+	cursor:pointer;
+}
+.titler{
+	font-family:arial;
+	font-size:12px;
+	background: url("../../images/lable_right.gif");
+	width: 5px;
+}
+.titlel1{
+	font-family:arial;
+	font-size:12px;
+	background: url("../../images/lable_left1.gif");
+	width: 5px;
+}
+.titlem1{
+	background: url("../../images/lable_center1.gif");
+	vertical-align: bottom; 
+	color: #000000; 
+	font-family:arial;
+	font-size:12px;
+	height: 22px; 
+	padding-left: 5px; 
+	padding-right: 5px;
+	text-align:center;
+	cursor:pointer;
+}
+.titler1{
+	font-family:arial;
+	font-size:12px;
+	background: url("../../images/lable_right1.gif");
+	width: 5px;
+}
+
+.readonly_bg{
+	font-family:arial;
+	font-size:12px;
+	background: #ccc;
+}

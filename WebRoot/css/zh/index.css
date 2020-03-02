@@ -1,0 +1,135 @@
+body {
+	font-family:arial;
+	font-size:12px;
+	margin: 0 0 0 0;
+	background: url('../../images/bodybg.jpg');
+	overflow: hidden;
+}
+
+.menu_td {
+	font-family:arial;
+	font-size:12px;
+	width: 50px;
+	height:45px;
+	line-height: 20px;
+	text-align: center;
+	padding: 0 10 0 10;
+	cursor: default;
+}
+.sep_td{
+	font-family:arial;
+	font-size:12px;
+	width:4px;
+}
+
+#top_nav a{
+	font-family:arial;
+	font-size:12px;
+	color:white;
+	text-decoration: underline;
+}
+#top_nav a:HOVER{
+	font-family:arial;
+	font-size:12px;
+	color:red;
+	text-decoration: none;
+}
+
+td {
+	font-family:arial;
+	font-size:12px;
+}
+
+.shortcut_tbl {
+	font-family:arial;
+	font-size:12px;
+}
+.shortcut_tbl td {
+	font-family:arial;
+	font-size:12px;
+	width: 150px;
+	padding: 10	10 10 10;
+	text-align: center;
+	line-height: 30px;
+	/*cursor: default;*/
+}
+
+.t_top {
+	font-family:arial;
+	font-size:12px;
+	height: 25px;
+	background: #98D0D0;
+	background: url('../../images/bg_table_center_top.gif');
+}
+
+.t_bottom {
+	font-family:arial;
+	font-size:12px;
+	height: 5px;
+	background: #98D0D0;
+}
+.t_left_right {
+	font-family:arial;
+	font-size:12px;
+	width: 5px;
+	background: #98D0D0;
+}
+.inner_tbl{
+	font-family:arial;
+	font-size:12px;
+	width: 95%;
+	/*border-bottom:1px gray;
+	border-bottom-style: dashed;*/
+	padding: 5 5 5 5;	
+	
+}
+.inner_tbl td{
+	font-family:arial;
+	font-size:14px;
+	color:#173530;	
+	height: 80px; 		
+	letter-spacing:2px;
+	border-bottom:1px gray;
+	border-bottom-style: dashed;
+	
+}
+.tabwelcome td{
+	font-family:arial;
+	height:80px;
+	letter-spacing:2px;		
+	text-align:center;	
+	border-bottom:1px gray;
+	border-bottom-style: dashed;
+}
+.menuleft{
+	font-family:arial;
+	font-size:14px; 
+	font-weight:bold;
+	color:#336666;
+	vertical-align: middle;
+	height:100%;
+	padding-top: 10px;
+	border-right:5px dotted #1D776E;
+}
+.menuleft td{
+	font-family:arial;
+	font-size:14px;	
+	height:40px;
+	padding-left: 5px;
+}
+.rightdiv{
+	font-family:arial;
+overflow: scroll;
+}
+.main a{
+	font-family:arial;
+	color: #173530;
+	font-size:14px;
+	text-decoration: underline;
+}
+.main a:HOVER{
+	font-family:arial;
+	color:red;
+	font-size:14px;
+	text-decoration: none;
+}

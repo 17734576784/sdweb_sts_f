@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.CsStanditem" table="cs_standitem">
+		<composite-id>
+			<key-property name="cosId" 		column="cos_id" 	type="short"></key-property>
+			<key-property name="itemId" 	column="item_id" 	type="short"></key-property>
+		</composite-id>
+	
+		<property name="realcos" 		column="realcos" 	type="short"></property>
+		<property name="dfchgarate" 	column="dfchgarate" type="short"></property>
+		<property name="reserve1" 		column="reserve1" 	type="short"></property>
+		<property name="reserve2" 		column="reserve2" 	type="integer"></property>
+	</class>
+</hibernate-mapping>

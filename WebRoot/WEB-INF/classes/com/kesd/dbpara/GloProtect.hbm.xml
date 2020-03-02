@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.GloProtect" table="gloprotect">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="appType" column="app_type" type="byte"></property>
+		<property name="useFlag" column="use_flag" type="byte"></property>
+		
+		<property name="bgDate" column="bg_date" type="integer"></property>
+		<property name="bgTime" column="bg_time" type="integer"></property>
+		<property name="edDate" column="ed_date" type="integer"></property>
+		<property name="edTime" column="ed_time" type="integer"></property>
+		
+		<property name="reserve1" column="reserve1" type="string"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+		<property name="reserve3" column="reserve3" type="string"></property>
+		<property name="reserve4" column="reserve4" type="string"></property>
+	
+	</class>
+</hibernate-mapping>

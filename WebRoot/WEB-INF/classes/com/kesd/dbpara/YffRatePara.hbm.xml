@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.YffRatePara" table="yffratepara">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="rateId" column="rateid" type="short"></property>
+		<property name="activdate" column="activdate" type="int"></property>
+		
+		<property name="feeType" column="fee_type" type="byte"></property>
+		<property name="ratedZ" column="rated_z" type="double"></property>
+		<property name="ratefJ" column="ratef_j" type="double"></property>
+		<property name="ratefF" column="ratef_f" type="double"></property>
+		<property name="ratefP" column="ratef_p" type="double"></property>
+		<property name="ratefG" column="ratef_g" type="double"></property>
+		<property name="rateh1" column="rateh_1" type="double"></property>
+		<property name="rateh2" column="rateh_2" type="double"></property>
+		<property name="rateh3" column="rateh_3" type="double"></property>
+		<property name="rateh4" column="rateh_4" type="double"></property>
+		<property name="ratehBl1" column="rateh_bl1" type="byte"></property>
+		<property name="ratehBl2" column="rateh_bl2" type="byte"></property>
+		<property name="ratehBl3" column="rateh_bl3" type="byte"></property>
+		<property name="ratehBl4" column="rateh_bl4" type="byte"></property>
+		
+		<property name="ratejType" column="ratej_type" type="byte"></property>
+		<property name="ratejNum" column="ratej_num" type="byte"></property>
+		<property name="meterfeeType" column="meterfee_type" type="byte"></property>
+		<property name="meterfeeR" column="meterfee_r" type="double"></property>		
+		<property name="ratejR1" column="ratej_r1" type="double"></property>
+		<property name="ratejR2" column="ratej_r2" type="double"></property>
+		<property name="ratejR3" column="ratej_r3" type="double"></property>
+		<property name="ratejR4" column="ratej_r4" type="double"></property>
+		<property name="ratejR5" column="ratej_r5" type="double"></property>
+		<property name="ratejR6" column="ratej_r6" type="double"></property>
+		<property name="ratejR7" column="ratej_r7" type="double"></property>
+		<property name="ratejTd1" column="ratej_td1" type="double"></property>
+		<property name="ratejTd2" column="ratej_td2" type="double"></property>
+		<property name="ratejTd3" column="ratej_td3" type="double"></property>
+		<property name="ratejTd4" column="ratej_td4" type="double"></property>
+		<property name="ratejTd5" column="ratej_td5" type="double"></property>
+		<property name="ratejTd6" column="ratej_td6" type="double"></property>
+		<property name="ratehjType" 	column="ratehj_type" type="byte"></property>
+		<property name="ratehjNum" 		column="ratehj_num" type="byte"></property>
+		<property name="meterfeehjType" column="meterfeehj_type" type="byte"></property>
+		<property name="meterfeehjR" 	column="meterfeehj_r" type="double"></property>		
+		<property name="ratehjHr1R1" 	column="ratehj_hr1_r1" type="double"></property>
+		<property name="ratehjHr1R2" 	column="ratehj_hr1_r2" type="double"></property>
+		<property name="ratehjHr1R3" 	column="ratehj_hr1_r3" type="double"></property>
+		<property name="ratehjHr1R4" 	column="ratehj_hr1_r4" type="double"></property>
+		<property name="ratehjHr1Td1" 	column="ratehj_hr1_td1" type="double"></property>
+		<property name="ratehjHr1Td2" 	column="ratehj_hr1_td2" type="double"></property>
+		<property name="ratehjHr1Td3" 	column="ratehj_hr1_td3" type="double"></property>
+		<property name="ratehjHr2" 	column="ratehj_hr2" type="double"></property>
+		<property name="ratehjHr3" 	column="ratehj_hr3" type="double"></property>
+		<property name="ratehjBl1" 	column="ratehj_bl1" type="byte"></property>
+		<property name="ratehjBl2" 	column="ratehj_bl2" type="byte"></property>
+		<property name="ratehjBl3" 	column="ratehj_bl3" type="byte"></property>
+		
+		
+		<property name="moneyLimit" column="money_limit" type="double"></property>
+		<property name="infCode1" column="inf_code1" type="string"></property>
+		<property name="infCode2" column="inf_code2" type="string"></property>
+		<property name="infCode3" column="inf_code3" type="string"></property>
+		<property name="reserve1" column="reserve1" type="double"></property>
+		<property name="reserve2" column="reserve2" type="double"></property>
+	</class>
+</hibernate-mapping>

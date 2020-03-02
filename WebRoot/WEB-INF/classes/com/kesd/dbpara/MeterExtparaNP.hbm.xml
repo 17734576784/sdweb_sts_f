@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.MeterExtparaNP" table="meter_extparanp">
+		<composite-id>
+			<key-property name="rtuId" column="rtu_id" type="integer"></key-property>
+			<key-property name="mpId"  column="mp_id"  type="short"></key-property>
+		</composite-id> 
+	
+		<property name="areaId"   column="area_id" 	type="integer"></property>
+		<property name="reserve1" column="reserve1" type="string"></property>
+		<property name="reserve2" column="reserve2" type="string"></property>
+		<property name="reserve3" column="reserve3" type="string"></property>
+	</class>
+</hibernate-mapping>

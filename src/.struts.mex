@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ajax" location="0,0" size="0,0">
+    <action name="actLogin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCommon" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actTree" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actPrint" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actImportMeterData" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="importMeterArchive.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="importMeterArchive.jsp" />
+      </result>
+    </action>
+    <action name="actLogPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="docs" location="0,0" size="0,0">
+    <action name="actYffAlarmPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffRatePara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actOrgStsPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffManDef" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actGloProtect" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actRtuPayCtrlPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffParaZ" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffParaExt" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCsStand" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffParaNP" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actAreaPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actYffDocModel" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actHoLiDayDef" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actHoLiDayGroup" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actConsPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actRtuPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actResidentPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="dyjc" location="0,0" size="0,0">
+    <action name="actConsPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actImportBD" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actChgMeter" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actChgRate" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCardReadInfo" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSearch" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actReport" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actUpdateState" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCheckSearch" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actPublishRate" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSupplyBill" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSG186JSExcel" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSG186DlJs" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actReadMeter" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actLoadUserInfoDB" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMakeTools" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMakeTokens" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="np" location="0,0" size="0,0">
+    <action name="actConsPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actImportBD" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actChgMeter" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actChgRate" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCardReadInfo" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSearch" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actReport" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actUpdateState" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCheckSearch" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actPublishRate" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSupplyBill" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSG186JSExcel" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="spec" location="0,0" size="0,0">
+    <action name="actConsPara" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actImportBD" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSearch" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actReport" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSupplyBill" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actUpdateState" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSG186JSExcel" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="oper" location="0,0" size="0,0">
+    <action name="actCommDy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSysCtrl" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCommGy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actOperDy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actOperGy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actOperNp" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actCommNp" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMisGy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMisDy" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actWebCard" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMisDyGS" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMisGyGS" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actMisCheck" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actOperDyBengal" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="actSaveDBBengal" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="impOrexp" location="0,0" size="0,0">
+    <action name="export" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="import" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="impModel.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="impModel.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="excelStream" location="0,0" size="0,0">
+    <action name="dataExcel" location="0,0" size="0,0">
+      <result name="excel" />
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="err_excel.jsp" />
+      </result>
+    </action>
+    <action name="SG186JSExcelGy" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+    </action>
+    <action name="SG186JSExcelDy" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+    </action>
+    <action name="SG186JSExcelDyDl" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="uploadSG186TotDl.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadSG186TotDl.jsp" />
+      </result>
+    </action>
+    <action name="SG186JSExcelGyPl" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+    </action>
+    <action name="SG186JSExcelDyPl" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="uploadSG186BdYe.jsp" />
+      </result>
+    </action>
+    <action name="fileUploadNPB" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="yffparapl_npb.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="yffparapl_npb.jsp" />
+      </result>
+    </action>
+    <action name="fileUploadNPK" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="yffparapl_npk.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="yffparapl_npk.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="importMeterArchive.jsp" path="/jsp/docs/importMeterArchive.jsp" location="0,0" size="0,0" />
+  <webResource name="impModel.jsp" path="/jsp/docs/impModel.jsp" location="0,0" size="0,0" />
+  <webResource name="err_excel.jsp" path="/err_excel.jsp" location="0,0" size="0,0" />
+  <webResource name="uploadSG186BdYe.jsp" path="/jsp/spec/dialog/uploadSG186BdYe.jsp" location="0,0" size="0,0" />
+  <webResource name="uploadSG186BdYe.jsp" path="/jsp/dyjc/dialog/uploadSG186BdYe.jsp" location="0,0" size="0,0" />
+  <webResource name="uploadSG186TotDl.jsp" path="/jsp/dyjc/dialog/uploadSG186TotDl.jsp" location="0,0" size="0,0" />
+  <webResource name="yffparapl_npb.jsp" path="/jsp/docs/yffparapl_npb.jsp" location="0,0" size="0,0" />
+  <webResource name="yffparapl_npk.jsp" path="/jsp/docs/yffparapl_npk.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

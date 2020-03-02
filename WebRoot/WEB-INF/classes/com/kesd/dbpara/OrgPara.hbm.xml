@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kesd.dbpara.OrgPara" table="orgpara">
+		<id name="id" column="id" type="short">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="describe" column="describe" type="string"></property>
+		<property name="rorgNo" column="r_org_no" type="string"></property>
+		<property name="addr" column="addr" type="string"></property>
+		<property name="postalCode" column="postalcode" type="string"></property>
+		<property name="mail" column="mail" type="string"></property>
+		<property name="fax" column="fax" type="string"></property>
+		<property name="linkMan" column="link_man" type="string"></property>
+		<property name="telNo" column="telno" type="string"></property>
+		<!-- 
+		<set name="lineFZMan" lazy="false" inverse="true">
+			<key column="id"></key>
+			<one-to-many class="com.keyd.dbpara.sysmanage.LineFZMan" />
+		</set>
+		
+		<set name="consPara" lazy="false" inverse="true">
+			<key column="id"></key>
+			<one-to-many class="com.keyd.dbpara.dyjc.ConsPara" />
+		</set>
+		 -->
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rows>	
+	<dy-card> 		<!-- 居民卡式 -->
+		<item id="1" useflag="1" filename="yffmodel_jm_card_a4.loc" 	text="transfer credit" 	desc="apply to transfer credit opt.(58mm paper)" />
+	</dy-card>
+
+	<dy-addcus> 		<!-- 居民开户 -->
+		<item id="1" useflag="1" filename="yffmodel_jm_addcus_a4.loc" 	text="open an account" 	desc="apply to open a new account opt.(58mm paper)" />
+ 	</dy-addcus>
+ 	
+ 	<tool> 		<!-- 居民开户 -->
+		<item id="1" useflag="1" filename="tool.loc" 	text="tool" 	desc="apply to tool opt.(58mm paper)" />
+ 	</tool>
+</rows>
