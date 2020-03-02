@@ -52,16 +52,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Basic Archive</td></tr></table>
     	</td></tr>
     	<tr>
-	    	<td><font color=red>*</font>Name:</td><td><input type="text" name="conspara.describe" id="describe" style="width: 150px;"/></td>
-	    	<td><font color=red>*</font>Utility:</td><td><select name="conspara.orgId" id="orgId" onChange="getLineFzMan(this.value);"  style="width: 150px;"><option value="">--Select--</option></select></td>
-	    	<td>Power Supply Type:</td><td><select name="conspara.powerType" id="powerType" style="width: 150px;"></select></td>
+	    	<td><font color=red>*</font>Nom:</td><td><input type="text" name="conspara.describe" id="describe" style="width: 150px;"/></td>
+	    	<td><font color=red>*</font>Utilitaire:</td><td><select name="conspara.orgId" id="orgId" onChange="getLineFzMan(this.value);"  style="width: 150px;"><option value="">--Select--</option></select></td>
+	    	<td>Type d'alimentation:</td><td><select name="conspara.powerType" id="powerType" style="width: 150px;"></select></td>
 	    	
 	    	<!--
 	    	<td><font color=red>*</font>Line Supervisor:</td><td><select name="conspara.lineFzManId" id="lineFzManId" style="width: 150px;"><option value=""></option></select><input type="hidden" id="prelineFzManId"/></td>
 	    --></tr>
 	    <tr>
-	    	<td>Voltage Class:</td><td><select name="conspara.voltGrade" id="voltGrade" ></select></td>
-	    	<td>Transformer Type:</td><td><select name="conspara.trModel" id="trModel" style="width: 150px;"></select></td>
+	    	<td>Classe de tension:</td><td><select name="conspara.voltGrade" id="voltGrade" ></select></td>
+	    	<td>Type de transformateur:</td><td><select name="conspara.trModel" id="trModel" style="width: 150px;"></select></td>
 	    </tr>
 	    
 	    <tr><td colspan="6" style="border-left: 0px;border-right: 0px;border-bottom: 0px;"></td></tr>
@@ -77,8 +77,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</tr>
     	<tr>
     		<td>Téléphone portable:</td><td><input type="text" name="conspara.telNo2" id="telNo2" style="width: 150px;"/></td>
-    		<td>Post Code:</td><td><input type="text" name="conspara.postalCode" id="postalCode"/></td>
-    		<td>Address:</td><td><input type="text" name="conspara.addr" id="addr" style="width: 150px;"/>
+    		<td>Code postal:</td><td><input type="text" name="conspara.postalCode" id="postalCode"/></td>
+    		<td>Adresse:</td><td><input type="text" name="conspara.addr" id="addr" style="width: 150px;"/>
     			<input type="hidden" id="id" name="conspara.id" />
     			<input type="hidden" id="appType" name="conspara.appType" /></td>
     	</tr>

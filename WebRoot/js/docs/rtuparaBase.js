@@ -12,8 +12,8 @@ $(document).ready(function(){
 
 function initGrid(){
 	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />," +
-	"							Serial No.,Name,Use Flag,Terminal Type,Protocol,Address Code,Master Channel,Resident Amount,Meter Amount," +
-	"							Residential Area,&nbsp;";
+	"							Num¨¦ro de s¨¦rie.,Nom,Utiliser le drapeau,Type de terminal,Protocole,Code d'adresse,Canal principal,Montant pour r¨¦sident,Montant du compteur," +
+	"							Zone r¨¦sidentielle,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,right,left,right,right,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,200,80,150,120,100,100,130,100,100,*";

@@ -52,11 +52,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <td>
    	<table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
   		<tr>
-			<td width=70>&nbsp;Name:</td><td>
+			<td width=70>&nbsp;Nom:</td><td>
 			<input type="text" name="search_condition" value="" id="search_condition" style="width: 110px;">
-			<input type="button" name="search" value="Inquiry" id="search" onclick='search();'/>&nbsp;&nbsp;
-			<input type="button" name="pldel" value="Batch Remove" id="pldel"/>&nbsp;&nbsp;
-			<input type="button" name="tianjia" value="Add" id="tianjia"/>
+			<input type="button" name="search" value="Enquête" id="search" onclick='search();'/>&nbsp;&nbsp;
+			<input type="button" name="pldel" value="Supprimer le lot" id="pldel"/>&nbsp;&nbsp;
+			<input type="button" name="tianjia" value="Ajouter" id="tianjia"/>
 			</td>
 			<td align="right" style="display: none;">
 	 			<jsp:include page="../inc/btn_excel.jsp"></jsp:include>

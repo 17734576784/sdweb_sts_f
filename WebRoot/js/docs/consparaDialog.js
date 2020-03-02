@@ -1,7 +1,7 @@
 var params = window.dialogArguments;
 
 $(document).ready(function(){
-	if(params.id == ""){//¸¸Ò³Ãæ  µã»÷  ĞÂÔö  ½øÈë±¾Ò³ÃæÊ±£¬ĞŞ¸Ä°´Å¥½ûÓÃ
+	if(params.id == ""){//çˆ¶é¡µé¢  ç‚¹å‡»  æ–°å¢  è¿›å…¥æœ¬é¡µé¢æ—¶ï¼Œä¿®æ”¹æŒ‰é’®ç¦ç”¨
 		$("#xiugai").attr("disabled",true);
 	}else{
 		$("#xiugai").attr("disabled",false);
@@ -92,15 +92,15 @@ function addOrEdit(flag){
 	
 	var params = $('#addorupdate').serialize();
 	$.ajax({
-		url      : YDDef.BASEPATH + "ajaxdocs/actConsPara!addOrEdit.action", //ºóÌ¨´¦Àí³ÌĞò
-		type     : 'post',					 							//Êı¾İ·¢ËÍ·½Ê½
-		data     : params, 												//Òª´«µİµÄÊı¾İ£»¾ÍÊÇÉÏÃæĞòÁĞ»¯µÄÖµ
-		success  : function(data) {								    	//»Ø´«º¯Êı
+		url      : YDDef.BASEPATH + "ajaxdocs/actConsPara!addOrEdit.action", //åå°å¤„ç†ç¨‹åº
+		type     : 'post',					 							//æ•°æ®å‘é€æ–¹å¼
+		data     : params, 												//è¦ä¼ é€’çš„æ•°æ®ï¼›å°±æ˜¯ä¸Šé¢åºåˆ—åŒ–çš„å€¼
+		success  : function(data) {								    	//å›ä¼ å‡½æ•°
 			if (data.result == "fail") {
 				if(flag == 'add'){
-					alert("Failed to add£¡");
+					alert("Ã‰chec de l'ajout deï¼");
 				}else{
-					alert("Failed to modify£¡");
+					alert("Impossible de modifier modify");
 				}
 			}else{
 				if(flag == 'add'){
@@ -119,7 +119,7 @@ function check() {
 	if (!ckChar("describe", "Name", 64, true)) {
 		return false;
 	}
-//	if (!isNumber("telNo3", "Utilitaire ID",0,9999, true)) {
+//	if (!isNumber("telNo3", "Utility ID",0,9999, true)) {
 //		return false;
 //	}
 //	if (!isMobilePhone("telNo1", "Telphone", false)) {

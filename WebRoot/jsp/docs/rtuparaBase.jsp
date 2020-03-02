@@ -51,11 +51,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="<%=basePath%>js/css.js"></script>
   	<table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
 		<tr>
-			<td width=50>&nbsp;Name:</td><td>
+			<td width=50>&nbsp;Nom:</td><td>
 			<input type="text" name="search_condition" value="" id="search_condition" style="width: 110px;">
-			<input type="button" name="search" value="Inquiry" id="search" onclick='search();' />
-			<input type="button" name="pldel" value="Batch Remove" id="pldel"/>&nbsp;&nbsp;
-			<input type="button" name="tianjia" value="Add" id="tianjia"/>					
+			<input type="button" name="search" value="Enquête" id="search" onclick='search();' />
+			<input type="button" name="pldel" value="Supprimer le lot" id="pldel"/>&nbsp;&nbsp;
+			<input type="button" name="tianjia" value="Ajouter" id="tianjia"/>					
 			</td>
 		</tr>
 	</table>

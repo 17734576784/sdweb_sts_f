@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 function initGrid(){
 	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);'/>," +
-	"								Serial No.,Name,Contacts,Téléphone,Téléphone portable,Power Supply Type," +
-	"								Voltage Class,Utilitaire,Line Supervisor,&nbsp;";
+	"								Numéro de série.,nom,Contacts,Numéro de téléphone,Téléphone portable,Type d'alimentation," +
+	"								Classe de tension,Utilitaire,Superviseur de ligne,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,center,center,left,center";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,200,100,100,100,130,100,100,100,*";

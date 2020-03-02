@@ -134,7 +134,7 @@ function addOrEdit(flag){
 	if($("#describe").val() != "" && $("#rtuAddr").val() != ""){
 		$.post(YDDef.BASEPATH  + "ajaxdocs/actRtuPara!checkRtuAddrAreaCode.action", {field : tmp_str}, function(data) {
 			if( data.field != ""){
-				alert("The terminal address and administration code has been used by  " + data.field+ "！");
+				alert("L'adresse du terminal et le code d'administration ont été utilisés par  " + data.field+ "！");
 				$("#rtuAddr").select();
 				return false;
 			}
@@ -148,9 +148,9 @@ function addOrEdit(flag){
 							if (data.result.indexOf("fail") >= 0) {
 								if(data.result == "fail"){
 									if(flag == 'add'){
-										alert("Failed to add！");
+										alert("Échec de l'ajout de！");
 									}else{
-										alert("Failed to modify！");
+										alert("Impossible de modifier modify");
 									}
 								}else{
 									alert(data.result.substring(4));
@@ -158,11 +158,11 @@ function addOrEdit(flag){
 							}
 							else{
 								if(flag == 'add') {
-									alert("Successfully Add！");
+									alert("Ajouter avec succès！");
 									window.returnValue = 1;
 								}
 								else {
-									alert("Successfully Modify！");
+									alert("Modifier avec succès！");
 									window.returnValue = 0;
 								}
 								window.close();
@@ -195,7 +195,7 @@ function check() {
 	}
 	//验证"认证码"的长度
 	if(!ckNumChar($("#authCode").val(),32)){
-		alert("Authentication code length should be within 0-32 bytes, and only be number or character. ");
+		alert("La longueur du code d'authentification doit être comprise entre 0 et 32 octets, et être uniquement un nombre ou un caractère. ");
 		return false;
 	}
 	if(!isMobilePhone("showSimcard","SIM card number")){

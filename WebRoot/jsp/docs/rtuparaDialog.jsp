@@ -53,24 +53,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Basic Archive</td></tr></table>
     	</td></tr>
     	<tr>
-	    	<td><font color=red>*</font>Name:</td><td><input type="text" name="rtuPara.describe" id="describe"  style=" width:170px;"/></td>
+	    	<td><font color=red>*</font>Nom:</td><td><input type="text" name="rtuPara.describe" id="describe"  style=" width:170px;"/></td>
 	    	<td>Use-Flag:</td><td><select name="rtuPara.useFlag" id="useFlag"></select></td>
-	    	<td><font color=red>*</font>Protocol:</td><td><select name="rtuPara.protType" id="protType" style=" width:170px;"></select></td>
+	    	<td><font color=red>*</font>Protocole:</td><td><select name="rtuPara.protType" id="protType" style=" width:170px;"></select></td>
 	    </tr>
 	    <tr>
-	    	<td><font color=red>*</font>Terminal Address:</td><td><input type="text" name="rtuPara.rtuAddr" id="rtuAddr"  style=" width:170px;"/></td>
-	    	<td><font color=red>*</font>Area Code:</td><td><input type="text" name="rtuPara.areaCode" id="areaCode" /></td>
-	    	<td><font color=red>*</font>Residential Area:</td><td><input type="text" id="showconsId" readonly style="background-color:#DCDCDC;border: 1px solid #808080;width:145px;" onDblClick="$('#selconsId').click();" />&nbsp;<button id="selconsId">...</button></td>
+	    	<td><font color=red>*</font>Adresse du terminal:</td><td><input type="text" name="rtuPara.rtuAddr" id="rtuAddr"  style=" width:170px;"/></td>
+	    	<td><font color=red>*</font>Indicatif régional:</td><td><input type="text" name="rtuPara.areaCode" id="areaCode" /></td>
+	    	<td><font color=red>*</font>Zone résidentielle:</td><td><input type="text" id="showconsId" readonly style="background-color:#DCDCDC;border: 1px solid #808080;width:145px;" onDblClick="$('#selconsId').click();" />&nbsp;<button id="selconsId">...</button></td>
 	    </tr>
 	    <tr>
-	    	<td><font color=red>*</font>Terminal Type:</td><td><select name="rtuPara.rtuModel" id="rtuModel" style=" width:170px;"></select></td>
-	    	<td>Operation State:</td><td><select name="rtuPara.runStatus" id="runStatus"></select></td>
-	    	<td nowrap>Frozen Project:</td><td><select name="rtuPara.fzcbId" id="fzcbId" style=" width:170px;" ></select></td>
+	    	<td><font color=red>*</font>Type de terminal:</td><td><select name="rtuPara.rtuModel" id="rtuModel" style=" width:170px;"></select></td>
+	    	<td>État de fonctionnement:</td><td><select name="rtuPara.runStatus" id="runStatus"></select></td>
+	    	<td nowrap>Projet gelé:</td><td><select name="rtuPara.fzcbId" id="fzcbId" style=" width:170px;" ></select></td>
 	    </tr>
         <tr>
-            <td><font color=red>*</font>Authentication Code:</td>
+            <td><font color=red>*</font>code d'identification:</td>
             <td><input type="text" name="rtuCommPara.authCode"    id="authCode" style=" width:170px;"/></td>
-        	<td>Length of Authentication Code:</td>
+        	<td>Longueur du code d'authentification:</td>
 	    	<td><input type="text" name="rtuCommPara.authCodelen" id="authCodelen" /></td>
 	    	<td>&nbsp;</td><td>&nbsp;</td>
 	    	
@@ -84,13 +84,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	</td></tr>
 
 	    <tr style="display: none">
-	    	<td><font color=red>*</font>Master Channel:</td><td><select name="rtuPara.chanMain" id="chanMain" style=" width:170px;"></select></td>
-	    	<td>Slave Channel:</td><td><select name="rtuPara.chanBak" id="chanBak" ></select></td>
-	    	<td><font color=red>*</font>Online Mode:</td><td><select name="rtuCommPara.onlineType" id="onlineType" style="width:170px;"></select></td>
+	    	<td><font color=red>*</font>Canal principal:</td><td><select name="rtuPara.chanMain" id="chanMain" style=" width:170px;"></select></td>
+	    	<td>Canal esclave:</td><td><select name="rtuPara.chanBak" id="chanBak" ></select></td>
+	    	<td><font color=red>*</font>Mode en ligne:</td><td><select name="rtuCommPara.onlineType" id="onlineType" style="width:170px;"></select></td>
 	    </tr>
 	    <tr style="display: none">
-	    	<td>Network IP:</td><td><input type="text" name="rtuCommPara.rtuIpaddr" id="rtuIpaddr" style=" width:170px;"/></td>
-	    	<td>Network Port:</td><td><input type="text" name="rtuCommPara.rtuIpport" id="rtuIpport" /></td>
+	    	<td>IP réseau:</td><td><input type="text" name="rtuCommPara.rtuIpaddr" id="rtuIpaddr" style=" width:170px;"/></td>
+	    	<td>Port réseau:</td><td><input type="text" name="rtuCommPara.rtuIpport" id="rtuIpport" /></td>
             <td><!-- SIM卡号: --></td>
 	    	<td>
 	    		<!-- <input type="text" id="showSimcard" name="rtuCommPara.telno" style="border: 1px solid #808080;"/>&nbsp;<button id="selSimcard">...</button>-->
@@ -106,30 +106,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	</td>
     	</tr>
     	<tr style="display: none">
-    		<td>Asset No.:</td><td><input type="text" name="rtuPara.assetNo" id="assetNo" style=" width:170px;"/></td>
-	    	<td>Bar Code:</td><td><input type="text" name="rtuPara.barCode" id="barCode" /></td>
-	    	<td>Manufacturer:</td><td><select name="rtuPara.factory" id="factory"  style=" width:170px;"></select></td>
+    		<td>N ° d'actif.:</td><td><input type="text" name="rtuPara.assetNo" id="assetNo" style=" width:170px;"/></td>
+	    	<td>Code à barre:</td><td><input type="text" name="rtuPara.barCode" id="barCode" /></td>
+	    	<td>Constructeur:</td><td><select name="rtuPara.factory" id="factory"  style=" width:170px;"></select></td>
 	   	</tr>
     	<tr style="display: none">
-	    	<td>Factory Number:</td><td><input type="text" name="rtuPara.madeNo" id="madeNo" style=" width:170px;"/></td>
-	    	<td>Interface Code1:</td><td><input type="text" name="rtuPara.infCode1" id="infCode1" /></td>
-	    	<td>Interface Code2:</td><td><input type="text" name="rtuPara.infCode2" id="infCode2" style=" width:170px;"/></td>
+	    	<td>Numéro d'usine:</td><td><input type="text" name="rtuPara.madeNo" id="madeNo" style=" width:170px;"/></td>
+	    	<td>Code d'interface1:</td><td><input type="text" name="rtuPara.infCode1" id="infCode1" /></td>
+	    	<td>Code d'interface2:</td><td><input type="text" name="rtuPara.infCode2" id="infCode2" style=" width:170px;"/></td>
 	    </tr>
 	    <tr style="display: none">
-	    	<td>Installation Site:</td><td><select name="rtuPara.instSite" id="instSite" style=" width:170px;"></select></td>
-	    	<td>Installation Date:</td>
+	    	<td>Site d'installation:</td><td><select name="rtuPara.instSite" id="instSite" style=" width:170px;"></select></td>
+	    	<td>Date d'installation:</td>
 	    	<td>
 	    		<input type="text" id="instDateF" readonly onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:'false',readOnly:'true',lang:'zh-cn',position:{top:'above'}});" />
 	    		<input type="hidden" name="rtuPara.instDate" id="instDate" />
 	    	</td>
-	    	<td>Run Date:</td>
+	    	<td>Date d'exécution:</td>
 	    	<td>
 	    		<input type="text" id="runDateF" readonly onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:'false',readOnly:'true',lang:'zh-cn',position:{top:'above'}});"  style=" width:170px;"/>
 	    		<input type="hidden" name="rtuPara.runDate" id="runDate" />
 	    	</td>
 	    </tr>
     	<tr style="display: none">
-	    	<td>Stop Date:</td>
+	    	<td>Date d'arrêt:</td>
 	   		<td>
 	   			<input type="text" id="stopDateF" readonly onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',isShowClear:'false',readOnly:'true',lang:'zh-cn',position:{top:'above'}});" style=" width:170px;"/>
 	   			<input type="hidden" name="rtuPara.stopDate" id="stopDate" />
