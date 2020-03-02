@@ -68,14 +68,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
             </td>
            	<td width=100>			
-			<input type="button" name="search" value="preview" id="search"'/>&nbsp;&nbsp;
+			<input type="button" name="search" value="Aperçu" id="search"'/>&nbsp;&nbsp;
 			</td>
   			<td width=80 align="left" nowrap>Terminal:</td>
             <td width="120" align="left" nowrap>
 			<select id="rtuId" style="width: 110px;"></select>
             </td>
            	<td align="right" >			
-			<input type="button" value="Import Libraries" id="importToDB" onclick="importGridDataToDB();"/>&nbsp;&nbsp;
+			<input type="button" value="Importer des bibliothèques" id="importToDB" onclick="importGridDataToDB();"/>&nbsp;&nbsp;
 			</td>
 		</tr>
 	</table>
