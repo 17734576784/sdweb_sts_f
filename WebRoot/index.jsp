@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
-		<title>Utility Electricity Sale Sub-system</title>
+		<title>Sous-système de vente d'électricité</title>
 		<meta http-equiv="pragma" content="no-cache">
 		<meta http-equiv="cache-control" content="no-cache">
 		<link href="css/zh/index.css" rel="stylesheet" type="text/css" id="index_theme" />
@@ -52,17 +52,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<tr>
 <!--		<td align="left" colspan="2" style="padding-right: 6px;">Current Operator:<span id="operman" title="Account:<%=yffman.getName()%>"><%=yffman.getDescribe()%></span></td>-->
-		<td align="left">Current Operator:</td>
+		<td align="left">Opérateur actuel:</td>
 		<td align="left" style="padding-left: 6px;"><%=yffman.getDescribe()%></td>
-		<td align="left" style="padding-left: 6px;">Login Time:</td>
+		<td align="left" style="padding-left: 6px;">Temps de connexion:</td>
 		<td align="left" style="padding-left: 6px;"><%=yffman.getReserve2()%></td>
 	</tr>
 	<tr>
 <!--		<td align="left"><span id="alarm_ggtz" style="width: 15px; background: url('images/bullet.gif') no-repeat right;"> </span><span style="padding-right: 6px; color: white; cursor: pointer;"><span id="glo_ggtz">Change Notice</span></span></td>-->
 		
-		<td align="left"><a href="javascript:chg_pwd();">Change Password</a></td>
-		<td align="left" style="padding-left: 6px;"><a href="javascript:window.location.reload();">Refresh</a></td>
-		<td align="left" style="padding-left: 6px;"><a href="javascript:;" onclick="logout();">LogOut</a></td>
+		<td align="left"><a href="javascript:chg_pwd();">Changer le mot de passe</a></td>
+		<td align="left" style="padding-left: 6px;"><a href="javascript:window.location.reload();">Rafraîchir</a></td>
+		<td align="left" style="padding-left: 6px;"><a href="javascript:;" onclick="logout();">Se déconnecter</a></td>
 		<td></td>
 		
 	</tr>
