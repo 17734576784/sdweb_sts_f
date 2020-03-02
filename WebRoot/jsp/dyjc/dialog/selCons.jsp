@@ -50,24 +50,24 @@
 	<table class="tabinfo" align="center">
 		<tr><td colspan="6" style="height:5px; border: 0px;"></td></tr>
     	<tr>
-    	   	<td class="td_lable" >Filter Conditions</td>	
+    	   	<td class="td_lable" >Conditions de filtrage</td>	
        </tr>
 	    <tr>
-			<td class="tdr">Utility:</td><td><select id="orgId" name="orgId" onchange="getLineFzMan()"></select></td>
-		    <td class="tdr">Meter ID:</td><td><input name="comm_addr" id="comm_addr" /></td>
+			<td class="tdr">Utilitaire:</td><td><select id="orgId" name="orgId" onchange="getLineFzMan()"></select></td>
+		    <td class="tdr">ID du compteur:</td><td><input name="comm_addr" id="comm_addr" /></td>
 	    	<td class="tdr">Terminal:</td><td><input name="rtuName" id="rtuName" /></td>			  	       	
 	    </tr>	  
 	    <tr>
-	    	<td class="tdr">Consumer Name:</td><td><input name="consName" id="consName" /></td>
-		    <td class="tdr">Consumer ID:</td><td><input name="residentId" id="residentId" /></td>
-		    <td class="tdr">Mobile Phone:</td><td><input name="telNo1" id="telNo1" /></td>
+	    	<td class="tdr">Nom du consommateur:</td><td><input name="consName" id="consName" /></td>
+		    <td class="tdr">ID consommateur:</td><td><input name="residentId" id="residentId" /></td>
+		    <td class="tdr">Téléphone portable:</td><td><input name="telNo1" id="telNo1" /></td>
 		</tr>
 	   	<tr><td colspan="6" style="height:3px; border: 0px;"></td></tr>
     	 <tr>
-    	   	<td class="td_lable">Consumer List</td>
+    	   	<td class="td_lable">Liste des consommateurs</td>
     	   	<td style="text-align: right;border: 0px;" colspan=5 >	
-    	   		<button name="submit"  class="btn" onclick="search()">Inquiry</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	
-	    		<button  name="btnRead"  class="btn" onclick="returnWin()">Confirm</button>
+    	   		<button name="submit"  class="btn" onclick="search()">Enquête</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	
+	    		<button  name="btnRead"  class="btn" onclick="returnWin()">Confirmer</button>
 	    	</td>
     	   		
        </tr>

@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 function initGrid(){
 	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);'/>," +
-	"								Serial No.,Name,Contacts,Telephone,Mobile Phone,Power Supply Type," +
-	"								Voltage Class,Utility,Line Supervisor,&nbsp;";
+	"								Serial No.,Name,Contacts,Téléphone,Téléphone portable,Power Supply Type," +
+	"								Voltage Class,Utilitaire,Line Supervisor,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,center,center,left,center";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,200,100,100,100,130,100,100,100,*";
@@ -48,22 +48,22 @@ function redoOnRowDblClicked(id){
 		return;
 	}
 	else{
-		if(rtnValue == 1) {//添加
+		if(rtnValue == 1) {//娣诲姞
 			gridopt.selectRow = -1;
-			var cp = parseInt($("#gopage").val()); //当前页
-			var npp = parseInt($("#prs").val()); //每页记录数
-			var tn = gridopt.grid.getRowsNum();  //当前页记录数
+			var cp = parseInt($("#gopage").val()); //褰撳墠椤�
+			var npp = parseInt($("#prs").val()); //姣忛〉璁板綍鏁�
+			var tn = gridopt.grid.getRowsNum();  //褰撳墠椤佃褰曟暟
 			if(npp==tn){
 			 cp++;
 			}
 			gridopt.showgrid(false, cp, npp);
 			addSelectRow();
 		}
-		else {//修改
+		else {//淇敼
 			gridopt.showgrid(false, $("#gopage").val(), $("#prs").val());
    			editSelectRow(id);
 		}
-//		gridopt.filter(0);//修改成功刷新 
+//		gridopt.filter(0);//淇敼鎴愬姛鍒锋柊 
 	}
 }
 function redoOnRowSelected(json){

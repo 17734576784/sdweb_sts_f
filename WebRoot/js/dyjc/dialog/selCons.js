@@ -73,7 +73,7 @@ function setOrgVal(org_id) {
 function initGrid(){
 	GridPage.init();
 	GridPage.gridobj.setImagePath(SDDef.BASEPATH + "images/grid/imgs/");
-	GridPage.gridobj.setHeader("Serial No.,Terminal,Meter,Consumer,Consumer ID,Meter ID,Mobile Phone,Utility,Asset No.,Consumer Address,Manufacturer,Multiplying Power,Connecting Mode,&nbsp;");
+	GridPage.gridobj.setHeader("Numéro de série.,Terminal,Mètre,consommateur,consommateur ID,Mètre ID,Téléphone portable,Utilitaire,N ° d'actif,Adresse du consommateur,Constructeur,Multiplier la puissance,Mode de connexion,&nbsp;");
 	GridPage.gridobj.setInitWidths("40,100,120,100,80,100,90,90,90,90,90,90,90,*");
 	GridPage.gridobj.setColAlign("center,left,left,left,left,right,left,left,left,left,left,left,left")
 	GridPage.gridobj.setColTypes("ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro");
@@ -160,7 +160,7 @@ function returnWin(){//关闭、返回
 	
 	var selId = GridPage.gridobj.getSelectedId();
 	if(selId == null){
-		alert("Please choose a record");
+		alert("Veuillez choisir un enregistrement");
 		return;
 	}
 	
@@ -174,7 +174,7 @@ function returnWin(){//关闭、返回
 
 	
 	if(selId == null){
-		alert('Please choose a record');
+		alert('Veuillez choisir un enregistrement');
 	}else{		
 		var json_ids = selId.split("_");	//可以用定义
 		var param = {};

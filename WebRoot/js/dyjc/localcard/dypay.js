@@ -94,7 +94,7 @@ function fillInfoValue(obj) {
 function payOper(){
 	if ($("#zdl").text() < 0) {
 		loading.loaded();
-		alert("kWh is not valid!");
+		alert("kWh n'est pas valide!");
 		return;
 	}
 	
@@ -126,7 +126,7 @@ function payOper(){
  	
 	if($("#zje").val() == ""){
 		loading.loaded();
-		alert("Payment amount can't be empty.");
+		alert("Le montant du paiement ne peut pas être vide.");
 		return
 	}
 	
@@ -200,7 +200,7 @@ function payOper(){
 
 			}else{
 				loading.loaded();
-				alert("Failure of payment");
+				alert("Échec de paiement");
 			}
 		}
 	);	
@@ -210,7 +210,7 @@ function CheckCardProc(result) {
 
 	var json_out = eval("(" + result + ")");	
 	if(json_out == undefined || json_out ==""){
-		alert("Reading Card Failure!");
+		alert("Échec de la carte de lecture!");
 		return  false;				
 	}
 	
@@ -220,32 +220,32 @@ function CheckCardProc(result) {
 	keyNo	 	= json_out.block8_keyNo;
 	seqNo	  	= json_out.block8_seqNo;
 	if ("" == meterNo.replace(/(^0*)/g, ""))	{
-		alert("Meter ID invalid, fail to pay!")
+		alert("ID de compteur invalide, échec de paiement!")
 		return false;
 	}
 	else if ("" == consNo.replace(/(^0*)/g, ""))	{
-		alert("Consumer ID invalid, fail to pay!")
+		alert("Numéro de consommateur invalide, échec de paiement!")
 		return false;
 	}
 	else if (json_out.block2_cardUsedFlag != 250) {
-		alert("You has not inserted yet after last payment.")
+		alert("Vous n'avez pas encore inséré après le dernier paiement.")
 		return false;
 	}
 	else if ((parseInt(keyNo) < 0) || (parseInt(seqNo) <=0)||(parseInt(keyNo) >=255) || (parseInt(seqNo) >=65535)) {
-		alert("Returned data missing in card,fail to purchase!")
+		alert("Les données retournées sont manquantes sur la carte, échec d'achat!")
 		return false;
 	}
 	
 	else if (rtnValue.userno.replace(/(^0*)/g, "") != consNo.replace(/(^0*)/g, "")) {
-		alert("Consumer ID is different with system informaton!")
+		alert("L'identifiant du consommateur est différent des informations système!")
 		return false;
 	} 
 	else if (rtnValue.commaddr.replace(/(^0*)/g, "") != meterNo.replace(/(^0*)/g, "")) {
-		alert("Meter ID is different with system information, please switch to change meter procedure!")
+		alert("L'ID du compteur est différent avec les informations système, veuillez passer à la procédure de changement du compteur!")
 		return false;
 	}
 	else if ((rtnValue.seqNo != seqNo )|| (rtnValue.keyNo != keyNo)) {
-		alert("Times of purchase is different with system information, fail to purchase!")
+		alert("Les heures d'achat sont différentes avec les informations système, échec d'achat!")
 		return false;
 	}
 
@@ -308,15 +308,12 @@ function saveDataToDBByAdd(){
 				loading.loaded();
 				if(data.result = "success"){	
 					getRecord($("#rtu_id").val(), $("#mp_id").val(), "", 10);
-					//var json = eval('(' + data.params + ')');
-					//getPrintParam = eval('(' + data.params + ')');
-					//window.top.WebPrint.setYffDataOperIdx2params(data.params,window.top.WebPrint.nodeIdx.dycard);//打印用的参数
 		 			$("#pay").attr("disabled",true);
 		 			$("#prt").attr("disabled",false);
 		 			alert("success!");	
 				}
 				else{
-					alert("Fail to store data base, please make up the record!");
+					alert("Impossible de stocker la base de données, veuillez constituer l'enregistrement!");
 				}
 			});
 }
@@ -370,7 +367,7 @@ function saveDataToDB(){
  			alert("success!");	
 		}
 		else{
-			alert("Fail to store data base!");
+			alert("Impossible de stocker la base de données!");
 		}
 		
 	});
@@ -420,7 +417,7 @@ function calcTotal(){//总金额
 		 	$("#zdl").html(zdlStr);	//电量
 		}
 		else{
-			alert("Fail to store data base!");
+			alert("Impossible de stocker la base de données!");
 		}
 		
 	});
@@ -467,7 +464,7 @@ function check() {
 	}
 	
  	if(parseFloat($("#zje").val()) == 0){
-		if(!confirm("Total amount is 0, is payment still needed?"))
+		if(!confirm("Le montant total est de 0, le paiement est-il toujours nécessaire?"))
 			return false;
 	}
 	
@@ -501,8 +498,6 @@ function printPayRec(){//打印
 	printParam.orgAddr = mygrid.cells(selectedId,9).getValue(); 
 	printParam.telno = mygrid.cells(selectedId,10).getValue(); 
 	printParam.orgDesc = mygrid.cells(selectedId,11).getValue(); 
-//	console.log(printParam);
-//	return;
 	
 	modalDialog.width 	= 250;
 	modalDialog.height 	= 600;
@@ -511,17 +506,4 @@ function printPayRec(){//打印
 		
 	modalDialog.show();
 	
-//		if(rtnVal == undefined || rtnVal == null){
-//			return null ;
-//		}else{
-//			if(rtnVal.saveflag) this.saveCookie(type,rtnVal.filename)
-//			return rtnVal.filename;
-//		}
-//	printTemplate.jsp
-//	window.top.WebPrint.prt_params.ext_info = "";
-//	var filename =  window.top.WebPrint.getTemplateFileNm(window.top.WebPrint.nodeIdx.dycard);
-//	if(filename == undefined || filename == null)return;
-//	window.top.WebPrint.prt_params.file_name = filename;
-//	window.top.WebPrint.prt_params.reprint = 0;
-//	window.top.WebPrint.doPrintDy();
 }

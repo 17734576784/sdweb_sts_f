@@ -40,27 +40,27 @@
 	<body>
 	<table id="tabinfo" class="tabinfo" align="center">
 	   	<tr>
-	    	<td class="td_lable" style="height:25px;">Base Information</td>
+	    	<td class="td_lable" style="height:25px;">Informations de base</td>
 	    	<td colspan=6 style="padding-left:10px; border: 0px;">
-	    		<button id="btnSearch" class="btn" >Retrieval</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	    		<button id="btnSearch" class="btn" >Récupération</button>&nbsp;&nbsp;&nbsp;&nbsp;
  	    	</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr" width="12%">Consumer ID:</td><td id="userno" width="22%">&nbsp;</td>
-	    	<td class="tdr" width="15%">Consumer Name:</td><td id="username" width="22%">&nbsp;</td>
-	     	<td class="tdr" width="15%">Consumer State:</td><td id="cus_state" width="22%">&nbsp;</td>
+	    	<td class="tdr" width="12%">ID consommateur:</td><td id="userno" width="22%">&nbsp;</td>
+	    	<td class="tdr" width="15%">Nom du consommateur:</td><td id="username" width="22%">&nbsp;</td>
+	     	<td class="tdr" width="15%">État consommateur:</td><td id="cus_state" width="22%">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Telephone:</td><td id="tel">&nbsp;</td>
-	   		<td class="tdr">Address:</td><td colspan=3 id="useraddr">&nbsp;</td>
+	    	<td class="tdr">Téléphone:</td><td id="tel">&nbsp;</td>
+	   		<td class="tdr">Adresse:</td><td colspan=3 id="useraddr">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Meter ID:</td><td id="commaddr">&nbsp;</td>
+	    	<td class="tdr">ID du compteur:</td><td id="commaddr">&nbsp;</td>
 	    	<td class="tdr">Prepayment Mode:</td><td id="yffmeter_type_desc">&nbsp;</td>
-	    	<td class="tdr">Utility ID:</td><td id="utilityid">&nbsp;</td>
+	    	<td class="tdr">ID utilitaire:</td><td id="utilityid">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Manufacturers:</td><td id="factory">&nbsp;</td>
+	    	<td class="tdr">Constructeur:</td><td id="factory">&nbsp;</td>
 	    	<td></td><td></td>
 	    	<td></td><td></td>
 	    </tr>	    

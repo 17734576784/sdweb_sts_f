@@ -119,7 +119,7 @@ function check() {
 	if (!ckChar("describe", "Name", 64, true)) {
 		return false;
 	}
-//	if (!isNumber("telNo3", "Utility ID",0,9999, true)) {
+//	if (!isNumber("telNo3", "Utilitaire ID",0,9999, true)) {
 //		return false;
 //	}
 //	if (!isMobilePhone("telNo1", "Telphone", false)) {

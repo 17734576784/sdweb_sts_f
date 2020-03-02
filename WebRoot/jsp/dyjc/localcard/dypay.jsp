@@ -62,50 +62,50 @@
 	<table id="tabinfo" class="tabinfo" align="center">
     	<tr><td colspan="6" style="height:10px; border:0px;"></td></tr>
     	<tr>
-	    	<td class="td_lable" style="height:25px;">Base Information</td>
+	    	<td class="td_lable" style="height:25px;">Informations de base</td>
 	    	<td colspan=4 style="padding-left:10px; border: 0px;">
-	    	<button id="btnSearch" class="btn" >Retrieval</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	    	<button id="btnSearch" class="btn" >Récupération</button>&nbsp;&nbsp;&nbsp;&nbsp;
  	    	</td>
 	    	<td style="border:0px; text-align: right;" ><img id=rtuonline_img style="display:none"/>&nbsp;<span id=rtuonline_sp></span>&nbsp;&nbsp;</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr" width="12%">Consumer ID:</td><td id="userno" width="15%">&nbsp;</td>
-	    	<td class="tdr" width="12%">Consumer Name:</td><td id="username" width="20%">&nbsp;</td>
-	     	<td class="tdr" width="12%">Consumer State:</td><td id="cus_state">&nbsp;</td>
+	    	<td class="tdr" width="12%">ID Consommateur:</td><td id="userno" width="15%">&nbsp;</td>
+	    	<td class="tdr" width="12%">Nom du consommateur:</td><td id="username" width="20%">&nbsp;</td>
+	     	<td class="tdr" width="12%">État consommateur:</td><td id="cus_state">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Telephone:</td><td id="tel">&nbsp;</td>
-	   		<td class="tdr">Address:</td><td colspan=3 id="useraddr">&nbsp;</td>
+	    	<td class="tdr">Téléphone:</td><td id="tel">&nbsp;</td>
+	   		<td class="tdr">Adresse</td><td colspan=3 id="useraddr">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Meter ID:</td><td id="commaddr">&nbsp;</td>
-	    	<td class="tdr">Prepayment Type:</td><td id="yffmeter_type_desc">&nbsp;</td>
-	    	<td class="tdr">Utility ID:</td><td id="utilityid">&nbsp;</td>
+	    	<td class="tdr">ID du compteur:</td><td id="commaddr">&nbsp;</td>
+	    	<td class="tdr">Type de prépaiement:</td><td id="yffmeter_type_desc">&nbsp;</td>
+	    	<td class="tdr">ID utilitaire:</td><td id="utilityid">&nbsp;</td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Manufacturers:</td><td id="factory">&nbsp;</td>
+	    	<td class="tdr">Constructeur:</td><td id="factory">&nbsp;</td>
 	    	<td></td><td></td>
 	    	<td></td><td></td>
 	    </tr>
 	    <tr><td colspan="6" style="height:10px; border: 0px;"></td></tr>
-    	<tr><td class="td_lable">Cost Control Information</td></tr>
+    	<tr><td class="td_lable">Informations sur le contrôle des coûts</td></tr>
 	   <tr>
-	    	<td class="tdr">Billing Mode:</td><td id="cacl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Cost Control Mode:</td><td id="feectrl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Payment Mode:</td><td id="pay_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de facturation:</td><td id="cacl_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de contrôle des coûts:</td><td id="feectrl_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de paiement:</td><td id="pay_type_desc">&nbsp;</td>
 	    </tr>
 	   	<tr>
-	    	<td class="tdr">Tariff Project:</td><td id="feeproj_desc">&nbsp;</td>
-	    	<td class="tdr">Tariff Description:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
+	    	<td class="tdr">Projet tarifaire:</td><td id="feeproj_desc">&nbsp;</td>
+	    	<td class="tdr">Description tarifaire:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
 	   	</tr>
 	   	<tr>
-	   		<td class="tdr">Overdraw Amount:</td><td id="tzval">&nbsp;</td>
+	   		<td class="tdr">Montant à découvert:</td><td id="tzval">&nbsp;</td>
 	   		<td class="tdr">CT:</td><td id="ctData"></td>
 	   		<td class="tdr">PT:</td><td id="ptData"></td>
 	    </tr>
 	 	<tr><td colspan="6" style="height:5px; border-left: 0px;border-right: 0px;border-bottom: 0px;"></td></tr>	    
 	    <tr id="_title3">
-	    <td class="td_lable" style="border-bottom: 0">Purchasing Record</td>
+	    <td class="td_lable" style="border-bottom: 0">Dossier d'achat</td>
 	    </tr>
 	</table>
 	<table class="gridbox" align="center">
@@ -114,23 +114,23 @@
 	<table id="tabinfo3" class="tabinfo" align="center">
 		<tr><td colspan="8" style="height:5px; border: 0px;"></td></tr>
     	<tr>
-    	   	<td class="td_lable">Billing Information</td>
+    	   	<td class="td_lable">détails de facturation</td>
 	    </tr>
 	    <tr>
-		    <td class="tdr" style="width: 10%">Times of Purchasing:</td>
+		    <td class="tdr" style="width: 10%">Heures d'achat:</td>
 		    <td class="tdrn"><span id="buy_times"></span></td>
 	    	<td class="tdr" style="width: 150px"><!-- Current Balance(TAKA):隐藏当前余额 --></td>
 		    <td class="buy_times" style="width: 17%" id="dqye" colspan=5 ></td>
 	    </tr>
 	    <tr>
-		    <td class="tdr" style="width: 10%">Balance:</td>
+		    <td class="tdr" style="width: 10%">Équilibre:</td>
 		    <td class="tdrn"><span id="jy_money"></span></td>
 		    <td class="tdr" style="width: 150px"></td>
 		    <td class="buy_times" style="width: 17%" colspan=5 ></td>
 	    </tr>	    
 	   	<tr><td colspan="8" style="height:5px; border: 0px;"></td></tr>
     	<tr>
-    	   	<td class="td_lable">Recharge Information</td>
+    	   	<td class="td_lable">Informations sur la recharge</td>
     	   	<td class="tdr" style="width: 100px">KEN:</td>	
     	   	<td class="tdr" style="width: 100px"><input type="text" id="KEN" value="255"/></td>	  
 	    </tr>
@@ -140,8 +140,8 @@
     	   	<td class="tdr" id="thirdLabel"  style="width: 8%;"></td><td class="tdrn" style="width: 16%;" id="paymenttoken3" style="text-align: left;dispaly:none"></td>
 	    </tr>	    
 	    <tr>
-	        <td class="tdr" style="width: 12%;">Payment amount:</td><td class="tdrn" style="width: 12%;"><input type="text" id=zje /></td>
-	    	<td class="tdr" style="width: 12%;">Transfer Credit(kWh):</td><td class="tdrn" style="width: 12%;"><span id="zdl"></span></td>	
+	        <td class="tdr" style="width: 12%;">Montant du paiement:</td><td class="tdrn" style="width: 12%;"><input type="text" id=zje /></td>
+	    	<td class="tdr" style="width: 12%;">Crédit de transfert (kWh):</td><td class="tdrn" style="width: 12%;"><span id="zdl"></span></td>	
 	    	<td colspan="2" ></td>
  	    </tr>
 	    <tr><td colspan="8" style="height:5px; border: 0px;"></td></tr>	   
@@ -154,8 +154,8 @@
 			</td>
 			<td style="text-align: right;border: 0; width:3%"></td>
     		<td style="text-align: right;border: 0; width:30%">
- 	    	<button id="pay"  class="btn"  disabled="disabled">Payment</button> &nbsp;&nbsp;&nbsp;&nbsp;
-	    	<button id="prt"  class="btn"  disabled="disabled">Print</button> &nbsp;&nbsp;&nbsp;&nbsp;  	 
+ 	    	<button id="pay"  class="btn"  disabled="disabled">Paiement</button> &nbsp;&nbsp;&nbsp;&nbsp;
+	    	<button id="prt"  class="btn"  disabled="disabled">Impression</button> &nbsp;&nbsp;&nbsp;&nbsp;  	 
 	    	</td>
 	    </tr>	 
 	</table>

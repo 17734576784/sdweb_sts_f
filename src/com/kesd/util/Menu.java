@@ -96,14 +96,14 @@ public class Menu {
 	
 	
 	public static void initLeftMenu(){
-		dy_leftMenu.add(new LeftMenu("localcard",		"Local Cost Control",			"menu_kb.gif",		false));
-		dy_leftMenu.add(new LeftMenu("localremote",		"本地费控(远程)",			"menu_bd.gif",		false));
-		dy_leftMenu.add(new LeftMenu("main",			"主站费控",				"menu_zz.gif",		false));
-		dy_leftMenu.add(new LeftMenu("localcardExt",	"本地费控(外接卡式)",	"menu_kb.gif",		false));
-		dy_leftMenu.add(new LeftMenu("query",			"Inquiry",					"menu_query.gif",	false));
-		dy_leftMenu.add(new LeftMenu("report",			"Reports",					"menu_report.gif",	false));
-		dy_leftMenu.add(new LeftMenu("tool",			"Tool",					"menu_tool.gif",	false));
-		dy_leftMenu.add(new LeftMenu("print",			"Print",					"menu_print.gif",	false));
+		dy_leftMenu.add(new LeftMenu("localcard", "Contrôle local des coûts", "menu_kb.gif", false));
+		dy_leftMenu.add(new LeftMenu("localremote", "本地费控(远程)", "menu_bd.gif", false));
+		dy_leftMenu.add(new LeftMenu("main", "主站费控", "menu_zz.gif", false));
+		dy_leftMenu.add(new LeftMenu("localcardExt", "本地费控(外接卡式)", "menu_kb.gif", false));
+		dy_leftMenu.add(new LeftMenu("query", "Enquête", "menu_query.gif", false));
+		dy_leftMenu.add(new LeftMenu("report", "Rapports", "menu_report.gif", false));
+		dy_leftMenu.add(new LeftMenu("tool", "Outil", "menu_tool.gif", false));
+		dy_leftMenu.add(new LeftMenu("print", "Impression", "menu_print.gif", false));
 		
 //		gy_leftMenu.add(new LeftMenu("localcard",		"本地费控(卡式)", 			"menu_kb.gif",		false));
 //		gy_leftMenu.add(new LeftMenu("localbd",			"本地费控(远程表底)",		"menu_bd.gif", 		false));
@@ -120,39 +120,40 @@ public class Menu {
 //		np_leftMenu.add(new LeftMenu("tool",   			"工具", 					"menu_tool.gif",	false));
 //		np_leftMenu.add(new LeftMenu("print",  			"打印", 					"menu_print.gif",	false));
 //		
-		docs_leftMenu.add(new LeftMenu("public",		"Public Archives", 				"menu_ggda.gif",	false));
-		docs_leftMenu.add(new LeftMenu("dyfk",  		"Low Voltage Cost Control Archives", 			"menu_dyda.gif",	false));
-		docs_leftMenu.add(new LeftMenu("log",  			"Operation Log Query", 			"menu_npda.gif",	false));
+		docs_leftMenu.add(new LeftMenu("public", "Archives publiques", "menu_ggda.gif", false));
+		docs_leftMenu
+				.add(new LeftMenu("dyfk", "Archives de contrôle des coûts de basse tension", "menu_dyda.gif", false));
+		docs_leftMenu.add(new LeftMenu("log", "Requête du journal des opérations", "menu_npda.gif", false));
 
 //		docs_leftMenu.add(new LeftMenu("npfk",  		"Arrigation Cost Control Archives", 			"menu_npda.gif",	false));
 
 		
 //		other_leftMenu.add(new LeftMenu("ctrl", 		"System Control", 				"menu_ctrl.gif",	false));
-		other_leftMenu.add(new LeftMenu("down", 		"Download Area",	 			"menu_download.gif",false));
-		other_leftMenu.add(new LeftMenu("extend", 		"Extended Function",	 			"menu_gnkz.gif",    false));
-		
+		other_leftMenu.add(new LeftMenu("down", "Zone de téléchargement", "menu_download.gif", false));
+		other_leftMenu.add(new LeftMenu("extend", "Fonction étendue", "menu_gnkz.gif", false));
+
 	}
 	
 	public static void initDy(){//低压暂时没使用。下面是正确的低压菜单。不要删除。
 
 
-		dy_localcard.add(new RightMenu("Purchase Electricity",		"Purchase Electricity:  Consumer recharge after openning an account.",		    			"op_jiaofei.gif",		"jsp/dyjc/localcard/dypay.jsp",			payflag,  false));
-		dy_localcard.add(new RightMenu("Open an Account",			"Open an Account:  Consumer first purchase electricity after meter installation.",						"op_kaihu.gif",			"jsp/dyjc/localcard/dyaddcus.jsp",		openflag, false));
-		dy_localcard.add(new RightMenu("Account Cancellation",		"Account Cancellation:  Consumer cancel account before he log off/cancel/remove the meter.",		    			"op_xiaohu.gif",		"jsp/dyjc/localcard/dydestroycus.jsp",	openflag, false));
+		dy_localcard.add(new RightMenu("Purchase Electricity",		"Achat d'électricité: recharge du consommateur après l'ouverture d'un compte.",		    			"op_jiaofei.gif",		"jsp/dyjc/localcard/dypay.jsp",			payflag,  false));
+		dy_localcard.add(new RightMenu("Open an Account",			"Ouvrir un compte: le consommateur achète d'abord de l'électricité après l'installation du compteur.",						"op_kaihu.gif",			"jsp/dyjc/localcard/dyaddcus.jsp",		openflag, false));
+		dy_localcard.add(new RightMenu("Account Cancellation",		"Annulation de compte: le consommateur annule son compte avant de se déconnecter / annuler / retirer le compteur.",		    			"op_xiaohu.gif",		"jsp/dyjc/localcard/dydestroycus.jsp",	openflag, false));
 		
-		dy_search.add(new RightMenu("Query all operation record information",					"Query all operation record information",					"op_zhcx_sts.gif",			"jsp/dyjc/query/search.jsp",		viewflag, false));
-		dy_search.add(new RightMenu("Query customer information",								"Query customer information",							"op_yhxx_sts.gif",			"jsp/dyjc/query/yhxx.jsp",			viewflag, false));
-		dy_search.add(new RightMenu("Query of Parameter and status information of prepayment",	"Query of Parameter and status information of prepayment",				"op_yhzt_sts.gif",			"jsp/dyjc/query/yhzt.jsp",			viewflag, false));
+		dy_search.add(new RightMenu("Query all operation record information",					"Recherchez toutes les informations d'enregistrement d'opération",					"op_zhcx_sts.gif",			"jsp/dyjc/query/search.jsp",		viewflag, false));
+		dy_search.add(new RightMenu("Query customer information",								"Demander des informations client",							"op_yhxx_sts.gif",			"jsp/dyjc/query/yhxx.jsp",			viewflag, false));
+		dy_search.add(new RightMenu("Query of Parameter and status information of prepayment",	"Requête d'informations sur les paramètres et l'état du prépaiement",				"op_yhzt_sts.gif",			"jsp/dyjc/query/yhzt.jsp",			viewflag, false));
 
-		dy_report.add(new RightMenu("Report of Purchase electricity details",		  "Report of Purchase electricity details",			"op_gdmx.gif",			"jsp/dyjc/report/gdmxb.jsp",			viewflag, false));
-		dy_report.add(new RightMenu("Report of time accumulated purchase information","Report of time accumulated purchase information","op_yhgd.gif",			"jsp/dyjc/report/yhgdb.jsp",			viewflag, false));
-		dy_report.add(new RightMenu("Report of Purchase summary",					  "Report of Purchase summary",						"op_gdhz.gif",			"jsp/dyjc/report/gdhzb.jsp",			viewflag, false));
-		dy_report.add(new RightMenu("Report of salesperson sales information",  	  "Report of salesperson sales information",		"op_fxdf.gif",			"jsp/dyjc/report/opmansalsum.jsp",		viewflag, false));  // 操作员售电汇总表
-		dy_report.add(new RightMenu("Report of sales information of area",  		  "Report of  sales information of area",	    	"op_kzxx.gif",			"jsp/dyjc/report/rtucoltmoney.jsp",		viewflag, false));  // 台区售电汇总表
+		dy_report.add(new RightMenu("Report of Purchase electricity details",		  "Rapport d'achat Détails sur l'électricité",			"op_gdmx.gif",			"jsp/dyjc/report/gdmxb.jsp",			viewflag, false));
+		dy_report.add(new RightMenu("Report of time accumulated purchase information","Rapport des informations d'achat cumulées","op_yhgd.gif",			"jsp/dyjc/report/yhgdb.jsp",			viewflag, false));
+		dy_report.add(new RightMenu("Report of Purchase summary",					  "Résumé du rapport d'achat",						"op_gdhz.gif",			"jsp/dyjc/report/gdhzb.jsp",			viewflag, false));
+		dy_report.add(new RightMenu("Report of salesperson sales information",  	  "Rapport d'informations sur les ventes du vendeur",		"op_fxdf.gif",			"jsp/dyjc/report/opmansalsum.jsp",		viewflag, false));  // 操作员售电汇总表
+		dy_report.add(new RightMenu("Report of sales information of area",  		  "Rapport des informations de vente de la région",	    	"op_kzxx.gif",			"jsp/dyjc/report/rtucoltmoney.jsp",		viewflag, false));  // 台区售电汇总表
 		
-		dy_tool.add(new RightMenu("STS Tool",			"STS Tool:  This tool is used for test the STS Token",										"op_makecard.gif", 	"jsp/dyjc/tool/makermcard.jsp",		ctrlflag, false));
+		dy_tool.add(new RightMenu("STS Tool",			"Outil STS: cet outil est utilisé pour tester le jeton STS",										"op_makecard.gif", 	"jsp/dyjc/tool/makermcard.jsp",		ctrlflag, false));
  		
-		dy_print.add(new RightMenu("Print Tickets",		"Print tickets of sales",	"op_bdfp.gif",			"jsp/dyjc/print/bdfp.jsp", 				payflag, false));
+		dy_print.add(new RightMenu("Print Tickets",		"Imprimer les tickets de vente",	"op_bdfp.gif",			"jsp/dyjc/print/bdfp.jsp", 				payflag, false));
 	}
 	
 	//****************高压--开始***************
@@ -1254,8 +1255,8 @@ public class Menu {
 		boolean flag = WebConfig.menuShow.get("dy_leftmenu" + menu_idx);
 		if(!flag) return "";
 		
-		String naviga = "Residential Electricity" + SDDef.NAVIG_SPRT + "Tool";
-		String menuId = "tool";
+		String naviga = "Électricité résidentielle" + SDDef.NAVIG_SPRT + "Tool";
+		String menuId = "outil";
 		
 		StringBuffer ret = new StringBuffer();
 		
@@ -1586,11 +1587,11 @@ public class Menu {
 			ret.append("<td class='sep_td'></td>\n");
 			
 			js_top_menus += "'top_xtda',";
-			js_top_menus_desc += "'Archives',";
+			js_top_menus_desc += "'Les archives',";
 		}
 		
 		js_top_menus += "'top_other'";
-		js_top_menus_desc += "'Others'";
+		js_top_menus_desc += "'Autres'";
 		js_top_menus = "<script>var top_menus = [" + js_top_menus + "], menuguide = [" + js_top_menus_desc + "];</script>";
 		
 		//其他

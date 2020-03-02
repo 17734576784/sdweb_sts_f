@@ -101,7 +101,7 @@ input, select {
     </tr>
     <tr>
 	    <td>Meter Type: </td><td><select name = "mppaypara.yffmeterType" id= "yffmeterType" style="width: 160px;"></select></td>
-    	<td>Billing Mode: </td><td><select  name="mppaypara.caclType" id="caclType"></select></td>
+    	<td>Mode de facturation: </td><td><select  name="mppaypara.caclType" id="caclType"></select></td>
     	<td>Cost Control Mode: </td><td><select name ="mppaypara.feectrlType" id="feectrlType" style="width: 160px;"></select></td>
     </tr>
     <tr>

@@ -179,7 +179,7 @@ function initGrid(div_id) {
 	if(div_id == undefined) div_id = "gridbox";
 	
 	mygrid = new dhtmlXGridObject(div_id);
-	var yff_grid_title = "Operation Date,Operation Type,Payment Amount,Total Amount,Times of Purchasing,Total Credit(kWh),Serial Number,Payment Mode,Operator,orgAddr,telno,orgDesc,&nbsp;";
+	var yff_grid_title = "Date d'opération,Type d'opération,Montant du paiement,Montant total,Heures d'achat,Crédit total (kWh),Numéro de série,Mode de paiement,Opératrice,Adresse de la station d'alimentation,numéro de téléphone,Nom de la centrale,&nbsp;";
 	mygrid.setImagePath(def.basePath +"images/grid/imgs/");
 	mygrid.setHeader(yff_grid_title);
 	mygrid.setInitWidths("150,150,200,200,200,200,100,150,120,150,120,120,*")
@@ -240,7 +240,7 @@ function getRecord(rtu_id, mp_id, div_id, num, oper_type) {
 				else{
 					//补卡操作时，没有缴费记录，则补卡按钮禁用
 					if(oper_type){
-						alert("Fail to reissue card, without payment record！");
+						alert("Ne pas réémettre la carte, sans enregistrement de paiement！");
 						$("#repair").attr("disabled",true);
 					}	
 				}
@@ -271,7 +271,7 @@ function lastPayInfo(rtu_id, mp_id){
 			rever_info.last_wastno = json.last_wastno;	//原交易流水号
 			
 		} else {
-			alert("无可冲正的记录!");
+			alert("Aucun enregistrement correct!");
 		}
 	});
 }

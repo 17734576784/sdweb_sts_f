@@ -55,10 +55,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    <tr>	
 	    	<td>Address:</td><td><input type="text" name="residentpara.address" id="address"/></td>
 	    	<td>Post Code:</td><td><input type="text" name="residentpara.post" id="post"/></td>
-	    	<td>Mobile Phone:</td><td><input type="text" name="residentpara.mobile" id="mobile"/></td>
+	    	<td>Téléphone portable:</td><td><input type="text" name="residentpara.mobile" id="mobile"/></td>
 	    </tr>
 	    <tr>
-			<td>Telephone:</td><td><input type="text" name="residentpara.phone" id="phone"/></td>	    
+			<td>Téléphone:</td><td><input type="text" name="residentpara.phone" id="phone"/></td>	    
 	    	<td>Fax:</td><td><input type="text" name="residentpara.fax" id="fax"/></td>
 	    	<td>E-mail:</td><td><input type="text" name="residentpara.mail" id="mail" /></td>
 	    </tr>

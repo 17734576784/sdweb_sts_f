@@ -72,11 +72,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    </tr>
     	<tr>
     		<td>Contact:</td><td><input type="text" name="conspara.fzMan" id="fzMan"/></td>
-    		<td>Telephone:</td><td><input type="text" name="conspara.telNo1" id="telNo1" style="width: 150px;"/></td>
+    		<td>Téléphone:</td><td><input type="text" name="conspara.telNo1" id="telNo1" style="width: 150px;"/></td>
     		<td></td><td><input type="text" name="conspara.telNo3" id="telNo3" style="width: 150px;"/></td>
     	</tr>
     	<tr>
-    		<td>Mobile Phone:</td><td><input type="text" name="conspara.telNo2" id="telNo2" style="width: 150px;"/></td>
+    		<td>Téléphone portable:</td><td><input type="text" name="conspara.telNo2" id="telNo2" style="width: 150px;"/></td>
     		<td>Post Code:</td><td><input type="text" name="conspara.postalCode" id="postalCode"/></td>
     		<td>Address:</td><td><input type="text" name="conspara.addr" id="addr" style="width: 150px;"/>
     			<input type="hidden" id="id" name="conspara.id" />
