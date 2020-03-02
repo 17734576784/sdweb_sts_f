@@ -69,7 +69,7 @@ function saveC2token(){
 	json.mpId  =  rtnValue.mp_id;
 	if(class2Token == undefined)
 	{
-		alert("The token is not generated, and then save the token.");
+		alert("Le jeton n'est pas généré, puis enregistrez le jeton.");
 		return;
 	}
 	json.class2Token = class2Token;
@@ -79,7 +79,7 @@ function saveC2token(){
  			},
  			function(data){
  				if(data.result != ""){
-					alert("Save successfully.");
+					alert("Sauvegarde réussie.");
   				} 				
  			} 		
  		); 		
@@ -97,7 +97,7 @@ function savemetertoken(){
  			},
  			function(data){
  				if(data.result != ""){
- 					alert("Save successfully.");
+ 					alert("Sauvegarde réussie.");
   				} 				
  			} 		
  		); 		
@@ -243,7 +243,7 @@ function maketoken() {
 
 function makeClass2Token(json){		
 	if(($("#tokentype").val() == 3  || $("#tokentype").val() == 4) ){
-		if(!ckChar("newmeterkey","New Meter Key",20,true)){
+		if(!ckChar("newmeterkey","Nouvelle clé de compteur",20,true)){
 			return;
 		}	
 	}

@@ -18,13 +18,13 @@ function initDate(){
 }
 /**通用不传param时的grid初始化*/
 function initgrid(){
-	var gridHeader = "ID,Serial No,Terminal,Customer ID,Nom du client,Addr,OperType,Date d'opération,Opératrice,Type de transaction,Montant du paiement,Montant total,Balance,Crédit de transfert (kWh),Nombre d'achats,Unit Price";
+	var gridHeader = "ID,Numéro de série,Terminal,N ° de client,Nom du client,Adresse,Type de fonctionnement,Date d'opération,Opératrice,Type de transaction,Montant du paiement,Montant total,Équilibre,Crédit de transfert (kWh),Nombre d'achats,Prix unitaire";
 	var datatype = "ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	$("#vfreeze").val(1);
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridHeader));
 	$("#colType").val(datatype);
-	$("#filename").val(encodeURI("Print Tickets"));
+	$("#filename").val(encodeURI("Imprimer des billets"));
 	gridopt.gridHeader           = gridHeader;
 	gridopt.gridColAlign         = "center,left,left,left,left,left,left,center,left,left,right,right,right,right,right,left";
 	gridopt.gridColTypes         = "ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
@@ -56,10 +56,9 @@ function search(){
 	}
 	
 	if(sdate.substring(0, 4) != edate.substring(0, 4)){
-		alert("不能跨年选择日期");
+		alert("Impossible de sélectionner des dates au fil des ans");
 		return;
 	}
-	//var param = '{sdate:"'+sdate+'",edate:"'+edate+'",khbh:"'+$("#khbh").val()+'",czy:"'+$("#czy").val()+'",khmc:"'+$("#khmc").val()+'",org:"'+$("#org").val()+'",rtu:"'+$("#rtu").val()+'"}';
 	var params={};
 	params.sdate = sdate;
 	params.edate = edate;
@@ -80,7 +79,7 @@ function rePrint(){//补打发票
 	var selectedId=gridopt.grid.getSelectedRowId();
 	
 	if(null==selectedId){
-		alert("Please Select Print Content.");
+		alert("Veuillez sélectionner le contenu imprimé.");
 		return;
 	}
 	
@@ -118,32 +117,4 @@ function rePrint(){//补打发票
 	modalDialog.url 	= basePath + "jsp/dyjc/print/printTemplate.jsp";
 		
 	modalDialog.show();
-	
-	
-//	var ids = selectedId.split("_"); 
-// 	window.top.WebPrint.prt_params.rtu_id  = ids[0];
-// 	window.top.WebPrint.prt_params.sub_id  = ids[1];
-//	window.top.WebPrint.prt_params.op_date = ids[3];
-//	window.top.WebPrint.prt_params.op_time = ids[4];
-//  	window.top.WebPrint.prt_params.op_type = ids[2]; 
-// 	window.top.WebPrint.prt_params.wasteno = mygrid.cells(selectedId, 1).getValue();;    
-//	window.top.WebPrint.prt_params.page_type = ids[5];
-//	window.top.WebPrint.prt_params.reprint = 1;
-	
-	
-	
-	
-//  	if(ids[5] == 2 ){
-//		window.top.WebPrint.prt_params.ext_info = ids[6]+"---"+ids[7];
-//	}else{
-//		window.top.WebPrint.prt_params.ext_info = "";
-//	}
-// 	
-//	var filename =  window.top.WebPrint.getTemplateFileNm(ids[5]);
-//	if(filename == undefined || filename == null){
-//		return;
-//	}
-//	window.top.WebPrint.prt_params.file_name = filename;
-//	window.top.WebPrint.doPrintDy();
-	
 }

@@ -20,7 +20,7 @@ function initDate(){
 }
 
 function initgrid(){
-	var gridHeader = "ID,POS,Concentrator, Purchase count,Elec-charge,#cspan,Crédit de transfert (kWh),&nbsp;";
+	var gridHeader = "ID,POS,Concentrator, Nombre d'achats,Elec-charge,#cspan,Crédit de transfert (kWh),&nbsp;";
 	var attachheader = "#rspan,#rspan,#rspan,#rspan,Montant du paiement,Montant total,#rspan,#rspan";
 	var datatype = "int,str,str,int,0.000,0.000,0.000,str";
 	mygrid.setImagePath(def.basePath + "images/grid/imgs/");

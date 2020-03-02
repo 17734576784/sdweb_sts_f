@@ -75,54 +75,54 @@
 	   		<td colspan="2" style="height:25px;" align = "right">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  <button id="saveClass2Token">Save Token</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="printC2Token">Print Token</button> </td>
 	    </tr>	    
 	    <tr>
-	    	<td class="tdr" width="12%">Token Type:</td><td width="22%"><select id="tokentype" onChange="changeshowvalue();"><option value="0">SetMaximumPowerLimit</option><option value="1">ClearCredit</option><option value="3">Set1stSectionDecoderKey</option><option value="4">Set2ndSectionDecoderKey</option><option value="5">ClearTamperCondition</option><option value="6">SetMaximumPhasePowerUnbalanceLimit</option><option value="11">Reserved for Proprietary Use</option></select></td>
+	    	<td class="tdr" width="12%">Type de jeton:</td><td width="22%"><select id="tokentype" onChange="changeshowvalue();"><option value="0">Définir la limite de puissance maximale</option><option value="1">Crédit clair</option><option value="3">Définir la clé du décodeur de la première section</option><option value="4">Définir la clé du décodeur de 2ème section</option><option value="5">Effacer la condition de sabotage</option><option value="6">Définir la limite maximale de déséquilibre de puissance de phase</option><option value="11">Réservé à un usage exclusif</option></select></td>
 	    	<td class="tdr" width="15%"><label id="showvalue"></label></td><td width="22%"><input type="text" id="class2value" style="display: none" style="width: 160px;"/></td>
    			<td class="tdr" width="15%">RND:</td><td width="22%"><select id="RND" style="width: 130px"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select></td>   			
 	    </tr>
 	    <tr>
 	    	<td class="tdr">TID:</td><td id="TID">&nbsp;</td>
-   			<td class="tdr">Sub Class:</td><td id="subclass">&nbsp;</td>
-   			<td class="tdr">Class:</td><td id="class2">2</td>
+   			<td class="tdr">Sous-classe:</td><td id="subclass">&nbsp;</td>
+   			<td class="tdr">Classe:</td><td id="class2">2</td>
 	    </tr>
 	    <tr id ="tr1" style="display: none">
-	        <td class="tdr">New Register NO:</td><td><input type="text" id="newmeterkey"/></td>
-	    	<td class="tdr">New SGC:</td><td><input type="text" id="newSGC"/></td>
-   			<td class="tdr">New KEN:</td><td><input type="text" id="newKEN"/></td>   			
+	        <td class="tdr">Nouveau registre NON:</td><td><input type="text" id="newmeterkey"/></td>
+	    	<td class="tdr">Nouveau SGC:</td><td><input type="text" id="newSGC"/></td>
+   			<td class="tdr">Nouveau KEN:</td><td><input type="text" id="newKEN"/></td>   			
 	    </tr>
 	    <tr id ="tr2" style="display: none">
-	    	<td class="tdr">New Meter Number:</td><td><input type="text" id="newMeterNo"/></td>
-   			<td class="tdr">New Key Type:</td><td><select id="newKT" style="width: 130px"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></td>
-   			<td class="tdr">New Tariff Index:</td><td><input type="text" id="newTI"/></td>
+	    	<td class="tdr">Nnouveau numéro de compteur:</td><td><input type="text" id="newMeterNo"/></td>
+   			<td class="tdr">Nouveau type de clé:</td><td><select id="newKT" style="width: 130px"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></td>
+   			<td class="tdr">Nouveau indice tarifaire:</td><td><input type="text" id="newTI"/></td>
 	    </tr>
 	    <tr id ="tr3" style="display: none">
-	        <td class="tdr">New KRN:</td><td><select id="newKRN" style="width: 130px;"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></td>
-	      	<td class="tdr">Rollover Key Change(RO):</td><td><input type="checkbox" id="ro"/></td>
-   			<td class="tdr">Reserved(RES):</td><td><input type="checkbox" id="res"/></td>
+	        <td class="tdr">Nouveau KRN:</td><td><select id="newKRN" style="width: 130px;"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></td>
+	      	<td class="tdr">Changement de touche de survol(RO):</td><td><input type="checkbox" id="ro"/></td>
+   			<td class="tdr">Réservé(RES):</td><td><input type="checkbox" id="res"/></td>
 	    </tr>	    
 	    <tr><td colspan="6" style="height:10px; border: 0px;"></td></tr>
 	    <tr>
 	    	<td class="td_lable" style="height:25px;"><input id = "chkclass1" name="chkclass1" type="checkbox" style="width:16px; text-align: left;" /><label for="chkclass1">Class1</label></td>
 	   		<td colspan="3" style="height:25px;" id ="class1token" style="text-align: left;"></td>
-	   		<td colspan="2" style="height:25px;" align = "right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="printC1Token">Print Token</button> </td>
+	   		<td colspan="2" style="height:25px;" align = "right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="printC1Token">Jeton d'impression</button> </td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Select Test:</td><td><select id="selecttest" onChange="changecontrolvalue();"><option value="0">Test 0</option><option value="1">Load Switch</option><option value="2">Display</option><option value="3"> Cumulative kWh</option><option value="4">KRN</option><option value="5">TI</option><option value="7">Max Power Limit</option><option value="8">Tamper Status</option><option value="9">Power Consumption</option><option value="10">Software Version</option></select></td>
-	    	<td class="tdr">Control(Hex):</td><td ><input type="text" id="controlvalue" style="width: 160px;"/></td>	
-	    	<td class="tdr">Sub Class:</td><td><input type="text" id="subclass1"/></td>   			
+	    	<td class="tdr">Sélectionnez Test:</td><td><select id="selecttest" onChange="changecontrolvalue();"><option value="0">Test 0</option><option value="1">Commutateur de charge</option><option value="2">Afficher</option><option value="3"> KWh cumulé</option><option value="4">KRN</option><option value="5">TI</option><option value="7">Limite de puissance maximale</option><option value="8">Statut de sabotage</option><option value="9">Consommation d'énergie</option><option value="10">Une version de logiciel</option></select></td>
+	    	<td class="tdr">Contrôle(Hex):</td><td ><input type="text" id="controlvalue" style="width: 160px;"/></td>	
+	    	<td class="tdr">Sous-classe:</td><td><input type="text" id="subclass1"/></td>   			
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Class:</td><td id="class1" >1</td>
+	    	<td class="tdr">Classe:</td><td id="class1" >1</td>
 	    	<td class="tdr">Mfr Code:</td><td><input type="text" id="mfrcode" style="width: 160px;"/></td>
 	    	<td></td><td></td>	    
 	    </tr>
 	    <tr><td colspan="6" style="height:10px; border: 0px;"></td></tr>
 	    <tr>
-	    	<td class="td_lable" style="height:25px;"><input id = "chkmeterkey" name="chkmeterkey" type="checkbox" style="width:16px; text-align: left;" /><label for="chkmeterkey">Meter Keys</label></td>
+	    	<td class="td_lable" style="height:25px;"><input id = "chkmeterkey" name="chkmeterkey" type="checkbox" style="width:16px; text-align: left;" /><label for="chkmeterkey">Touches de compteur</label></td>
 	    	<td colspan="3" style="height:25px;" id ="metertoken" style="text-align: left;"></td>
-	    	<td colspan="2" style="height:25px;" align = "right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="savetoken"  class="btn" onClick="savemetertoken()">Save Meter Token</button></td>
+	    	<td colspan="2" style="height:25px;" align = "right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="savetoken"  class="btn" onClick="savemetertoken()">Enregistrer le jeton du compteur</button></td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Key Type:</td><td><select id="keytype" style="width: 160px;"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></td>
+	    	<td class="tdr">Type de clé:</td><td><select id="keytype" style="width: 160px;"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></td>
 	    	<td class="tdr">TI:</td><td><input type="text" id ="TI" style="width: 160px;"/></td>
 	    	<td class="tdr">SGC:</td><td><input type="text" id="SGC" style="width: 160px;"/></td>
 	    </tr>
@@ -137,7 +137,7 @@
 	    	<td class="tdr"></td><td></td>	   
 	    </tr> 	    
  	    <tr>
-	    	<td colspan="8"style="padding-left:10px; border: 0px;" align = "right"><button id="maketoken"  class="btn">Make Token</button>&nbsp;&nbsp;
+	    	<td colspan="8"style="padding-left:10px; border: 0px;" align = "right"><button id="maketoken"  class="btn">Faire un jeton</button>&nbsp;&nbsp;
 	    </tr>
 	</table>		
 	

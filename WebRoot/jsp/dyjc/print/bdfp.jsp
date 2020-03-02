@@ -73,7 +73,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    <tr>
 	    <td class="tdr" colspan="8">
 		    <button class="btn" id="search">Requete</button>&nbsp;&nbsp;&nbsp;&nbsp;
-		    <button class="btn" id="toprint">Re print</button>
+		    <button class="btn" id="toprint">Réimprimer</button>
 	    </td>
 	    </tr>
 	</table>
