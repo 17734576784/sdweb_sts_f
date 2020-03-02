@@ -49,17 +49,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr" width="10%">Start Date:</td>
+	    	<td class="tdr" width="10%">Date de début:</td>
 	     	<td width="15%"><input id=sdate name=sdate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	     	<td class="tdr" width="10%">End Date:</td>
+	     	<td class="tdr" width="10%">Date de fin:</td>
 	     	<td width="15%"><input id=edate name=edate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	    	<td class="tdr" width="10%">POS:</td><td width="10%"><select id="org" style="width: 240px"></select></td>
+	    	<td class="tdr" width="10%">PDV:</td><td width="10%"><select id="org" style="width: 240px"></select></td>
 	    	<td width="10%"></td> <td width="15%"></td>
 	     <!-- <td class="tdr">集中器:</td><td><select id="rtu"></select></td> -->
 	    </tr>
 	    <tr>
 	    <td class="tdr" colspan="8">
-		    <button class="btn" id="search">Query</button>
+		    <button class="btn" id="search">Requete</button>
 		    <form style="display: inline;" method="post" action="<%=basePath%>excel/dataExcel.action" name="toxls">
 				<input type="hidden" id="excPara" name="excPara" />
 				<input type="hidden" id="colType"  name="colType" />
@@ -71,7 +71,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="hidden" id="filename" name="filename" />
 				<input type="hidden" id="footerType" name="footerType" />
 				<input type="hidden" id="mergeRows" name="mergeRows" />
-				<button class="btn" id="toexcel" onclick='dcExcel();'>Export</button>
+				<button class="btn" id="toexcel" onclick='dcExcel();'>Exportation</button>
 			</form>
 	    </td>
 	    </tr>

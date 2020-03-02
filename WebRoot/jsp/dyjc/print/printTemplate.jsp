@@ -26,12 +26,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="printTemplateTable" style="font-size:10pt;font-weight:bold;width:58mm;text-align:center;">
 		<table width="100%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
 	  		<tr>
-	    		<td align="center">Vending System</td>
+	    		<td align="center">Système de vente</td>
 	  		</tr>
 		</table>
 		<table width="100%"  height="30"  border="0" cellspacing="0" bgcolor="#FFFFFF">
 		  <tr>
-		    <td width="30" height="30" align="left">Serial:</td>
+		    <td width="30" height="30" align="left">En série:</td>
 		    <td align="left" id="waterNo" style="word-wrap:break-word;word-break:break-all;">流水号</td>
 		  </tr>
 		  <tr>

@@ -21,8 +21,8 @@ function initDate(){
 
 function initgrid(){
 	mygrid.setImagePath(def.basePath + "images/grid/imgs/");
-	var gridHeader = "ID,Customer No,Customer Name,Meter Addr,Purchase Count,Elec-charge,#cspan,Transfer Credit,Average Price,&nbsp;";
-	var attachheader = "#rspan,#rspan,#rspan,#rspan,#rspan,Payment amount,Total amount,#rspan,#rspan,#rspan";
+	var gridHeader = "ID,Numéro client,Nom du client,Meter Addr,Nombre d'achats,Elec-charge,#cspan,Transfer Credit,Average Price,&nbsp;";
+	var attachheader = "#rspan,#rspan,#rspan,#rspan,#rspan,Montant du paiement,Montant total,#rspan,#rspan,#rspan";
 	var datatype = "int,str,str,str,int,0.000,0.000,0.000,0.000,0.000";
 	mygrid.setHeader(gridHeader);
 	mygrid.attachHeader(attachheader);

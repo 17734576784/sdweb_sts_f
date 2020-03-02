@@ -52,49 +52,49 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
 	    <tr>
-	     	<td class="tdr">POS:</td><td><select id="org" style="width: 150px"></select></td>
-	     	<td class="tdr">Concentrator:</td><td><select id="rtu" style="width: 150px"><option value="-1">All</option></select></td>
-	     	<td class="tdr">Customer No:</td><td><input type="text" id="yhhh" style="width: 150px"/></td>
-	     	<td class="tdr">Customer Name:</td><td><input type="text" id="yhmc" style="width: 150px"/></td>
+	     	<td class="tdr">PDV:</td><td><select id="org" style="width: 150px"></select></td>
+	     	<td class="tdr">Concentrateur:</td><td><select id="rtu" style="width: 150px"><option value="-1">Tous</option></select></td>
+	     	<td class="tdr">Numéro client:</td><td><input type="text" id="yhhh" style="width: 150px"/></td>
+	     	<td class="tdr">Nom du client:</td><td><input type="text" id="yhmc" style="width: 150px"/></td>
 	     	<td class="tdr">Meter No:</td><td><input type="text" id="bh" style="width: 150px"/></td>
 	    </tr>
 	    <tr>
-	    <td class="tdr">Customer State:</td>
+	    <td class="tdr">État du client:</td>
 	    <td><select id="yhzt" class="is_width" style="width: 150px">
-	    <option value="0">All</option>
-	    <option value="1">Normal account</option>
-	    <option value="2">Abnormal account</option>
-	    <option value="3">More than 1.0 of the balance</option>
-	    <option value="4">Less than 1.0 of the balance</option>
+	    <option value="0">Tous</option>
+	    <option value="1">Compte normal</option>
+	    <option value="2">Compte anormal</option>
+	    <option value="3">Plus de 1,0 du solde</option>
+	    <option value="4">Moins de 1,0 du solde</option>
 	    </select></td>
 	   <!--20121114 add except begin-->
-	   <td class= "tdr">Alarm State</td>
+	   <td class= "tdr">État d'alarme</td>
 	   <td><select id="alarm_type" class="is_width" style="width: 150px"> 
-	    <option value="0">All</option>
-	    <option value="1">1st Short Message</option>
-	    <option value="2">1st Sound</option>
-	    <option value="3">2nd Short Message</option>
-	    <option value="4">Alarm</option>
+	    <option value="0">Tous</option>
+	    <option value="1">1er court message</option>
+	    <option value="2">1er son</option>
+	    <option value="3">2e message court</option>
+	    <option value="4">Alarme</option>
 	    <option value="5">1st Short Msg Succ</option>
 	    <option value="6">1st Sound Succ</option>
 	    <option value="7">2nd Short Msg Succ</option>
-	    <option value="8">Alarm Succ</option>
+	    <option value="8">Réussite de l'alarme</option>
         </select></td>
         
-	    <td class= "tdr">Control State</td>
+	    <td class= "tdr">État de contrôle</td>
 	   <td><select id="ctrl_type" class="is_width" style="width: 150px"> 
-	    <option value="0">All</option>
-	    <option value="1">Switch off Error</option>
-	    <option value="2">Switch on Error</option>
-	    <option value="3">Switch on/off Error</option>
-	    <option value="4">Switch off OK</option>
-	    <option value="5">Switch on OK</option>
-	    <option value="6">Switch on/off OK</option>
+	    <option value="0">Tous</option>
+	    <option value="1">Désactiver l'erreur</option>
+	    <option value="2">Erreur d'activation</option>
+	    <option value="3">Erreur d'activation / désactivation</option>
+	    <option value="4">Désactiver OK</option>
+	    <option value="5">Allumez OK</option>
+	    <option value="6">Allumer / éteindre OK</option>
         </select></td>
         <!--20121114 add except 下面colspan 有调整 end-->
 	    <td class="tdr" colspan="4">
 	        <input type="hidden" type="button" value="Select Item" class="btn" id="selLookItem" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    <button class="btn" id="search">Query</button>
+		    <button class="btn" id="search">Requete</button>
 		    <form style="display: inline;" method="post" action="<%=basePath%>excel/dataExcel.action" name="toxls">
 				<input type="hidden" id="excPara" name="excPara" />
 				<input type="hidden" id="colType"  name="colType" />
@@ -103,7 +103,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="hidden" id="vfreeze" name="vfreeze" />
 				<input type="hidden" id="hfreeze" name="hfreeze" />
 				<input type="hidden" id="filename" name="filename" />
-				<button class="btn" id="toexcel" onclick='dcExcel();'>Export</button>
+				<button class="btn" id="toexcel" onclick='dcExcel();'>Exportation</button>
 			</form>
 	    </td>
 	    </tr>

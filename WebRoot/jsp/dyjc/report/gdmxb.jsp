@@ -48,17 +48,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr">Start Date:</td>
+	    	<td class="tdr">Date de début:</td>
 	     	<td><input id=sdate name=sdate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	     	<td class="tdr">End Date:</td>
+	     	<td class="tdr">Date de fin:</td>
 	     	<td><input id=edate name=edate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	    	<td class="tdr">POS:</td><td><select id="org" style="width: 240px"></select></td>
-	    	<td class="tdr">Concentrator:</td><td><select id="rtu" style="width: 150px"></select></td>
-	    	<td class="tdr">Operator:</td><td><input type="text" id="czy"/></td>
+	    	<td class="tdr">PDV:</td><td><select id="org" style="width: 240px"></select></td>
+	    	<td class="tdr">Concentrateur:</td><td><select id="rtu" style="width: 150px"></select></td>
+	    	<td class="tdr">Opératrice:</td><td><input type="text" id="czy"/></td>
 	    </tr>
 	    <tr>
 	    <td class="tdr" colspan="10">
-		    <button class="btn" id="search">Query</button>
+		    <button class="btn" id="search">Requete</button>
 		    <form style="display: inline;" method="post" action="<%=basePath%>excel/dataExcel.action" name="toxls">
 				<input type="hidden" id="excPara" name="excPara" />
 				<input type="hidden" id="colType"  name="colType" />
@@ -69,7 +69,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="hidden" id="hfreeze" name="hfreeze" />
 				<input type="hidden" id="filename" name="filename" />
 				<input type="hidden" id="footerType" name="footerType" />
-				<button class="btn" id="toexcel" onclick='dcExcel();'>Export</button>
+				<button class="btn" id="toexcel" onclick='dcExcel();'>Exportation</button>
 			</form>
 	    </td>
 	    </tr>

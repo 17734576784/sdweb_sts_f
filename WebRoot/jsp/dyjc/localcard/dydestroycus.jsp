@@ -53,12 +53,12 @@
 	<table id="tabinfo2" class="tabinfo" align="center">
 		<tr><td colspan="6" style="height:5px; border: 0px;"></td></tr>
     	<tr>
-    	   	<td class="td_lable" style="width: 150px;">Recharge Info</td>	  
+    	   	<td class="td_lable" style="width: 150px;">Informations de recharge</td>	  
     	   	<td colspan="7" id="canceltoken" style="text-align: left;display: none"></td>
     	   	
 	    </tr>
 	    <tr>
-		    <td class="tdr"  width = "10%" >Current Balance:          </td><td class="tdrn" width="10%"><input type="text" id="dqye" /></td>
+		    <td class="tdr"  width = "10%" >Solde actuel:</td><td class="tdrn" width="10%"><input type="text" id="dqye" /></td>
 		    <td class="tdr"  width = "10%" ></td><td class="tdr"  width = "10%"></td>
 		    <td class="tdr"  width = "10%"></td>
 			<td></td>
@@ -72,8 +72,8 @@
 	    <tr><td colspan="6" style="height:5px; border: 0px;"></td></tr>
     	 <tr>
     		<td colspan="6" style="text-align: right;border: 0">
-  	    	<button id="btnDestroy"  class="btn">Account Cancellation</button> &nbsp;&nbsp;
-  	    	<button id="prt"  class="btn"  disabled="disabled">Print</button> &nbsp;&nbsp;&nbsp;&nbsp;  	 
+  	    	<button id="btnDestroy"  class="btn">Annulation de compte</button> &nbsp;&nbsp;
+  	    	<button id="prt"  class="btn"  disabled="disabled">Impression</button> &nbsp;&nbsp;&nbsp;&nbsp;  	 
   	    	
 	    </td></tr>
 	</table>

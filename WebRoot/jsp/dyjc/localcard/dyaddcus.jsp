@@ -69,37 +69,37 @@
     	<tr><td class="td_lable">Informations sur le contrôle des coûts</td></tr>
 	   <tr>
 	    	<td class="tdr">Mode de facturation:</td><td id="cacl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Cost Control Mode:</td><td id="feectrl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Payment Mode:</td><td id="pay_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de contrôle des coûts:</td><td id="feectrl_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de paiement:</td><td id="pay_type_desc">&nbsp;</td>
 	    </tr>
 	   	<tr>
-	    	<td class="tdr">Tariff Project:</td><td id="feeproj_desc">&nbsp;</td>
-	    	<td class="tdr">Tariff Description:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
+	    	<td class="tdr">Projet tarifaire:</td><td id="feeproj_desc">&nbsp;</td>
+	    	<td class="tdr">Description tarifaire:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
 	   	</tr>
 	   	<tr>
-	   		<td class="tdr">Overdraw Amount:</td><td id="tzval">&nbsp;</td>
+	   		<td class="tdr">Montant à découvert:</td><td id="tzval">&nbsp;</td>
 	   		<td class="tdr">KEN:</td><td><input type="text" id="KEN" value="255"/></td>
 	   		<td></td><td></td>
 	    </tr>
 		<tr><td colspan="6" style="height:10px; border: 0px;"></td></tr>
     	<tr><td class="td_lable" style="width: 120px;">Recharge Information</td></tr>
 	    <tr>
-	    	<td class="tdr">Payment amount:</td><td class="tdrn"><input id=zje /></td>		  		        		    				
-	    	<td class="tdr">Transfer Credit:</td><td class="tdrn" id="zdl"> </td>
+	    	<td class="tdr">Montant du paiement:</td><td class="tdrn"><input id=zje /></td>		  		        		    				
+	    	<td class="tdr">Transfert de crédit:</td><td class="tdrn" id="zdl"> </td>
 	    	<td></td><td></td>
 	    </tr>
 	    
 	    <tr id="tokens" style="display: none">
 	   		<td class="tdr">1stKCT:</td><td class="tdrn" id="token1">&nbsp;</td>
 	   		<td class="tdr">2ndKCT:</td><td class="tdrn" id="token2"></td>
-	   		<td class="tdr">Open Account Token:</td><td id="opentoken"></td>
+	   		<td class="tdr">Jeton de compte ouvert:</td><td id="opentoken"></td>
 	    </tr>
 	    
 	    <tr><td colspan="6" style="height:5px; border: 0px;"></td></tr>
     	<tr>
     	<td colspan="6" style="text-align: right;border: 0">
-    		<button id="btnNew"  	class="btn" disabled="disabled">Open an account</button> &nbsp;&nbsp;&nbsp;&nbsp;  
-    		<button id="prt"  class="btn"  disabled="disabled">Print</button> &nbsp;&nbsp;&nbsp;&nbsp;  
+    		<button id="btnNew"  	class="btn" disabled="disabled">Ouvrir un compte</button> &nbsp;&nbsp;&nbsp;&nbsp;  
+    		<button id="prt"  class="btn"  disabled="disabled">Impression</button> &nbsp;&nbsp;&nbsp;&nbsp;  
 	    </td></tr>
 	</table>
 	<input type="hidden" id="rtu_id"/>

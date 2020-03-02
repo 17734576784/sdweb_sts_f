@@ -22,8 +22,8 @@ function initDate(){
 
 function initgrid(){
 	
-	var gridHeader = "ID,Customer ID,Customer Name,Meter Addr,Tariff Project,Electric fees,#cspan,Average Price,PT Ratio,CT Ratio,Purchase Count,Purchase Readings, Purchase kWh,Date,Operator,&nbsp;";
-	var attachheader = "#rspan,#rspan,#rspan,#rspan,#rspan,Payment amount,Total amount,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan";
+	var gridHeader = "ID,Numéro client,Nom du client,Meter Addr,Tariff Project,Electric fees,#cspan,Average Price,PT Ratio,CT Ratio,Nombre d'achats,Purchase Readings, Purchase kWh,Date,Opératrice,&nbsp;";
+	var attachheader = "#rspan,#rspan,#rspan,#rspan,#rspan,Montant du paiement,Montant total,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan,#rspan";
 	var datatype = "int,str,str,str,str,0.000,0.000,0.000,0.000,0.000,0,0.000,0.000,str,str";
 	
 	mygrid.setImagePath(def.basePath + "images/grid/imgs/");

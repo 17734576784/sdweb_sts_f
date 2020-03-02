@@ -50,16 +50,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
 	    <tr>
-	     	<td class="tdr">POS:</td><td><select id="org" style="width: 230px"></select></td>
-	     	<td class="tdr">Concentrator:</td><td><select id="rtu" style="width: 150px"><option value="-1">所有</option></select></td>
-	     	<td class="tdr">Customer No:</td><td><input type="text" id="yhbh" style="width: 100px"/></td>
+	     	<td class="tdr">PDV:</td><td><select id="org" style="width: 230px"></select></td>
+	     	<td class="tdr">Concentrateur:</td><td><select id="rtu" style="width: 150px"><option value="-1">所有</option></select></td>
+	     	<td class="tdr">Numéro client:</td><td><input type="text" id="yhbh" style="width: 100px"/></td>
 	     	<td class="tdr">Meter No:</td><td><input type="text" id="bh" style="width: 100px"/></td>
-	     	<td class="tdr">Customer Name:</td><td><input type="text" id="yhmc" style="width: 100px"/></td>
-	     	<td class="tdr">Phone Number:</td><td><input type="text" id="lxdh" style="width: 100px"/></td>
+	     	<td class="tdr">Nom du client:</td><td><input type="text" id="yhmc" style="width: 100px"/></td>
+	     	<td class="tdr">Numéro de téléphone:</td><td><input type="text" id="lxdh" style="width: 100px"/></td>
 	    </tr>
 	    <tr>
 	    <td class="tdr" colspan="12">
-		    <button class="btn" id="search">Query</button>
+		    <button class="btn" id="search">Requete</button>
 		    <form style="display: inline;" method="post" action="<%=basePath%>excel/dataExcel.action" name="toxls">
 				<input type="hidden" id="excPara" name="excPara" />
 				<input type="hidden" id="colType"  name="colType" />
@@ -68,14 +68,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="hidden" id="vfreeze" name="vfreeze" />
 				<input type="hidden" id="hfreeze" name="hfreeze" />
 				<input type="hidden" id="filename" name="filename" />
-				<button class="btn" id="toexcel" onclick='dcExcel();'>Export</button>
+				<button class="btn" id="toexcel" onclick='dcExcel();'>Exportation</button>
 			</form>
 	    </td>
 	    </tr>
 	</table>
 	<jsp:include page="../../inc/jsdef.jsp" />
 	<script type="text/javascript">
-	$("#gridbox").height($(window).height() - $("#tabinfo").height() - 38);
+		$("#gridbox").height($(window).height() - $("#tabinfo").height() - 38);
 	</script>
-  </body>
+</body>
 </html>

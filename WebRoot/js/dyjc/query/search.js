@@ -22,18 +22,8 @@ function initDate(){
 function initgrid(){
 	
 	//mygrid.setImagePath(def.basePath + "images/grid/imgs/");
-	var gridHeader = "ID,Terminal,Serial No,Customer No,Customer Name,Customer Addr,Meter Addr,OperType,OperDate,Operator,ChargeType,Payment amount,Total amount,Transfer Credit(kWh),Purchase Count";
+	var gridHeader = "ID,Terminal,Numéro de série,Numéro client,Nom du client,Client Addr,Meter Addr,Type d'opération,Date d'opération,Opératrice,Type de transaction,Montant du paiement,Montant total,Crédit de transfert (kWh),Nombre d'achats";
 	var datatype = "int,str,str,str,str,str,str,str,str,str,str,0.00,0.00,0.00,,int";
-	
-	/*
-	mygrid.setHeader(gridHeader);
-	mygrid.setInitWidths("50,120,120,80,130,130,80,150,100,100,100,100,100,100,100,100,100,100")
-	mygrid.setColAlign("center,left,left,left,left,left,left,center,left,left,right,right,right,right,right,right,right,right")
-	mygrid.setColTypes("ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro");
-	mygrid.enableSmartRendering(true);
-	mygrid.init();
-	mygrid.setSkin("light");
-	*/
 	
 	$("#vfreeze").val(1);
 	$("#hfreeze").val(0);
@@ -80,16 +70,10 @@ function search(){
 	
 	var y1 = sdate.substring(0, 4), y2 = edate.substring(0, 4);
 	if(Math.abs(parseInt(y1) - parseInt(y2)) > 3) {
-		alert("Please select the data within 4 years.");
+		alert("Veuillez sélectionner les données dans les 4 ans.");
 		return;
 	}
 	
-	/*
-	if(sdate.substring(0, 4) != edate.substring(0, 4)){
-		alert("不能跨年选择日期");
-		return;
-	}
-	*/
 	var param = '{sdate:"'+sdate+'",edate:"'+edate+'",yhbh:"'+$("#yhbh").val()+'",yhmc:"'+$("#yhmc").val()+'",czy:"'+$("#czy").val()+'",org:"'+$("#org").val()+'",rtu:"'+$("#rtu").val()+'",oper_type:"'+$("#oper_type").val()+'"}';
 	
 	gridopt.gridGetDataUrl      = def.basePath  + "ajaxdyjc/actSearch!zhSearch.action";
@@ -97,20 +81,4 @@ function search(){
 	var prs = $("#prs").val();
 	gridopt.filter(prs?prs:20);
 	
-	/*
-	loading.loading();
-	
-	$.post(def.basePath + "ajaxdyjc/actSearch!zhSearch.action",{result : param},function(data){
-		loading.loaded();
-		if(data.result != ""){
-			var json = eval('(' + data.result + ')');
-			mygrid.parse(json,"json");
-			
-			$("#excPara").val(encodeURI(jsonString.json2String(json)));
-			
-		}else{
-			
-		}
-	});
-	*/
 }

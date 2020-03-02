@@ -128,7 +128,7 @@ function openAccount(){
 	
 	if ($("#zdl").text() < 0) {
 		loading.loaded();
-		alert("kwh is not valid!");
+		alert("kwh n'est pas valide!");
 		return;
 	}
 	//loading.loading();
@@ -172,7 +172,7 @@ function openAccount(){
      				if (token1!="" || token2!="") {
      					saveDataToDB();
      				}else {
-     					alert("Failure of open");
+     					alert("Échec d'ouverture");
      				}
  				} 			
  			} 		
@@ -232,10 +232,10 @@ function saveDataToDB(){
 					//window.top.WebPrint.setYffDataOperIdx2params(data.params,window.top.WebPrint.nodeIdx.dycard);//打印用的参数
 					$("#btnNew").attr("disabled",true);
 					$("#prt").attr("disabled",false);
-					alert("Open an account successfully!");	
+					alert("Ouvrez un compte avec succès!");	
 				}
 				else{
-					alert("Fail to store data base, please make up the record!");
+					alert("Échec de stockage de la base de données, veuillez constituer l'enregistrement!");
 				}
 			});
 }
@@ -354,12 +354,12 @@ function check(){
 
 	
 	
-	if(!isDbl_Html("zje" ,  "Total Amount", 0, rtnValue.moneyLimit, false)){//缴费金额应该在0~囤积值之间
+	if(!isDbl_Html("zje" ,  "Montant total", 0, rtnValue.moneyLimit, false)){//缴费金额应该在0~囤积值之间
 		return false;
 	}
 
 	if(parseFloat(zje) == 0){
-		if(!confirm("Consumer have not pay yet, is payment needed?"))return false;
+		if(!confirm("Le consommateur n'a pas encore payé, le paiement est-il nécessaire?"))return false;
 	}
 	
 	return true;
@@ -397,10 +397,4 @@ function printPayRec() {
 		
 	modalDialog.show();
 	
-//	var filename =  window.top.WebPrint.getTemplateFileNm(window.top.WebPrint.nodeIdx.dycard);
-//	var filename =  window.top.WebPrint.getTemplateFileNm(window.top.WebPrint.nodeIdx.dyaddcus);
-// 	if(filename == undefined || filename == null)return;
-//	window.top.WebPrint.prt_params.file_name = filename;
-//	window.top.WebPrint.prt_params.reprint = 0;
-//	window.top.WebPrint.doPrintDy();
 }

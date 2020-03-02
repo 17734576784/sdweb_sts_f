@@ -125,13 +125,13 @@ function fillInfoValue(obj){
 function consDestroy() {	//销户
 	if(!check()) return;
 	
-	if(!confirm("Are you sure to cancel account？")){
+	if(!confirm("Voulez-vous vraiment annuler le compte？")){
 		return;
 	}
 	
 	var rtu_id = $("#rtu_id").val(), mp_id = $("#mp_id").val();
 	if(rtu_id === "" || mp_id === ""){
-		alert("Please choose consumer information!");
+		alert("Veuillez choisir les informations du consommateur!");
 		return;
 	}
 	
@@ -193,10 +193,10 @@ function consDestroy() {	//销户
  					getPrintParam = eval('(' + data.params + ')');
 					//window.top.WebPrint.setYffDataOperIdx2params(data.params,window.top.WebPrint.nodeIdx.dycard);//打印用的参数
 					$("#btnDestroy").attr("disabled",true);
-					alert("Account cancellation success！");
+					alert("Succès de l'annulation du compte！");
 				}
 				else{
-					alert("Account cancellation failure...！");
+					alert("Échec de l'annulation du compte ...！");
 				}
 			
 			});
@@ -228,7 +228,7 @@ function check() {
 //		alert("Please input base information");
 //		return false;
 //	}
-	if(!isDbl("dqye", "Current balance", -rtnValue.moneyLimit, rtnValue.moneyLimit)){
+	if(!isDbl("dqye", "Solde actuel", -rtnValue.moneyLimit, rtnValue.moneyLimit)){
 		return false;
 	}
 	return true;

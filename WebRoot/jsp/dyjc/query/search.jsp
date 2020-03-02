@@ -57,20 +57,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr">Start Date:</td>
+	    	<td class="tdr">Date de début:</td>
 	     	<td><input id=sdate name=sdate class="roinput" style="width: 150px" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	     	<td class="tdr">End Date:</td>
+	     	<td class="tdr">Date de fin:</td>
 	     	<td><input id=edate name=edate class="roinput"  style="width: 150px" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	    	<td class="tdr" width="120px;">Customer No:</td><td><input type="text" id="yhbh" style="width: 150px"/></td>
-	    	<td class="tdr">Customer Name:</td><td><input type="text" id="yhmc" style="width: 150px"/></td>
+	    	<td class="tdr" width="120px;">Numéro client:</td><td><input type="text" id="yhbh" style="width: 150px"/></td>
+	    	<td class="tdr">Nom du client:</td><td><input type="text" id="yhmc" style="width: 150px"/></td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Operator:</td><td><input type="text" id="czy" style="width: 150px"/></td>
-	     	<td class="tdr">POS:</td><td><select id="org" style="width: 230px"></select></td>
-	     	<td class="tdr">Concentrator:</td><td><select id="rtu" style="width: 150px"><option value=-1>All</option></select></td>
-	     	<td class="tdr">Operate Type:</td>
+	    	<td class="tdr">Opératrice:</td><td><input type="text" id="czy" style="width: 150px"/></td>
+	     	<td class="tdr">PDV:</td><td><select id="org" style="width: 230px"></select></td>
+	     	<td class="tdr">Concentrateur:</td><td><select id="rtu" style="width: 150px"><option value=-1>Tous</option></select></td>
+	     	<td class="tdr">Type de fonctionnement:</td>
 	     	<td><select id="oper_type" style="width: 150px">
-	     	<option value="-1">All</option>
+	     	<option value="-1">Tous</option>
 			<%
 			Map<Integer,String> map = Rd.getDict(Dict.DICTITEM_YFFOPTYPE);
 			Iterator<Map.Entry<Integer,String>> it = map.entrySet().iterator();
@@ -84,7 +84,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    </tr>
 	    <tr>
 	    <td class="tdr" colspan="8">
-		    <button class="btn" id="search">Query</button>
+		    <button class="btn" id="search">Requete</button>
 		    <form style="display: inline;" method="post" action="<%=basePath%>excel/dataExcel.action" name="toxls">
 				<input type="hidden" id="excPara" name="excPara" />
 				<input type="hidden" id="colType"  name="colType" />
@@ -93,7 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="hidden" id="vfreeze" name="vfreeze" />
 				<input type="hidden" id="hfreeze" name="hfreeze" />
 				<input type="hidden" id="filename" name="filename" />
-				<button class="btn" id="toexcel" onclick='dcExcel();'>Export</button>
+				<button class="btn" id="toexcel" onclick='dcExcel();'>Exportation</button>
 			</form>
 		    
 	    </td>
@@ -101,7 +101,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</table>
 	<jsp:include page="../../inc/jsdef.jsp" />
 	<script type="text/javascript">
-	$("#gridbox").height($(window).height() - $("#tabinfo").height() - 38);
+		$("#gridbox").height($(window).height() - $("#tabinfo").height() - 38);
 	</script>
-  </body>
+</body>
 </html>

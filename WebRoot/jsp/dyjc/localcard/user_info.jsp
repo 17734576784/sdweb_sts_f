@@ -30,19 +30,19 @@
     	<tr><td class="td_lable">Informations sur le contrôle des coûts</td></tr>
 	   <tr>
 	    	<td class="tdr">Mode de facturation:</td><td id="cacl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Cost Control Mode:</td><td id="feectrl_type_desc">&nbsp;</td>
-	    	<td class="tdr">Payment Mode:</td><td id="pay_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de contrôle des coûts:</td><td id="feectrl_type_desc">&nbsp;</td>
+	    	<td class="tdr">Mode de paiement:</td><td id="pay_type_desc">&nbsp;</td>
 	    </tr>
 	   	<tr>
-	    	<td class="tdr">Tariff Project:</td><td id="feeproj_desc">&nbsp;</td>
-	    	<td class="tdr">Tariff Description:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
+	    	<td class="tdr">Projet tarifaire:</td><td id="feeproj_desc">&nbsp;</td>
+	    	<td class="tdr">Description tarifaire:</td><td colspan=3 id="feeproj_detail">&nbsp;</td>
 	   	</tr>
 	   	<tr>
-	   		<td class="tdr">Overdraw Amount:</td><td id="tzval">&nbsp;</td>
+	   		<td class="tdr">Montant à découvert:</td><td id="tzval">&nbsp;</td>
 	   		<td class="tdr">CT:</td><td id="ctData"></td>
 	   		<td class="tdr">PT:</td><td id="ptData"></td>
 	    </tr>
 	 	<tr><td colspan="6" style="height:5px; border-left: 0px;border-right: 0px;border-bottom: 0px;"></td></tr>	    
 	    <tr id="_title3">
-	    <td class="td_lable" style="border-bottom: 0">Purchasing Record</td>
+	    <td class="td_lable" style="border-bottom: 0">Dossier d'achat</td>
 	    </tr>

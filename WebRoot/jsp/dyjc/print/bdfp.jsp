@@ -56,23 +56,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    	<td class="td_lable" style="height:22px;" id="td2">Conditions</td>
 	    </tr>
    		<tr>
-	    	<td class="tdr">Start Date:</td>
+	    	<td class="tdr">Date de début:</td>
 	     	<td><input id=sdate name=sdate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	     	<td class="tdr">End Date:</td>
+	     	<td class="tdr">Date de fin:</td>
 	     	<td><input id=edate name=edate class="roinput" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});"/></td>
-	    	<td class="tdr" width="120px;">Customer No:</td><td><input type="text" id="khbh"/></td>
-	    	<td class="tdr">Customer Name:</td><td><input type="text" id="khmc"/></td>
+	    	<td class="tdr" width="120px;">Numéro client:</td><td><input type="text" id="khbh"/></td>
+	    	<td class="tdr">Nom du client:</td><td><input type="text" id="khmc"/></td>
 	    </tr>
 	    <tr>
-	    	<td class="tdr">Operator:</td><td><input type="text" id="czy"/></td>
-	     	<td class="tdr">POS:</td><td><select id="org"></select></td>
-	     	<td class="tdr">Concentrator:</td><td><select id="rtu"><option value=-1>All</option></select></td>
+	    	<td class="tdr">Opératrice:</td><td><input type="text" id="czy"/></td>
+	     	<td class="tdr">PDV:</td><td><select id="org"></select></td>
+	     	<td class="tdr">Concentrateur:</td><td><select id="rtu"><option value=-1>Tous</option></select></td>
 	     	<td class="tdr"></td>
 	     	<td></td>
 	    </tr>
 	    <tr>
 	    <td class="tdr" colspan="8">
-		    <button class="btn" id="search">Query</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		    <button class="btn" id="search">Requete</button>&nbsp;&nbsp;&nbsp;&nbsp;
 		    <button class="btn" id="toprint">Re print</button>
 	    </td>
 	    </tr>

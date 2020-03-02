@@ -138,13 +138,13 @@ var gridopt = {
 					page = page>totalpages?totalpages:page;
 					page = parseInt(page);
 					var makepage="<table height='100%' style='font-size:12px;' border=0 cellspacing=0 cellpadding=0><tr valign=bottom>";
-					makepage+="<td><select id='prs' onchange='gridopt.showgrid(false,1,this.value);' style='width:140px;'><option value=10>"+"Display 10 records"+"</option><option value=20>"+"Display 20 records"+"</option><option value=50>"+"Display 50 records"+"</option><option value=100>"+"Display 100 records"+"</option><option value=0>"+"All records"+"</option></select></td>";
+					makepage+="<td><select id='prs' onchange='gridopt.showgrid(false,1,this.value);' style='width:140px;'><option value=10>"+"Afficher 10 enregistrements"+"</option><option value=20>"+"Afficher 20 enregistrements"+"</option><option value=50>"+"Afficher 50 enregistrements"+"</option><option value=100>"+"Afficher 100 enregistrements"+"</option><option value=0>"+"Tous les enregistrements"+"</option></select></td>";
 					makepage+="<td><img src='"+def.basePath+"images/ar_left_abs.gif' "+(page==1?"style='filter: Alpha(Opacity=50);'":"onclick='gridopt.showgrid(false,1,"+pagesize+")' style='cursor:pointer;'")+"></td>";
 					makepage+="<td><img src='"+def.basePath+"images/ar_left.gif' "+(page==1?"style='filter: Alpha(Opacity=50);'":"onclick='gridopt.showgrid(false,"+(page-1)+","+pagesize+")' style='cursor:pointer;'")+"></td>";
 					makepage+="<td width=40 align=center><input type=text onkeyup='gridopt.gopage(this,"+totalpages+","+pagesize+")' style='width:25px;height:17px;text-align:center;font-size:11px;' value="+page+" id='gopage'></td>";
 					makepage+="<td><img src='"+def.basePath+"images/ar_right.gif' "+(page==totalpages?"style='filter: Alpha(Opacity=50);'":"onclick='gridopt.showgrid(false,"+(page+1)+","+pagesize+")' style='cursor:pointer;'")+"></td>";
 					makepage+="<td><img src='"+def.basePath+"images/ar_right_abs.gif' "+(page==totalpages?"style='filter: Alpha(Opacity=50);'":"onclick='gridopt.showgrid(false,"+totalpages+","+pagesize+")' style='cursor:pointer;'")+"></td>";
-					makepage+="<td>&nbsp;&nbsp;"+"Current Page: "+page+";  Total Pages: "+totalpages+";  Total Records: "+totalrecords+" "+"</td>";
+					makepage+="<td>&nbsp;&nbsp;"+"Page actuelle: "+page+";  Pages totales: "+totalpages+";  Total des enregistrements: "+totalrecords+" "+"</td>";
 					makepage+="</tr></table>";
 					$("#pageinfo").html(makepage);
 					$("#prs").val(pagesize);
@@ -168,7 +168,7 @@ var gridopt = {
 				}
 				else{
 					//zkz modify 20150318 start
-					$("#"+gridopt.gridPageId).html("No data to display！<input type=hidden value=20 id=prs /><input type=hidden value=1 id=gopage />");
+					$("#"+gridopt.gridPageId).html("aucune donnée à afficher！<input type=hidden value=20 id=prs /><input type=hidden value=1 id=gopage />");
 				//	$("#"+gridopt.gridPageId).html("No data to display！<input type=hidden value="+$("#prs").val()+" id=prs /><input type=hidden value=1 id=gopage />");
 					//zkz modify 20150318 end
 					gridopt.loaded = true;
@@ -191,7 +191,7 @@ var gridopt = {
 					return;
 				}
 				if(isNaN(page.value)){
-					alert("Please input number！");
+					alert("Veuillez saisir un numéro！");
 					page.value = "";
 					page.focus();
 					return;
@@ -313,13 +313,13 @@ var gridopt = {
 			}
 		}
 		if(seledrow==""){
-			alert("Please select record before delete it！");
+			alert("Veuillez sélectionner l'enregistrement avant de le supprimer！");
 			return;
 		}
 		if(flag == true){
 			seledrow+=","+window.top.rightFrame.rtuid;
 		}
-		if(confirm("Confirm to delete?")){
+		if(confirm("Confirmer la suppression?")){
 			seledrow=seledrow.substring(1);
 			if(this.del_showLoading){
 				loading.loading();
@@ -336,7 +336,7 @@ var gridopt = {
 					}
 					
 				}else if(data.result == SDDef.FAIL){
-					alert("Fail to delete！");
+					alert("Impossible de supprimer！");
 				}else {
 					alert(data.result);
 				}
@@ -352,7 +352,7 @@ var gridopt = {
 		}
 		else if(flag == 'edit') {
 			if($("#id").val() == "") {
-				alert("Please select one record to modify！");
+				alert("Veuillez sélectionner un enregistrement à modifier！");
 				return;
 			}
 			editid = $("#id").val();
@@ -370,9 +370,9 @@ var gridopt = {
 			
 				if (data.result == SDDef.FAIL) {
 					if(flag == 'add'){
-						alert("Failure to add！");
+						alert("Échec de l'ajout！");
 					}else{
-						alert("Failure to modify！");
+						alert("Défaut de modification！");
 					}
 				}else if(data.result == SDDef.SUCCESS){
 					if(flag == 'add'){
