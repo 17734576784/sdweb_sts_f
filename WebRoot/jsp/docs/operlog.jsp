@@ -59,25 +59,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <td>
    	<table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
   		<tr>
-  		<td width=120 align="left" nowrap>&nbsp;Operator Name：</td>
+  		<td width=120 align="left" nowrap>&nbsp;Nom de l'opérateur：</td>
             <td width="120" align="left" nowrap>
-			<select name="opername" id="opername" style="width: 110px;"><option value="-1">All</option></select>
+			<select name="opername" id="opername" style="width: 110px;"><option value="-1">Tous</option></select>
             </td>
-            <td width="100" align="left" nowrap>Operator Type：</td>
+            <td width="100" align="left" nowrap>Type d'opérateur：</td>
             <td width="120" align="left" nowrap>
 			<select id="opertype" style="width: 110px;">
-            <option value="-1">All</option>
-            <option value="0">LOG_LOGIN</option>
-            <option value="1">LOG_LOGOUT</option>
-            <option value="2">LOG_ADD</option>
-            <option value="3">LOG_UPDATE</option>
-            <option value="4">LOG_DELETE</option>
-            <option value="5">LOG_SET</option>
+            <option value="-1">Tous</option>
+            <option value="0">JOURNAL_S'IDENTIFIER</option>
+            <option value="1">JOURNAL_SE DÉCONNECTER</option>
+            <option value="2">JOURNAL_AJOUTER</option>
+            <option value="3">JOURNAL_MISE À JOUR</option>
+            <option value="4">JOURNAL_SUPPRIMER</option>
+            <option value="5">JOURNAL_ENSEMBLE</option>
             </select> 
-  			<td width="70" align="left" nowrap>Start Time：</td> <td width="150" align="left" nowrap><input type="text" name="sdate" id="sdate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
-            <td width="70" align="left" nowrap>End Time：</td> <td width="150" align="left" nowrap><input type="text" name="edate" id="edate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
+  			<td width="70" align="left" nowrap>Heure de début：</td> <td width="150" align="left" nowrap><input type="text" name="sdate" id="sdate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
+            <td width="70" align="left" nowrap>Heure de fin：</td> <td width="150" align="left" nowrap><input type="text" name="edate" id="edate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
            	<td>			
-			<input type="button" name="search" value="Inquiry" id="search"'/>&nbsp;&nbsp;
+			<input type="button" name="search" value="Enquête" id="search"'/>&nbsp;&nbsp;
 			</td>
 			<td align="right" style="display: none;">
 	 			<jsp:include page="../inc/btn_excel.jsp"></jsp:include>

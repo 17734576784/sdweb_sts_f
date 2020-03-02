@@ -57,35 +57,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <br/>
     <table class="tabsty" align="center">
     	<tr>
-	    	<td><font color=red>*</font>Login Name:</td><td><input type="text" name="yffmandef.name" id="name" /></td>
-	    	<td>Description:</td><td><input type="text" name="yffmandef.describe" id="describe" /></td>
-	    	<td>Password:</td><td><input type="password" name="yffmandef.passwd" id="passwd"/></td>
-	    	<td>Power Supply:</td>
-	    	<td><select name="yffmandef.orgId" id="orgId" disabled = "disabled"><option value="">--select--</option></select></td> 
+	    	<td><font color=red>*</font>Identifiant:</td><td><input type="text" name="yffmandef.name" id="name" /></td>
+	    	<td>La description:</td><td><input type="text" name="yffmandef.describe" id="describe" /></td>
+	    	<td>Mot de passe:</td><td><input type="password" name="yffmandef.passwd" id="passwd"/></td>
+	    	<td>Source de courant:</td>
+	    	<td><select name="yffmandef.orgId" id="orgId" disabled = "disabled"><option value="">--sélectionner--</option></select></td> 
 	    </tr>
 	    <tr>
-	    	<td>Application Type:</td>
-	    	<td><input type="checkbox" id="dyqx_chk" style="width:18px;" value="1"/><label for="dyqx_chk">Resident</label></td><!--
+	    	<td>Type d'application:</td>
+	    	<td><input type="checkbox" id="dyqx_chk" style="width:18px;" value="1"/><label for="dyqx_chk">Résidents</label></td><!--
 	    	<td><input type="checkbox" id="zbqx_chk" style="width:18px;" value="2"/><label for="zbqx_chk">专变</label></td>
 	    	<td><input type="checkbox" id="npqx_chk" style="width:18px;" value="4"/><label for="npqx_chk">农排</label></td>	    
 	    	-->
-	    	<td>Permission Range:</td><td><select name="yffmandef.rank" id="rank"></select></td>	
-	    	<td>Fee Control Archive Permissions:</td><td><select name="yffmandef.rese1_flag" id="rese1_flag" style="width: 150px"></select></td>
-	    	<td>Public Archive Permissions:</td><td><select name="yffmandef.rese3_flag" id="rese3_flag" style="width: 150px"></select></td>	    	
+	    	<td>Plage de permission:</td><td><select name="yffmandef.rank" id="rank"></select></td>	
+	    	<td>Autorisations d'archivage de contrôle des frais:</td><td><select name="yffmandef.rese1_flag" id="rese1_flag" style="width: 150px"></select></td>
+	    	<td>Autorisations d'archivage public:</td><td><select name="yffmandef.rese3_flag" id="rese3_flag" style="width: 150px"></select></td>	    	
 	     </tr>
 	    
 	    <tr> 
 	    	
-	    	<td style="border-right:none;">User Management Permissions:</td><td width="18" style="border-left:none;"><input type="checkbox" id="rese2_flag_chk" style="width:18px;"></td>
-	    	<td style="border-right:none;">Report Permission:</td><td width="18px" style="border-left:none;"><input type="checkbox" id="viewFlag_chk" style="width:18px;"></td>
-	    	<td style="border-right:none;">Account Permission:</td><td width="18" style="border-left:none;"><input type="checkbox" id="openFlag_chk" style="width:18px;"></td>
-	    	<td style="border-right:none;">The purchase of Electricity Permission:</td><td width="18" style="border-left:none;"><input type="checkbox" id="payFlag_chk" style="width:18px;"></td>
+	    	<td style="border-right:none;">Autorisations de gestion des utilisateurs:</td><td width="18" style="border-left:none;"><input type="checkbox" id="rese2_flag_chk" style="width:18px;"></td>
+	    	<td style="border-right:none;">Autorisation de rapport:</td><td width="18px" style="border-left:none;"><input type="checkbox" id="viewFlag_chk" style="width:18px;"></td>
+	    	<td style="border-right:none;">Autorisation de compte:</td><td width="18" style="border-left:none;"><input type="checkbox" id="openFlag_chk" style="width:18px;"></td>
+	    	<td style="border-right:none;">L'achat de l'autorisation d'électricité:</td><td width="18" style="border-left:none;"><input type="checkbox" id="payFlag_chk" style="width:18px;"></td>
 	    
 	   	</tr>
 	    <tr>
-	      	<td style="border-right:none;">Modify Permissions:</td><td width="18" style="border-left:none;"><input type="checkbox" id="paraFlag_chk" style="width:18px;"></td>
-	       	<td style="border-right:none;">Control Permissions:</td><td width="18" style="border-left:none;"><input type="checkbox" id="ctrlFlag_chk" style="width:18px;"></td>
-	    	<td id="residentLabel">Residential Area:</td><td id="residentBtn"><button style="width: 40px;height:25px" id="selectConsDialog">...</button></td>
+	      	<td style="border-right:none;">Modifier les autorisations:</td><td width="18" style="border-left:none;"><input type="checkbox" id="paraFlag_chk" style="width:18px;"></td>
+	       	<td style="border-right:none;">Autorisations de contrôle:</td><td width="18" style="border-left:none;"><input type="checkbox" id="ctrlFlag_chk" style="width:18px;"></td>
+	    	<td id="residentLabel">Zone résidentielle:</td><td id="residentBtn"><button style="width: 40px;height:25px" id="selectConsDialog">...</button></td>
 	    </tr>
     </table>
     	    <input type="hidden" id="id" 			name="yffmandef.id" />

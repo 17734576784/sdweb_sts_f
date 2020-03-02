@@ -41,37 +41,37 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   <DIV id="gridbox" style="width: 100%;" ></DIV>
   	<table width="100%" border="0" class="page_tbl" >
-    <tr><td id="pageinfo">&nbsp;</td><td align="right" id="soh">Hide detail</td><td width="15"><img src="<%=basePath%>images/mmd.gif" alt="hide" id=imghide onClick="gridopt.showOrHide(this);" style="cursor: pointer;"/></td></tr>
+    <tr><td id="pageinfo">&nbsp;</td><td align="right" id="soh">Masquer les détails</td><td width="15"><img src="<%=basePath%>images/mmd.gif" alt="hide" id=imghide onClick="gridopt.showOrHide(this);" style="cursor: pointer;"/></td></tr>
     </table>
     <div id="showmore">
     <form action="" method="post" id="addorupdate"  style='display:inline;'>
     <br/>
     <table class="tabsty" align="center">
     	<tr>    	    	
-    		<td width="120px">Utility Name: </td><td><input type="text" name="orgpara.describe" id="describe" style="width: 200px"/></td>	
-	    	<td  width="220px"><font color=red>*</font>Supply Group Code(SGC): </td><td><input type="text" name="orgpara.rorgNo" id="rorgNo"  style="width: 200px" /></td>
-	    	<td width="120px"> Address: </td><td><input type="text" name="orgpara.addr" id="addr"  style="width: 200px" /></td>
+    		<td width="120px">Nom de l'utilitaire: </td><td><input type="text" name="orgpara.describe" id="describe" style="width: 200px"/></td>	
+	    	<td  width="220px"><font color=red>*</font>Code de groupe d'approvisionnement (SGC): </td><td><input type="text" name="orgpara.rorgNo" id="rorgNo"  style="width: 200px" /></td>
+	    	<td width="120px"> Adresse: </td><td><input type="text" name="orgpara.addr" id="addr"  style="width: 200px" /></td>
 	    </tr>
 	    <tr>
-	    	<td width="120px"> postalCode: </td><td><input type="text" name="orgpara.postalCode" id="postalCode"   style="width: 200px"/></td>
-	    	<td width="120px"> linkMan: </td><td><input type="text" name="orgpara.linkMan" id="linkMan"  style="width: 200px" /></td>
-	    	<td width="120px"> telNo: </td><td><input type="text" name="orgpara.telNo" id="telNo"   style="width: 200px"/><input type="hidden" name="orgpara.id" id="id" />	</td>	    	
+	    	<td width="120px"> code postal: </td><td><input type="text" name="orgpara.postalCode" id="postalCode"   style="width: 200px"/></td>
+	    	<td width="120px"> speaker: </td><td><input type="text" name="orgpara.linkMan" id="linkMan"  style="width: 200px" /></td>
+	    	<td width="120px"> numéro de téléphone: </td><td><input type="text" name="orgpara.telNo" id="telNo"   style="width: 200px"/><input type="hidden" name="orgpara.id" id="id" />	</td>	    	
  	    </tr>
 	  
 	    <tr>
-	    <td width="120px">Key Type: </td><td><select name="orgstspara.KT" id="KT" style="width: 200px"><option value="0">0 - Initialization</option><option value="1">1 - Default</option><option value="2">2 - Unique</option><option value="3">3 - Common</option></select></td>	        	
-    	<td width="220px">Decoder Key Generation Algorithm: </td><td><select name="orgstspara.DKGA" id="DKGA" style="width: 200px"><option value="1">DKGA01</option><option value="2">DKGA02</option><option value="3">DKGA03</option><option value="4">DKGA04</option></select> </td>
-        <td width="120px">Encrypt Type: </td><td><select name="orgstspara.ET" id="ET" style="width: 200px" onChange="isDisplayKr();"><option value="0">Soft Encryption</option><option value="1">Hardware Encryption</option></select></td>
+	    <td width="120px">Type de clé: </td><td><select name="orgstspara.KT" id="KT" style="width: 200px"><option value="0">0 - Initialization</option><option value="1">1 - Default</option><option value="2">2 - Unique</option><option value="3">3 - Common</option></select></td>	        	
+    	<td width="220px">Algorithme de génération de clé de décodeur: </td><td><select name="orgstspara.DKGA" id="DKGA" style="width: 200px"><option value="1">DKGA01</option><option value="2">DKGA02</option><option value="3">DKGA03</option><option value="4">DKGA04</option></select> </td>
+        <td width="120px">Type de cryptage: </td><td><select name="orgstspara.ET" id="ET" style="width: 200px" onChange="isDisplayKr();"><option value="0">Soft Encryption</option><option value="1">Hardware Encryption</option></select></td>
         </tr>
         <tr>
-        <td width="120px">Vending Key1: </td><td><input type="text" name="orgstspara.VK1" id="VK1" style="width: 200px"/></td>	   
-    	<td width="120px">Vending Key2: </td><td><input type="text" name="orgstspara.VK2" id="VK2" style="width: 200px"/></td>
+        <td width="120px">Clé de vente1: </td><td><input type="text" name="orgstspara.VK1" id="VK1" style="width: 200px"/></td>	   
+    	<td width="120px">Clé de vente2: </td><td><input type="text" name="orgstspara.VK2" id="VK2" style="width: 200px"/></td>
 	   	<td width="120px" id="KRDesc">Key Regno: </td><td><input name="orgstspara.KR" id="KR" style="width: 200px;display:none" value="1" /></td> 
 	   	</tr>	   	
 	  	<tr>
-	  	<td width="120px">Vending Key3: </td><td><input type="text" name="orgstspara.VK3" id="VK3" style="width: 200px"/></td>	    
-    	<td width="120px">Vending Key4: </td><td><input type="text" name="orgstspara.VK4" id="VK4" style="width: 200px"/></td>
-    	<td width="120px">Register Flag: </td><td><select name="orgReg.useFlag" id="useFlag" style="width: 150px">
+	  	<td width="120px">Clé de vente3: </td><td><input type="text" name="orgstspara.VK3" id="VK3" style="width: 200px"/></td>	    
+    	<td width="120px">Clé de vente4: </td><td><input type="text" name="orgstspara.VK4" id="VK4" style="width: 200px"/></td>
+    	<td width="120px">Enregistrer le drapeau: </td><td><select name="orgReg.useFlag" id="useFlag" style="width: 150px">
     												<option value="0">Not Limit</option>
     												<option value="1">Limit</option>
     											  </select>

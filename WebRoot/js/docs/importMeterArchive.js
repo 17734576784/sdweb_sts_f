@@ -68,7 +68,7 @@ function loadPathName(){
 //实现excel预览
 function loadExcelMeterData(){
 	if($("#fileName").val()=="" || $("#fileName").val()=="null"){
-		alert("Please Browser Folder.");
+		alert("Veuillez dossier de navigateur.");
 		return;
 	}
 	excels.submit();
@@ -77,7 +77,7 @@ function loadExcelMeterData(){
 //导入数据到库中
 function importGridDataToDB(){
 	if(resultdata=="" || resultdata=="null"){
-		alert("No Data,please Browser Folder.");
+		alert("Aucune donnée, veuillez dossier du navigateur.");
 		return;
 	}
 	var selectImportData = new Array();
@@ -114,7 +114,7 @@ function importGridDataToDB(){
 				mygrid.setRowTextStyle(insertErrorRowId[i],"color:red;");
 			}
 		}else{
-			alert("Import Success!");
+			alert("Importation réussie!");
 		}
 
 	});
@@ -125,7 +125,7 @@ function initHeader(){
 	
 	mygrid = new dhtmlXGridObject("gridbox");
 	mygrid.setImagePath(def.basePath + "images/grid/imgs/");
-	mygrid.setHeader("<img src='"+ def.basePath + "images/grid/imgs/item_chk1.gif' onclick='selectAllOrNone(this);' />,Meter No,All Meter No,Meter No,TOKENT1,TOKEN2,METERKEY,MeterType,PT,CT,&nbsp;");
+	mygrid.setHeader("<img src='"+ def.basePath + "images/grid/imgs/item_chk1.gif' onclick='selectAllOrNone(this);' />,Mètre Non,Tous les numéros d'instruments,Mètre Non,JETON1,JETON2,METERKEY,Type de compteur,PT,CT,&nbsp;");
 	mygrid.setInitWidths("40,100,250,250,250,250,250,100,100,100,*");
 	mygrid.setColAlign("center,center,left,left,left,left,left,left,left,left,left");
 	mygrid.setColTypes("ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro");

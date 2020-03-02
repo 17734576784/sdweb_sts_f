@@ -68,26 +68,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
             </td>
            	<td>			
-			<input type="button" name="search" value="preview" id="search"'/>&nbsp;&nbsp;
+			<input type="button" name="search" value="Aperçu" id="search"'/>&nbsp;&nbsp;
 			</td>
-  			<td width=80 align="left" nowrap>Org Name:</td>
+  			<td width=80 align="left" nowrap>Nom de l'organisation:</td>
             <td width="120" align="left" nowrap>
-			<select id="orgname" style="width: 110px;" onchange = "initConsname();"><option value="-1">All</option></select>
+			<select id="orgname" style="width: 110px;" onchange = "initConsname();"><option value="-1">Tous</option></select>
             </td>
-            <td width="140" align="left" nowrap>Residential Area:</td>
+            <td width="140" align="left" nowrap>Zone résidentielle:</td>
             <td width="120" align="left" nowrap>
-			<select id="consname" style="width: 110px;" onchange="initResidentname()"><option value="-1">All</option></select> 
+			<select id="consname" style="width: 110px;" onchange="initResidentname()"><option value="-1">Tous</option></select> 
             </td>
-            <td width="120" align="left" nowrap>Resident Name:</td>
+            <td width="120" align="left" nowrap>Nom résident:</td>
             <td width="120" align="left" nowrap>
-			<select id="residentname" style="width: 110px;"><option value="-1">All</option></select> 
+			<select id="residentname" style="width: 110px;"><option value="-1">Tous</option></select> 
             </td>
-            <td width="120" align="left" nowrap>Tariff Project:</td>
+            <td width="120" align="left" nowrap>Projet tarifaire:</td>
             <td width="130" align="left" nowrap>
-			<select id="tariffProject" style="width: 110px;"><option value="-1">All</option></select> 
+			<select id="tariffProject" style="width: 110px;"><option value="-1">Tous</option></select> 
             </td>
            	<td align="right" >			
-			<input type="button" value="Import Libraries" id="importToDB" onclick="importGridDataToDB();"/>&nbsp;&nbsp;
+			<input type="button" value="Importer des bibliothèques" id="importToDB" onclick="importGridDataToDB();"/>&nbsp;&nbsp;
 			</td>
 		</tr>
 	</table>

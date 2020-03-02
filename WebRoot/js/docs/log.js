@@ -56,7 +56,7 @@ function dosearch(){
 function initHeader(){
 	mygrid = new dhtmlXGridObject("gridbox");
 	mygrid.setImagePath(def.basePath + "images/imgs/");
-	mygrid.setHeader("Serial No.,Operator Name,Operation  Date,Operation Time,Operation Type,Operation Content");
+	mygrid.setHeader("Numéro de série.,Nom de l'opérateur,Date d'opération,Moment de l'opération,Type d'opération,Contenu de l'opération");
 	mygrid.setInitWidths("50,150,120,120,120,*");
 	mygrid.setColAlign("center,left,left,left,left,left,left");
 	mygrid.setColTypes("ro,ro,ro,ro,ro,ro,ro");

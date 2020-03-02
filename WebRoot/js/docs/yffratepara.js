@@ -57,7 +57,7 @@ function initDiction(){
 	});
 }
 function initGrid(){
-	gridopt.gridHeader           = "<img src='"+ def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Serial No.,Name,Tariff Number,Activation date,Tariff Type,Max Credit Limit,Total Tariff,Shoulder Tariff,Peak Tariff,Off Tariff,阶梯电价类型,Num Of Step,电表费率类型,电表执行电价,阶梯费率1(元),阶梯费率2(元),阶梯费率3(元),阶梯费率4(元),阶梯费率5(元),阶梯费率6(元),阶梯费率7(元),阶梯梯度值1,阶梯梯度值2,阶梯梯度值3,阶梯梯度值4,阶梯梯度值5,阶梯梯度值6,接口编码1,接口编码2,&nbsp;";
+	gridopt.gridHeader           = "<img src='"+ def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Numéro de série.,Nom,Numéro tarifaire,Date d'activation,Type de tarif,Limite de crédit maximale,Tarif total,Tarif d'épaule,Tarif de pointe,Hors tarif,Type de prix d'échelle,Nombre d'étape,Type de débitmètre,Prix d'exécution du compteur d'électricité,Taux progressif1(RMB),Taux progressif2(RMB),Taux progressif3(RMB),Taux progressif4(RMB),Taux progressif5(RMB),Taux progressif6(RMB),Taux progressif7(RMB),Gradient de pas1,Gradient de pas2,Gradient de pas3,Gradient de pas4,Gradient de pas5,Gradient de pas6,Encodage d'interface1,Encodage d'interface2,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,left,left,left,left,left,left,left,left,left,right,right,right,right,right,right,right,right,right,right,right,right,right,right,right";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,50,200,120,100,200,150,100,100,100,150,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,*";

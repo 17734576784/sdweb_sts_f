@@ -49,7 +49,7 @@ function initDiction(){
 	});
 }
 function initGrid(){
-	gridopt.gridHeader           = "<img src='"+ def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Serial No.,Utility Name,Supply Group Code(SGC),Address,postalCode,linkMan,telNo,Key Type(KT),Decoder Key Generation Algorithm(DKGA),Vending Key1(VK1),Vending Key2(VK2),Vending Key3(VK3),Vending Key4(VK4),&nbsp;";
+	gridopt.gridHeader           = "<img src='"+ def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Numéro de série.,Nom de l'utilitaire,Code de groupe d'approvisionnement (SGC),Adresse,code postal,speaker,numéro de téléphone,Type de clé (KT),Algorithme de génération de clé de décodeur (DKGA),Clé de vente1(VK1),Clé de vente2(VK2),Clé de vente3(VK3),Clé de vente4(VK4),&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,left,left,left,left,left,left,left,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,50,200,150,150,150,100,100,100,150,100,100,100,100,*";

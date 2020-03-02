@@ -12,7 +12,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<input type="hidden" id="hfreeze" name="hfreeze" />
 	<input type="hidden" id="filename" name="filename" />
 	
-	<input type="button" value="Output Excel" id="toexcel" onclick='dcExcel();' />
+	<input type="button" value="Sortie Excel" id="toexcel" onclick='dcExcel();' />
 </form>
 <script src="<%=basePath%>js/common/jsonString.js"></script>
 <script type="text/javascript">

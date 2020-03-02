@@ -28,7 +28,7 @@ function loadPathName(){
 //实现excel预览
 function loadExcelResidentData(){
 	if($("#fileName").val()=="" || $("#fileName").val()=="null"){
-		alert("Please Browser Folder.");
+		alert("Veuillez dossier de navigateur.");
 		return;
 	}
 	excels.submit();
@@ -37,7 +37,7 @@ function loadExcelResidentData(){
 //导入数据到库中
 function importGridDataToDB(){
 	if(resultdata=="" || resultdata=="null" || mygrid.getRowsNum() == 0){
-		alert("No Data,please Browser Folder And preview.");
+		alert("Aucune donnée, veuillez dossier de navigateur et aperçu.");
 		return;
 	}
 	var selectImportData = new Array();
@@ -70,9 +70,9 @@ function importGridDataToDB(){
 				mygrid.cells(insertErrorRowId[i],0).setValue(true);
 				mygrid.setRowTextStyle(insertErrorRowId[i],"color:red;");
 			}
-			alert("Some data already exists.");
+			alert("Certaines données existent déjà.");
 		}else{
-			alert("Import Success!");
+			alert("Importation réussie!");
 		}
 
 	});
@@ -83,7 +83,7 @@ function initHeader(){
 	
 	mygrid = new dhtmlXGridObject("gridbox");
 	mygrid.setImagePath(def.basePath + "images/grid/imgs/");
-	mygrid.setHeader("<img src='"+ def.basePath + "images/grid/imgs/item_chk1.gif' onclick='selectAllOrNone(this);' />,Cons No,Meter No,Resident Describe,Resident Address,Resident Post,Resident Phone,Resident Mobile,Resident Fax,Resident Mail,&nbsp;");
+	mygrid.setHeader("<img src='"+ def.basePath + "images/grid/imgs/item_chk1.gif' onclick='selectAllOrNone(this);' />,Numéro de client,Numéro du compteur,Résident Décrire,Adresse de résidence,Poste de résident,Téléphone résident,Mobile résident,Fax résident,Courrier des résidents,&nbsp;");
 	mygrid.setInitWidths("40,100,150,150,150,150,150,150,150,150,*");
 	mygrid.setColAlign("center,center,left,left,left,left,left,left,left,left,left");
 	mygrid.setColTypes("ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro");

@@ -58,7 +58,7 @@ function disableChoose(){
 
 function initGrid(){
 	
-	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Serial No.,Login Name,Description,Permission Range,Power Supply,Report Permission,Account Permission,The purchase of Electricity Permission,Modify Permissions,Control Permissions,Archive Permissions,User Management Permissions,Public Archive Permissions,&nbsp;";
+	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />,Numéro de série.,Identifiant,La description,Plage de permission,Source de courant,Autorisation de rapport,Autorisation de compte,L'achat de l'autorisation d'électricité,Modifier les autorisations,Autorisations de contrôle,Autorisations d'archivage,Autorisations de gestion des utilisateurs,Autorisations d'archivage public,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,left,left,left,left,left,left,left,left,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,50,80,100,120,100,100,100,100,100,100,100,100,100,*";
@@ -196,7 +196,7 @@ function redoOnRowSelected(json){
 function getLineFzMan(linefzid){//根据供电所ID查询线路负责人列表，填充$("#fzmanId")。
 	var orgid=$("#orgId").val();
 	if(!orgid){
-		$("#fzmanId").html("<option value=''>--请选择--</option>");	
+		$("#fzmanId").html("<option value=''>--Veuillez sélectionner--</option>");	
 		return;
 	}
 	$.post(def.basePath + "ajax/actCommon!getLineFzByOrg.action",
@@ -209,7 +209,7 @@ function getLineFzMan(linefzid){//根据供电所ID查询线路负责人列表�
 			}
 			else{
 				var json = eval('(' + data.result + ')');
-				var option = "<option value=''>--请选择--</option>";
+				var option = "<option value=''>--Veuillez sélectionner--</option>";
 				for(var i=0; i<json.length; i++){
 					option += "<option value=" + json[i].value + ">" + json[i].text + "</option>";
 				}
