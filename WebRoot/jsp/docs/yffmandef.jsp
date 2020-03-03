@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <DIV id=gridbox style="width: 100%;"></DIV>
   	<table width="100%" border="0" class="page_tbl">
-    <tr><td id="pageinfo">&nbsp;</td><td align="right" id="soh">Hide detail</td><td width="15"><img src="<%=basePath%>images/mmd.gif" alt="hide" onClick="gridopt.showOrHide(this);" style="cursor: pointer;"/></td></tr>
+    <tr><td id="pageinfo">&nbsp;</td><td align="right" id="soh">Masquer les détails</td><td width="15"><img src="<%=basePath%>images/mmd.gif" alt="hide" onClick="gridopt.showOrHide(this);" style="cursor: pointer;"/></td></tr>
     </table>
     <div id="showmore">
     <form action="" method="post" id="addorupdate"  style='display:inline;'>

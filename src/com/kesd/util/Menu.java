@@ -870,12 +870,12 @@ public class Menu {
 	//初始化档案操作菜单（右边菜单）。
 	public static void initDoc(){
 		
-		docs_pb.add(new RightMenu("Tariff Project",	"Tariff Project Management.",	"op_flfa.gif",	"jsp/docs/yffratepara.jsp",		paraflag, false));  //费率方案
-		docs_pb.add(new RightMenu("STS Parameters",	"STS Parameters Management.",	"op_stspara.gif",	"jsp/docs/stspara.jsp",		paraflag, false));  //费率方案
-		docs_pb.add(new RightMenu("Prepaid personnel management",	"Prepaid operating personnel Archive。",	"op_yffry.gif",	"jsp/docs/yffmandef.jsp",		paraflag,  false));  //预付费人员
-		docs_pb.add(new RightMenu("Operation Log Query",	"Operation Log Query",	"op_fkcs.gif",	"jsp/docs/operlog.jsp",		paraflag, false));  //高压-费控参数
-		docs_pb.add(new RightMenu("Import Meter Archive",	"Import Meter Archive",	"op_fkpl.gif",	"jsp/docs/importMeterArchive.jsp",		paraflag, false));  //excel导入电表
-		docs_pb.add(new RightMenu("Import Resident Archive",	"Import Resident Archive",	"op_fkpl.gif",	"jsp/docs/importResidentArchive.jsp",		paraflag, false));  //excel导入居民
+		docs_pb.add(new RightMenu("Tariff Project",	"Gestion de projet tarifaire.",	"op_flfa.gif",	"jsp/docs/yffratepara.jsp",		paraflag, false));  //费率方案
+		docs_pb.add(new RightMenu("STS Parameters",	"Gestion des paramètres STS.",	"op_stspara.gif",	"jsp/docs/stspara.jsp",		paraflag, false));  //费率方案
+		docs_pb.add(new RightMenu("Prepaid personnel management",	"Archives du personnel d'exploitation prépayé。",	"op_yffry.gif",	"jsp/docs/yffmandef.jsp",		paraflag,  false));  //预付费人员
+		docs_pb.add(new RightMenu("Operation Log Query",	"Requête du journal des opérations",	"op_fkcs.gif",	"jsp/docs/operlog.jsp",		paraflag, false));  //高压-费控参数
+		docs_pb.add(new RightMenu("Import Meter Archive",	"Importer une archive de compteur",	"op_fkpl.gif",	"jsp/docs/importMeterArchive.jsp",		paraflag, false));  //excel导入电表
+		docs_pb.add(new RightMenu("Import Resident Archive",	"Importer une archive résidente",	"op_fkpl.gif",	"jsp/docs/importResidentArchive.jsp",		paraflag, false));  //excel导入居民
 		
 //		docs_pb.add(new RightMenu("报警方案",	"报警方案基础档案。",						"op_bjfa.gif",	"jsp/docs/yffalarmpara.jsp",	paraflag, false));  //报警方案		
 //		docs_pb.add(new RightMenu("预付费人员",	"预付费操作人员档案。",					"op_yffry.gif",	"jsp/docs/yffmandef.jsp",		paraflag,  false));  //预付费人员
@@ -885,10 +885,10 @@ public class Menu {
 //		docs_pb.add(new RightMenu("节假日组",	"节假日组档案。",							"op_jjrz.gif",	"jsp/docs/holidaygroup.jsp",		paraflag,  false));  //节假日
 //		
 		//20150305 zp for BENGAL
-		docs_dy.add(new RightMenu("Residential Area Archive",	"Residential Area Archive Management.",						"op_communityhov_obj.gif",	"jsp/docs/conspara.jsp",	paraflag, false));  		//低压-居民区档案
-		docs_dy.add(new RightMenu("Terminal Archive",	"Terminal Archive Management.",						"op_terminal.gif",	"jsp/docs/rtuparaBase.jsp",	paraflag, false));  		//低压-终端档案
-		docs_dy.add(new RightMenu("Resident Archive",	"Resident Archive Management.",						"op_resident.gif",	"jsp/docs/rtuparaResidentpara.jsp",	paraflag, false));  //低压-居民档案
-		docs_dy.add(new RightMenu("Residential Meter Archive",	"Residential Meter Cost Control Parameter Management.",					"op_kabiao1.gif",	"jsp/docs/yffpara_dyjc.jsp",	paraflag, false));  //低压-费控参数
+		docs_dy.add(new RightMenu("Residential Area Archive",	"Gestion des archives des zones résidentielles.",						"op_communityhov_obj.gif",	"jsp/docs/conspara.jsp",	paraflag, false));  		//低压-居民区档案
+		docs_dy.add(new RightMenu("Terminal Archive",	"Gestion des archives du terminal.",						"op_terminal.gif",	"jsp/docs/rtuparaBase.jsp",	paraflag, false));  		//低压-终端档案
+		docs_dy.add(new RightMenu("Resident Archive",	"Gestion des archives des résidents.",						"op_resident.gif",	"jsp/docs/rtuparaResidentpara.jsp",	paraflag, false));  //低压-居民档案
+		docs_dy.add(new RightMenu("Residential Meter Archive",	"Gestion des paramètres de contrôle des coûts des compteurs résidentiels.",					"op_kabiao1.gif",	"jsp/docs/yffpara_dyjc.jsp",	paraflag, false));  //低压-费控参数
 //		docs_dy.add(new RightMenu("费控批量",	"批量修改居民终端费控参数。",				"op_fkpl.gif",	"jsp/docs/yffparapl_dyjc.jsp",	paraflag, false));  //低压-费控 批量
 //		docs_dy.add(new RightMenu("预付费时间",	"预付费启用时间、与SG186对账时间设置。",	"op_yffsj.gif",	"jsp/docs/yffsj.jsp?apptype=3",	paraflag,  false));  //低压-预付费时间
 	
@@ -976,7 +976,7 @@ public class Menu {
 		boolean flag = WebConfig.menuShow.get("da_leftmenu" + menu_idx);
 		if(!flag) return "";
 		
-		String naviga = "Archives Management" + SDDef.NAVIG_SPRT + "Public Archives";
+		String naviga = "Gestion des archives" + SDDef.NAVIG_SPRT + "Archives publiques";
 		String menuId = "public";
 		
 		StringBuffer ret = new StringBuffer();
@@ -999,7 +999,7 @@ public class Menu {
 		boolean flag = WebConfig.menuShow.get("da_leftmenu" + menu_idx);
 		if(!flag) return "";
 		
-		String naviga = "Archives Management" + SDDef.NAVIG_SPRT + "Operation Log Query";
+		String naviga = "Gestion des archives" + SDDef.NAVIG_SPRT + "Requête du journal des opérations";
 		String menuId = "log";
 		
 		StringBuffer ret = new StringBuffer();
@@ -1026,7 +1026,7 @@ public class Menu {
 		boolean flag = WebConfig.menuShow.get("da_leftmenu" + menu_idx);
 		if(!flag) return "";
 		
-		String naviga = "Archives Management" + SDDef.NAVIG_SPRT + "Low Voltage Cost Control Archives";
+		String naviga = "Gestion des archives" + SDDef.NAVIG_SPRT + "Archives de contrôle des coûts de basse tension";
 		String menuId = "dyfk";
 		
 		StringBuffer ret = new StringBuffer();
@@ -1083,11 +1083,11 @@ public class Menu {
 //		other_ctrl.add(new RightMenu("报警控制",	"报警控制设置。",	"op_alarm.gif",		"jsp/other/alarm.jsp",		ctrlflag, false)); 
 //		other_ctrl.add(new RightMenu("节假保电",	"节假日保电设置。",	"op_baodian.gif",	"jsp/other/baodian.jsp",	ctrlflag, false));
 
-		other_down.add(new RightMenu("System Tools",	"System Software",		"op_xtgj.gif",	"jsp/other/systools.jsp",		paraflag, false));
-		other_down.add(new RightMenu("Debug Tools",	"System Debug Tools",	"op_tsgj.gif",	"jsp/other/debugtools.jsp",		paraflag, false));
+		other_down.add(new RightMenu("System Tools",	"Logiciel système",		"op_xtgj.gif",	"jsp/other/systools.jsp",		paraflag, false));
+		other_down.add(new RightMenu("Debug Tools",	"Outils de débogage système",	"op_tsgj.gif",	"jsp/other/debugtools.jsp",		paraflag, false));
 		
 		//20131211添加对账操作，从系统控制移动"打印模板"到扩展功能。
-		other_extend.add(new RightMenu("Print Template",	"Print Template Settings。",	"op_dypz.gif",		"jsp/other/print.jsp",		ctrlflag, false));
+		other_extend.add(new RightMenu("Print Template",	"Paramètres du modèle d'impression。",	"op_dypz.gif",		"jsp/other/print.jsp",		ctrlflag, false));
 		
 		//20150128 zkz 修改为缴费权限
 //		other_extend.add(new RightMenu("手工对账",	"和MIS系统进行高低压对账。",	"op_mischeck.gif",		"jsp/other/misCheck.jsp",		payflag, false));
@@ -1551,10 +1551,10 @@ public class Menu {
 		
 		//居民权限
 		if((app_type & SDDef.YFF_APPTYPE_DYQX) == SDDef.YFF_APPTYPE_DYQX){
-			ret.append("<td class='menu_td' id='top_dysd'><img src='images/dysd.gif' width=40/><div>Resident</div></td>\n");
+			ret.append("<td class='menu_td' id='top_dysd'><img src='images/dysd.gif' width=40/><div>Résidents</div></td>\n");
 			ret.append("<td class='sep_td'></td>\n");
 			js_top_menus += "'top_dysd',";
-			js_top_menus_desc += "'Residential Electricity',";
+			js_top_menus_desc += "'Électricité résidentielle',";
 		}
 //		//高压权限
 //		if((app_type & SDDef.YFF_APPTYPE_GYQX) == SDDef.YFF_APPTYPE_GYQX){
@@ -1583,7 +1583,7 @@ public class Menu {
 		
 		//档案权限
 		if(doc_per != 0) {
-			ret.append("<td class='menu_td' id='top_xtda'><img src='images/da.gif' width=40/><div>Archives</div></td>\n");
+			ret.append("<td class='menu_td' id='top_xtda'><img src='images/da.gif' width=40/><div>Les archives</div></td>\n");
 			ret.append("<td class='sep_td'></td>\n");
 			
 			js_top_menus += "'top_xtda',";
@@ -1595,7 +1595,7 @@ public class Menu {
 		js_top_menus = "<script>var top_menus = [" + js_top_menus + "], menuguide = [" + js_top_menus_desc + "];</script>";
 		
 		//其他
-		ret.append("<td class='menu_td' id='top_other'><img src='images/other.gif' width=40/><div>Others</div>" + js_top_menus + "</td>\n");
+		ret.append("<td class='menu_td' id='top_other'><img src='images/other.gif' width=40/><div>Autres</div>" + js_top_menus + "</td>\n");
 		
 		return ret.toString();
 	}

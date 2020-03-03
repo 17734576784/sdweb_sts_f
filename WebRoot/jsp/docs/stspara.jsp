@@ -59,9 +59,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	    </tr>
 	  
 	    <tr>
-	    <td width="120px">Type de clé: </td><td><select name="orgstspara.KT" id="KT" style="width: 200px"><option value="0">0 - Initialization</option><option value="1">1 - Default</option><option value="2">2 - Unique</option><option value="3">3 - Common</option></select></td>	        	
+	    <td width="120px">Type de clé: </td><td><select name="orgstspara.KT" id="KT" style="width: 200px"><option value="0">0 - Initialisation</option><option value="1">1 - Défaut</option><option value="2">2 - Unique</option><option value="3">3 - Commun</option></select></td>	        	
     	<td width="220px">Algorithme de génération de clé de décodeur: </td><td><select name="orgstspara.DKGA" id="DKGA" style="width: 200px"><option value="1">DKGA01</option><option value="2">DKGA02</option><option value="3">DKGA03</option><option value="4">DKGA04</option></select> </td>
-        <td width="120px">Type de cryptage: </td><td><select name="orgstspara.ET" id="ET" style="width: 200px" onChange="isDisplayKr();"><option value="0">Soft Encryption</option><option value="1">Hardware Encryption</option></select></td>
+        <td width="120px">Type de cryptage: </td><td><select name="orgstspara.ET" id="ET" style="width: 200px" onChange="isDisplayKr();"><option value="0">Cryptage logiciel</option><option value="1">Cryptage matériel</option></select></td>
         </tr>
         <tr>
         <td width="120px">Clé de vente1: </td><td><input type="text" name="orgstspara.VK1" id="VK1" style="width: 200px"/></td>	   
@@ -72,8 +72,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<td width="120px">Clé de vente3: </td><td><input type="text" name="orgstspara.VK3" id="VK3" style="width: 200px"/></td>	    
     	<td width="120px">Clé de vente4: </td><td><input type="text" name="orgstspara.VK4" id="VK4" style="width: 200px"/></td>
     	<td width="120px">Enregistrer le drapeau: </td><td><select name="orgReg.useFlag" id="useFlag" style="width: 150px">
-    												<option value="0">Not Limit</option>
-    												<option value="1">Limit</option>
+    												<option value="0">Pas de limite</option>
+    												<option value="1">Limite</option>
     											  </select>
     										  </td>
 	  	</tr>

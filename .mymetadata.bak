@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="sdweb_sts_f"
+  name="sdweb"
   id="myeclipse.1323151299062"
   context-root="/sdweb_sts"
   j2ee-spec="5.0"

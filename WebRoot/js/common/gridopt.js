@@ -271,13 +271,13 @@ var gridopt = {
 			$("#showmore").hide();
 			img.src=def.basePath +"images/mmu.gif";
 			img.alt="show";
-			$("#soh").html("Show detail");
+			$("#soh").html("Montrer les détails");
 		}else{
 			$("#gridbox").height($(window).height()-$("#showmore").height()- h + height);
 			$("#showmore").show();
 			img.src=def.basePath +"images/mmd.gif";
 			img.alt="hide";
-			$("#soh").html("Hide detail");
+			$("#soh").html("Masquer les détails");
 		}
 		this.showgrid(true);
 	},
