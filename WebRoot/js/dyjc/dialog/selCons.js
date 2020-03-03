@@ -50,7 +50,7 @@ function initOrg(){
 		if(data.result != ""){
 			var json = eval('(' + data.result + ')');
 			if(data.flag != "1"){
-				$("#orgId").append("<option value=-1>All</option>");
+				$("#orgId").append("<option value=-1>Tout</option>");
 			}
 			
 			for(var i=0;i<json.length;i++){
@@ -96,15 +96,15 @@ function onRowDblClicked(rId,cInd){
 function getLineFzMan(){//根据供电所ID查询线路负责人列表，填充$("#fzmanId")。
 	var orgid=$("#orgId").val();
 	if(orgid == undefined || orgid == "-1"){
-		$("#fzmanId").html("<option value=-1>All</option>");
+		$("#fzmanId").html("<option value=-1>Tout</option>");
 		return;
 	}
 	$.post(def.basePath + "ajax/actCommon!getLineFzByOrg.action",{value:orgid},function(data){
 		if(data.result == ""){
-			$("#fzmanId").html("<option value=-1>All</option>");
+			$("#fzmanId").html("<option value=-1>Tout</option>");
 		}else{
 			var json = eval('(' + data.result + ')');
-			var option="<option value=-1>All</option>";
+			var option="<option value=-1>Tout</option>";
 			for(var i=0;i<json.length;i++){
 				option += "<option value=" + json[i].value + ">" + json[i].text + "</option>";
 			}

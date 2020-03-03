@@ -12,8 +12,8 @@ $(document).ready(function(){
 
 function initGrid(){
 	gridopt.gridHeader           = "<img src='" + def.basePath + "images/grid/imgs/item_chk0.gif' onclick='gridopt.selectAllOrNone(this);' />," +
-	"							Num¨¦ro de s¨¦rie.,Nom,Utiliser le drapeau,Type de terminal,Protocole,Code d'adresse,Canal principal,Montant pour r¨¦sident,Montant du compteur," +
-	"							Zone r¨¦sidentielle,&nbsp;";
+	"							NumÃ©ro de sÃ©rie.,Nom,Utiliser le drapeau,Type de terminal,Protocole,Code d'adresse,Canal principal,Montant pour rÃ©sident,Montant du compteur," +
+	"							Zone rÃ©sidentielle,&nbsp;";
 	gridopt.gridColAlign         = "center,center,left,left,left,left,right,left,right,right,left";
 	gridopt.gridColTypes         = "ch,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	gridopt.gridWidths           = "40,60,200,80,150,120,100,100,130,100,100,*";
@@ -46,18 +46,18 @@ function redoOnRowDblClicked(id){
 		return;
 	}
 	else{
-		if(rtnValue == 1) {//Ìí¼Ó
+		if(rtnValue == 1) {//ï¿½ï¿½ï¿½
 			gridopt.selectRow = -1;
-			var cp = parseInt($("#gopage").val());//µ±Ç°Ò³
-			var pr = parseInt($("#prs").val());//Ã¿Ò³¼ÇÂ¼Êý
-			var cpr = gridopt.grid.getRowsNum();//µ±Ç°Ò³¼ÇÂ¼Êý
+			var cp = parseInt($("#gopage").val());//ï¿½ï¿½Ç°Ò³
+			var pr = parseInt($("#prs").val());//Ã¿Ò³ï¿½ï¿½Â¼ï¿½ï¿½
+			var cpr = gridopt.grid.getRowsNum();//ï¿½ï¿½Ç°Ò³ï¿½ï¿½Â¼ï¿½ï¿½
 			if(pr == cpr){
 				cp++;
 			}
 			gridopt.showgrid(false,cp,pr);
 			addSelectRow();
 		}
-		else {//ÐÞ¸Ä
+		else {//ï¿½Þ¸ï¿½
 			gridopt.showgrid(false,$("#gopage").val(),$("#prs").val());
 			editSelectRow(id);
 		}

@@ -20,13 +20,13 @@ var GridPage = {
 	makepageinfo : function(){
 		var html='';
 		var makepage="<table height='100%' id='pagediv' style='font-size:12px;' border=0 cellspacing=0 cellpadding=0><tr valign=bottom>";
-		makepage+="<td><select id='prs' onchange='GridPage.changePageSize(this.value);' style='width:140px;'><option value=10>"+"Display 10 records"+"</option><option value=20>"+"Display 20 records"+"</option><option value=50>"+"Display 50 records"+"</option><option value=100>"+"Display 100 records"+"</option><option value=0>"+"All records"+"</option></select></td>";
+		makepage+="<td><select id='prs' onchange='GridPage.changePageSize(this.value);' style='width:140px;'><option value=10>"+"Afficher 10 enregistrements"+"</option><option value=20>"+"Afficher 20 enregistrements"+"</option><option value=50>"+"Afficher 50 enregistrements"+"</option><option value=100>"+"Afficher 100 enregistrements"+"</option><option value=0>"+"All records"+"</option></select></td>";
 		makepage+="<td><img src='"+def.basePath+"images/ar_left_abs.gif' "+(this.currentPage==1?"style='filter: Alpha(Opacity=50);'":"onclick='GridPage.gopage1(1)' style='cursor:pointer;'")+"></td>";
 		makepage+="<td><img src='"+def.basePath+"images/ar_left.gif' "+(this.currentPage==1?"style='filter: Alpha(Opacity=50);'":"onclick='GridPage.gopage1(" + Number(this.currentPage-1) + ")' style='cursor:pointer;'")+"></td>";
 		makepage+="<td width=40 align=center><input type=text onkeyup='GridPage.gopage(this.value)' style='width:23px;height:17px;text-align:center;' value="+this.currentPage+" id='gopage'></td>";
 		makepage+="<td><img src='"+def.basePath+"images/ar_right.gif' "+(this.currentPage==this.totalPage?"style='filter: Alpha(Opacity=50);'":"onclick='GridPage.gopage1(" + Number(this.currentPage+1) + ")' style='cursor:pointer;'")+"></td>";
 		makepage+="<td><img src='"+def.basePath+"images/ar_right_abs.gif' "+(this.currentPage==this.totalPage?"style='filter: Alpha(Opacity=50);'":"onclick='GridPage.gopage1(" + this.totalPage + ")' style='cursor:pointer;'")+"></td>";
-		makepage+="<td>&nbsp;&nbsp;"+"Current Page: "+this.currentPage+";  Total Pages: "+this.totalPage+";  Total Records: "+this.totalRecords+" "+"</td>";
+		makepage+="<td>&nbsp;&nbsp;"+"Page actuelle: "+this.currentPage+";  Pages totales: "+this.totalPage+";  Total des enregistrements: "+this.totalRecords+" "+"</td>";
 		makepage+="</tr></table>";
 		$("#" + this.pageDivId).html(makepage);
 		$("#prs").val(this.pgSize);

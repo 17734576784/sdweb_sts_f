@@ -4,7 +4,7 @@ $(document).ready(function(){
   	$.post(def.basePath + "ajax/actCommon!initOperman.action",{tableName: "YffManDef"},function(data){
 		var json = eval('(' + data.result + ')');
 		$("#opername").html("");
-		$("#opername").append("<option value=-1>ALL</option>");
+		$("#opername").append("<option value=-1>Tout</option>");
 		for ( var i = 0; i < json.rows.length; i++) {
 			$("#opername").append("<option value="+json.rows[i].value+">"+json.rows[i].text+"</option>");
 		}
