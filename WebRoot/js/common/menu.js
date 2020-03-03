@@ -85,7 +85,7 @@ function mclick(tr) {
 		left_last_selected = tr.id;
 				
 		var tds = $("#" + tr.id).children();
-		
+
 		tds[0].style.background = menubg_sel_l;
 		tds[1].style.background = menubg_sel_m;
 		tds[2].style.background = menubg_sel_m;
