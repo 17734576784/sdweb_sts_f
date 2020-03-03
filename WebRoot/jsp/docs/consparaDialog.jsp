@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     
-    <title>Residents Archive</title>
+    <title>Archives des résidents</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -49,11 +49,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <br/>
     <table class="tabsty" align="center">
     	<tr><td colspan="6" style="font-size: 12px;background: url('<%=basePath%>images/bg22.gif') repeat-x;">
-    	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Basic Archive</td></tr></table>
+    	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Archive de base</td></tr></table>
     	</td></tr>
     	<tr>
 	    	<td><font color=red>*</font>Nom:</td><td><input type="text" name="conspara.describe" id="describe" style="width: 150px;"/></td>
-	    	<td><font color=red>*</font>Utilitaire:</td><td><select name="conspara.orgId" id="orgId" onChange="getLineFzMan(this.value);"  style="width: 150px;"><option value="">--Select--</option></select></td>
+	    	<td><font color=red>*</font>Utilitaire:</td><td><select name="conspara.orgId" id="orgId" onChange="getLineFzMan(this.value);"  style="width: 150px;"><option value="">--Sélectionner--</option></select></td>
 	    	<td>Type d'alimentation:</td><td><select name="conspara.powerType" id="powerType" style="width: 150px;"></select></td>
 	    	
 	    	<!--
@@ -67,7 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    <tr><td colspan="6" style="border-left: 0px;border-right: 0px;border-bottom: 0px;"></td></tr>
     	<tr>
 	    	<td colspan="6" style="font-size: 12px;background: url('../../../images/bg22.gif') repeat-x;">
-	    	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Contact Archive</td></tr></table>
+	    	<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td style="border: 0px; font-size: 12px;">Archives de contact</td></tr></table>
 	    	</td>
 	    </tr>
     	<tr>
