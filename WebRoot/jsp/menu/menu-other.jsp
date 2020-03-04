@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td id="tdleft" valign="top">
 		  <div id="div_leftmenu" >
 		  	<table class=menuleft  cellspacing="0" cellpadding="0" width="200px;">
-				<tr><td colspan=4 class="mtitle" style="padding-left: 35px;height:30px;">Management field</td></tr>
+				<tr><td colspan=4 class="mtitle" style="padding-left: 35px;height:30px;">Champ de gestion</td></tr>
 				<%=Menu.getOther_menu(yffman)%>
 			</table>
 		  </div>

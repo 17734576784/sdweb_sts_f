@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Electricity Sale Sub-system</title>
+    <title>Sous-système de vente d'électricité</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -117,27 +117,27 @@
   <body>
 <form method="post" onKeyPress="if(event.keyCode=='13'){login();}">
 <div style="position:absolute; right:1px; height:20px; text-align: right; font-size: 12px;">
-<a onClick="AddFavorite(window.location,document.title)" id="favorite" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Added to Favorites</a>&nbsp;&nbsp;|
-&nbsp;<a onClick="SetHome(this,window.location)" id="homePage" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Set as Homepage</a>&nbsp;
+<a onClick="AddFavorite(window.location,document.title)" id="favorite" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Ajouté aux favoris</a>&nbsp;&nbsp;|
+&nbsp;<a onClick="SetHome(this,window.location)" id="homePage" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Définir comme page d'accueil</a>&nbsp;
 </div>
 <br/><br/><br/>
 <table width="649" align="center" border="0">
 <tr><td background="images/loginbg.jpg" height="388" valign="bottom">
 	<table align="center" border="0" style="color: #045650;">
-		<tr><td align="left" valign="bottom" style="padding-left: 90px; font-size: 40px; color: white;" colspan="3" height="40">Utility</td></tr>
-		<tr><td align="center" valign="top" style="padding-left: 30px; font-size: 40px; color: white;" colspan="3">Electricity Sale</td></tr>
-		<tr><td align="center" valign="top" style="padding-left: 190px; font-size: 40px; color: white;" colspan="3">Sub-system</td></tr>
+		<tr><td align="left" valign="bottom" style="padding-left: 90px; font-size: 40px; color: white;" colspan="3" height="40">Utilitaire</td></tr>
+		<tr><td align="center" valign="top" style="padding-left: 30px; font-size: 40px; color: white;" colspan="3">Vente d'électricité</td></tr>
+		<tr><td align="center" valign="top" style="padding-left: 190px; font-size: 40px; color: white;" colspan="3">Sous-système</td></tr>
 		<tr><td  colspan="3">&nbsp;</td></tr>
 		<tr><td  colspan="3">&nbsp;</td></tr>
 		<tr><td  colspan="3">&nbsp;</td></tr>
 		<tr><td  colspan="3">&nbsp;</td></tr>
 		<tr>
-			<td width="180" height="28" align="right" style="font-size: 13px;">User Name:</td><td><input id="opername" type="text" class="id" /></td>
+			<td width="180" height="28" align="right" style="font-size: 13px;">Nom d'utilisateur:</td><td><input id="opername" type="text" class="id" /></td>
             <td width="169" rowspan="2">
             &nbsp;<img src="images/dlan.gif" onClick="login();" style="cursor: pointer;"/></td>
         </tr>
           <tr>
-            <td width="180" height="29" align="right" style="font-size: 13px;">Password:</td><td><input id="pwd" type="password" class="id" /></td>
+            <td width="180" height="29" align="right" style="font-size: 13px;">Mot de passe:</td><td><input id="pwd" type="password" class="id" /></td>
           </tr>
   	</table>
 <br/><br/><br/><br/>
@@ -145,18 +145,18 @@
 </table>
 <table width="649" align="center" border="0">
 <tr><td>
-<div style="font-size: 12px; height:20px; text-align: center;">Notice:The system need IE7 version and 1024*768 resolution or above.</div>
+<div style="font-size: 12px; height:20px; text-align: center;">Remarque: le système nécessite une version IE7 et une résolution 1024 * 768 ou supérieure.</div>
 <%
 Date date = new Date();
 java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy", Locale.SIMPLIFIED_CHINESE);
 %>
-  <div style="font-size: 12px; height:65px; text-align: center; background: url('images/logo_ke.gif') center bottom no-repeat;">SHIJIAZHUANG KELIN ELECTTIC CO.,LTD Copyright &copy;2010-<%=sdf.format(date)%></div>
+  <div style="font-size: 12px; height:65px; text-align: center; background: url('images/logo_ke.gif') center bottom no-repeat;">SHIJIAZHUANG KELIN ELECTTIC CO., LTD Droits d'auteur &copy;2010-<%=sdf.format(date)%></div>
 </td></tr>
 </table>
 </form>
 <div style="text-align: right;height:20px; font-size:13px; position:absolute; width:100%;" id="tips">
-Please add this website to reliable list.
-<a href="download.jsp?fileName=ke_yffwebctrl.rar" id="down" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Prepayment control download</a>
+Veuillez ajouter ce site Web à une liste fiable.
+<a href="download.jsp?fileName=ke_yffwebctrl.rar" id="down" style="cursor: pointer; color:#033;" onmousemove="chgCol(this.id,'#2a7066')" onmouseout="chgCol(this.id,'#033')">Téléchargement du contrôle de prépaiement</a>
 </div>
 <script type="text/javascript">
 	tips.style.posTop = $(window).height() - 20;
@@ -173,7 +173,7 @@ Please add this website to reliable list.
 	        }
 	        catch (e)
 	        {
-	            alert("Fail to added to favorites,please use 'Ctrl+D'");
+	            alert("Échec de l'ajout aux favoris, veuillez utiliser 'Ctrl + D'");
 	        }
 	    }
 	}

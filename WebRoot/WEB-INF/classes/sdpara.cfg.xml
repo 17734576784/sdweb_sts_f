@@ -11,7 +11,7 @@
 		org.hibernate.dialect.SQLServerDialect
 	</property>
 
-	<property name="connection.url">jdbc:sqlserver://192.168.19.4:1433;SelectMethod=cursor;DatabaseName=ydparaben</property>
+	<property name="connection.url">jdbc:sqlserver://192.168.1.49:1433;SelectMethod=cursor;DatabaseName=ydparaben</property>
 
 	<property name="connection.username">sa</property>
 	<property name="connection.password">keyd*%@#1095</property>

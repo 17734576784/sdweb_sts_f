@@ -5,7 +5,7 @@
   id="myeclipse.1323151299062"
   context-root="/sdweb_sts"
   j2ee-spec="5.0"
-  archive="sdweb_sts.war">
+  archive="sdweb_sts_f.war">
   <attributes>
     <attribute name="webrootdir" value="/WebRoot" />
   </attributes>
