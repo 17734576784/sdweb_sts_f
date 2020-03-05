@@ -29,7 +29,7 @@ function initgrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridHeader));
 	$("#colType").val(datatype);
-	$("#filename").val(encodeURI("ComprehensiveQuery"));
+	$("#filename").val(encodeURI("Requêtecomplète"));
 	
 	
 	gridopt.gridHeader           = gridHeader;

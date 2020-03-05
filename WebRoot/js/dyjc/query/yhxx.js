@@ -17,7 +17,7 @@ function initgrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridHeader));
 	$("#colType").val(datatype);
-	$("#filename").val(encodeURI("CustomerQuery"));
+	$("#filename").val(encodeURI("Requête client"));
 	
 	gridopt.gridHeader           = gridHeader;
 	gridopt.gridColAlign         = "center,left,left,left,left,left,left,left,left,right,left,left,left,left";

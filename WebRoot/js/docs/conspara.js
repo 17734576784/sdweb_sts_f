@@ -22,7 +22,7 @@ function initGrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridopt.gridHeader));
 	$("#colType").val("int,str,str,str,str,str,str,str,str");
-	$("#filename").val(encodeURI("Community Files"));
+	$("#filename").val(encodeURI("Fichiers de communauté"));
 	
 	gridopt.gridGetDataUrl       = def.basePath  + "ajaxdocs/actConsPara.action";
 	gridopt.gridDelRowUrl        = def.basePath  + "ajaxdocs/actConsPara!delConsParaById.action";

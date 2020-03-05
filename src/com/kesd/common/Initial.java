@@ -91,7 +91,7 @@ public class Initial implements Filter {
 				}
 			} else {	//用户未登录或登录超时，返回登录页面
 				//timeout(response, basePath, "\u767B\u5F55\u8D85\u65F6\uFF0C\u8BF7\u91CD\u65B0\u767B\u5F55！");
-				timeout(response, basePath, "Your login session has expired, Please relogin and try again!");
+				timeout(response, basePath, "Votre session de connexion a expiré, veuillez vous reconnecter et réessayer!");
 				return;
 			}
 		}else{

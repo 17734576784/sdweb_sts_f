@@ -37,7 +37,7 @@ function initgrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(header));
 	$("#colType").val(datatype);
-	$("#filename").val(encodeURI("StateQuery"));
+	$("#filename").val(encodeURI("Requête d'état"));
 	
 	gridopt.gridHeader           = header;
 	gridopt.gridColAlign         =   "center,left,left,left,left,left,left,left,left,left,left,left,left,left,left,left,left,left,left";

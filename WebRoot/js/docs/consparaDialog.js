@@ -100,7 +100,7 @@ function addOrEdit(flag){
 				if(flag == 'add'){
 					alert("Échec de l'ajout de！");
 				}else{
-					alert("Impossible de modifier modify");
+					alert("Impossible de modifier modifier");
 				}
 			}else{
 				if(flag == 'add'){

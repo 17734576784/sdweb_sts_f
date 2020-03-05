@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'stsToolTemplate.jsp' starting page</title>
+    <title></title>
     
     <script  src="<%=basePath%>js/jquery-1.4.2.min.js"></script>
     <script  src="<%=basePath%>js/common/jquery.jqprint-0.3.js"></script>
@@ -29,26 +29,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="printTemplateTable" style="font-size:8pt;font-weight:bold;width:58mm;text-align:center;">
 		<table width="100%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
 	  		<tr>
-	    		<td align="center">Vending System</td>
+	    		<td align="center">Système de vente</td>
 	  		</tr>
 		</table>
 		<table width="100%"  height="30"  border="0" cellspacing="0" bgcolor="#FFFFFF">
 		  <tr>
-		  	<td width="30" height="30" align="left" bgcolor="#FFFFFF">Csr No:</td>
+		  	<td width="30" height="30" align="left" bgcolor="#FFFFFF">Numéro de client:</td>
 		  	<td align="left" id="conNo" bgcolor="#FFFFFF">客户编号</td>
 		  </tr>
 		  <tr>
-		  	<td width="30" align="left" bgcolor="#FFFFFF">Csr Name:</td>
+		  	<td width="30" align="left" bgcolor="#FFFFFF">Nom du client:</td>
 		  	<td align="left" id="conName" bgcolor="#FFFFFF">客户名称</td>
 		  </tr>	
 		  <tr>
-		  	<td width="30" height="30" align="left"bgcolor="#FFFFFF">Meter No:</td>
+		  	<td width="30" height="30" align="left"bgcolor="#FFFFFF">Mètre Non:</td>
 		  	<td align="left" id="meterAddr" bgcolor="#FFFFFF">电表地址</td>
 		  </tr>
 		</table>
 	    <table width="100%" height="30" border="0" align="center" cellpadding="0" cellspacing="1">
 		  <tr>
-		  	<td height="30" align="left" bgcolor="#FFFFFF">TOKEN</td>
+		  	<td height="30" align="left" bgcolor="#FFFFFF">JETON</td>
 		  </tr>
 	  	  <tr>
 	      	<td align="left">*********************</td>
@@ -56,7 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</table>
 		<table width="100%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
 		  <tr>
-		  	<td align="left" id="token1" bgcolor="#FFFFFF">Token1</td>
+		  	<td align="left" id="token1" bgcolor="#FFFFFF">JETON1</td>
 		  </tr>	
 		</table>
 	    <table width="100%" height="30" border="0" align="center" cellpadding="0" cellspacing="1">
@@ -78,12 +78,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!--		  </tr>		-->
 <!--		</table>-->
 		<hr/>
-		Please keep the small ticket to prepare the query 
+		Veuillez conserver le petit ticket pour préparer la requête
 		<br>	 
 	</div>
 	<!-- endprint1 -->
 	<div style="text-align:center;">
-		<button class="btn" onclick="printTemplate();">Print</button>
+		<button class="btn" onclick="printTemplate();">Impression</button>
 	</div>
 	
 	<script src="<%=basePath%>js/dyjc/print/stsToolTemplate.js"></script>

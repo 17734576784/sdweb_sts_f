@@ -120,7 +120,7 @@ function writeCard(retStr){
 		saveDataToDB();
 	}
 	else{
-		alert("Writing card failure！\n" + ret_json.errsr);
+		alert("Échec de la carte d'écriture！\n" + ret_json.errsr);
 		loading.loaded();
 	}
 }
@@ -163,7 +163,7 @@ function saveDataToDB(){
 			getRecord($("#rtu_id").val(), $("#mp_id").val(), "", 10);
 		}
 		else{
-			alert("Fail to store data base！");
+			alert("Impossible de stocker la base de données！");
 		}
 		$("#repair").attr("disabled",true);
 	});

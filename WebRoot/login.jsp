@@ -54,13 +54,13 @@
 			var opername = $("#opername").val();
 			pressed = true;
 			if($.trim(opername) === ""){
-				alert("Please input user name！");
+				alert("Veuillez saisir le nom d'utilisateur！");
 				$("#opername").focus();
 				pressed = false;
 				return;
 			}
 			if($.trim($("#pwd").val()) === ""){
-				alert("Please input password！");
+				alert("Veuillez saisir le mot de passe！");
 				$("#pwd").focus();
 				pressed = false;
 				return;
@@ -85,7 +85,7 @@
 							window.open('index.jsp','', 'toolbar=0,menubar=0,location=0,status=0,resizable=1,left=0,top=0,height='+(screen.availHeight-30) +',width='+(screen.availWidth-10),true);
 						}else if(data.result == "fail"){
 							pressed = false;
-							alert("User name or password error,fail to log in！");
+							alert("Erreur de nom d'utilisateur ou de mot de passe, échec de connexion！");
 			//					$("#pwd").select();
 						}else{
 							pressed = false;
@@ -98,7 +98,7 @@
 						}
 					});
 				}catch (e) {
-					alert("fail");
+					alert("échouer");
 					pressed = false;
 				}
 		}
@@ -189,7 +189,7 @@ Veuillez ajouter ce site Web à une liste fiable.
 	                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
 	                        }
 	                        catch (e) {
-	                                alert("This operation is rejected by browser！\nPlease input“about:config”to address bar and press Enter\nThen set [signed.applets.codebase_principal_support] value as 'true',double click。");
+	                                alert("Cette opération est rejetée par le navigateur!\nPlease input“about:config”to address bar and press Enter\nThen set [signed.applets.codebase_principal_support] value as 'true',double click。");
 	                        }
 	                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
 	                        prefs.setCharPref('browser.startup.homepage',vrl);

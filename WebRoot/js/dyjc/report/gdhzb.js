@@ -43,7 +43,7 @@ function initgrid(){
 	$("#header").val(encodeURI(gridHeader));
 	$("#colType").val(datatype);
 	$("#attachheader").val(encodeURI(attachheader));
-	$("#filename").val(encodeURI("PurchaseSummary"));
+	$("#filename").val(encodeURI("Résumé d'achat"));
 	
 	//如果 WebConfig配置文件中autoshow="1"，则自动加载查询
 	if(dy_autoshow[0] == 1){

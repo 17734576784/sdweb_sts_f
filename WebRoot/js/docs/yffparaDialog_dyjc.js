@@ -373,15 +373,15 @@ function addOrEdit(flag){//修改
 		data     : params, 													//要传递的数据；就是上面序列化的值
 		success  : function(data) {								    		//回传函数
 			if (data.result == "existID"){
-				alert("Fail to add, the Record ID is existing.！");
+				alert("Échec de l'ajout, l'ID d'enregistrement existe.！");
 				$("#id_mp").select();
 			}
 			else if (data.result == "maxID"){
-				alert(" Fail to add, the Record ID has reached max 1024.！");
+				alert(" Échec de l'ajout, l'ID d'enregistrement a atteint max 1024.！");
 				$("#id_mp").select();
 			}
 			else if(data.result == "INVALID METER ADDRESS"){
-				alert("Luhn digit error in the DRN number");
+				alert("Erreur de chiffre Luhn dans le numéro DRN");
 			}
 			else if (data.result == "existAddr"){
 				var sjson = eval('(' + data.field + ')');
@@ -393,10 +393,10 @@ function addOrEdit(flag){//修改
 			}
 			else if (data.result == "fail") {
 				if(flag == 'add'){
-					alert("failure to add！");
+					alert("défaut d'ajouter！");
 				}
 				else{
-					alert("failure to modify！");
+					alert("défaut de modification！");
 				}
 			}
 			else{
@@ -449,7 +449,7 @@ function check() {
 		return false;
 	}
 	if($("#residentId").val() == null){
-		alert("Please add resident file!");
+		alert("Veuillez ajouter un fichier résident!");
 		return false;
 	}
 	if (!ckChar("commAddr", "Meter ID",13, true)) {

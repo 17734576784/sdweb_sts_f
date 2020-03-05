@@ -45,11 +45,11 @@ function confirm(){
 	$.post(def.basePath  + "ajaxdocs/actRtuPara!insertConsparaPerssion.action",{result:"{\"consIds\":\""+seledrow+"\","+"\"yffmanId\":"+yffmanId+"}"},function(data)
 	{
 		if(data.result == "success"){
-			alert("Set Successfully.");
+			alert("Définir avec succès.");
 			window.returnValue = data.result;
 			window.close();
 		}else{
-			alert("Error.");
+			alert("Erreur.");
 		}
 	});
 }

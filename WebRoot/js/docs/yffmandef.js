@@ -68,7 +68,7 @@ function initGrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridopt.gridHeader));
 	$("#colType").val("int,int,str,str,str,str,str,str,str,str,str,str,str,str,str");
-	$("#filename").val(encodeURI("prepaid personnel"));
+	$("#filename").val(encodeURI("personnel prépayé"));
 	
 	gridopt.gridGetDataUrl       = def.basePath  + "ajaxdocs/actYffManDef.action";
 	gridopt.gridSelRowUrl        = def.basePath  + "ajaxdocs/actYffManDef!getYffManDefById.action";

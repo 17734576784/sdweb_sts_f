@@ -59,7 +59,7 @@ function initGrid(){
 	$("#hfreeze").val(0);
 	$("#header").val(encodeURI(gridopt.gridHeader));
 	$("#colType").val("int,int,str,str,str,str,0.00,0.00,0.00,0.00,0.00,str,int,str,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,int,int");
-	$("#filename").val(encodeURI("Tariff Project"));
+	$("#filename").val(encodeURI("Projet tarifaire"));
 	
 	gridopt.gridGetDataUrl       = def.basePath  + "ajaxdocs/actOrgStsPara.action";
 	gridopt.gridSelRowUrl        = def.basePath  + "ajaxdocs/actOrgStsPara!getorgstsparaById.action";

@@ -12,12 +12,12 @@ $(document).ready(function(){
 
 function chg(){
 	if($.trim($("#old_pwd").val()) == "" || $.trim($("#new_pwd").val()) == "" || $.trim($("#new_pwd_q").val()) == ""){
-		alert("Passwords can not be empty！");
+		alert("Les mots de passe ne peuvent pas être vides！");
 		return;
 	}
 
 	if($("#new_pwd").val() != $("#new_pwd_q").val()){
-		alert("Confirm password is inconsistent with the new password, please re-enter！");
+		alert("Confirmez que le mot de passe est incompatible avec le nouveau mot de passe, veuillez ressaisir!");
 		$("#new_pwd_q").focus().select();
 		return;
 	}
@@ -30,7 +30,7 @@ function chg(){
 		if(data.result == "success"){
 			window.close();
 		}else if(data.result == "fail"){
-			alert("Old password is incorrect！");
+			alert("Ancien mot de passe est incorrect!");
 		}
 	});
 }

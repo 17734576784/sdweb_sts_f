@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>Residential Area Select</title>
+    <title>Zone résidentielle Select</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -48,10 +48,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <td>
    	<table cellpadding="0" cellspacing="0" height="24" width="100%" class="page_tbl_bg22">
   		<tr>
-			<td width=70>&nbsp;Name:</td><td>
+			<td width=70>&nbsp;nom:</td><td>
 			<input type="text" name="search_condition" value="" id="search_condition" style="width: 100px;">
-			<input type="button" name="search" value="Inquiry" id="search"/>&nbsp;&nbsp;
-			<input type="button" name="confirm" value="Confirm" id="confirm"/>
+			<input type="button" name="search" value="Enquête" id="search"/>&nbsp;&nbsp;
+			<input type="button" name="confirm" value="Confirmer" id="confirm"/>
 			</td>
 		</tr>
 	</table>

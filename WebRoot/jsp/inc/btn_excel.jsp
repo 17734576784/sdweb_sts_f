@@ -27,7 +27,7 @@ function dcExcel(){
 	var len = document.getElementById("excPara").value.length;
 	
 	if(len > 1280000){
-		alert("Data exceed normal, fail to output excel");
+		alert("Les données dépassent la normale, ne parviennent pas à produire Excel");
 		return;
 	}
 	

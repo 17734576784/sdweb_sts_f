@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>Change Password</title>
+    <title>Changer le mot de passe</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -37,16 +37,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<table class="tabsty" align="center">
 		<tr>
 			<td colspan="2" style="font-size: 12px;background: url('<%=basePath%>images/bg22.gif') repeat-x;">
-	    		<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td id="tdtitle" style="border: 0px; font-size: 12px;">Change Password</td></tr></table>
+	    		<table cellpadding="0" cellspacing="0"><tr><td style="border: 0px;"><img src="<%=basePath%>images/doctitle.png" style="padding-top: 3px;"/></td><td id="tdtitle" style="border: 0px; font-size: 12px;">Changer le mot de passe</td></tr></table>
 	    	</td>
 	    </tr>
-		<tr><td>Old Password:</td><td><input type="password" id="old_pwd" /></td></tr>
-		<tr><td>New Password:</td><td><input type="password" id="new_pwd" /></td></tr>
-		<tr><td>Confirm new Password:</td><td><input type="password" id="new_pwd_q" /></td></tr>
+		<tr><td>ancien mot de passe:</td><td><input type="password" id="old_pwd" /></td></tr>
+		<tr><td>nouveau mot de passe:</td><td><input type="password" id="new_pwd" /></td></tr>
+		<tr><td>Confirmer le nouveau mot de passe:</td><td><input type="password" id="new_pwd_q" /></td></tr>
 	</table>
 	<center>
-	<button id="xiugai">Confirm</button>&nbsp;&nbsp;&nbsp;
-	<button id="close">Close</button>
+	<button id="xiugai">Confirmer</button>&nbsp;&nbsp;&nbsp;
+	<button id="close">Fermer</button>
 	</center>
   </body>
 </html>

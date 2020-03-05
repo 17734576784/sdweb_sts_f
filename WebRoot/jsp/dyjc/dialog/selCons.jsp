@@ -64,8 +64,8 @@
 		</tr>
 	   	<tr><td colspan="6" style="height:3px; border: 0px;"></td></tr>
     	 <tr>
-    	   	<td class="td_lable">Liste des consommateurs</td>
-    	   	<td style="text-align: right;border: 0px;" colspan=5 >	
+    	   	<td class="td_lable" colspan=2 >Liste des consommateurs</td>
+    	   	<td style="text-align: right;border: 0px;" colspan=4 >	
     	   		<button name="submit"  class="btn" onclick="search()">Enquête</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	
 	    		<button  name="btnRead"  class="btn" onclick="returnWin()">Confirmer</button>
 	    	</td>

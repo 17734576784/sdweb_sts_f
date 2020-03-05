@@ -19,7 +19,7 @@ function readCardBengal() {
 						setValue(json);
 					}
 					else{
-						alert("Failed to read card！");
+						alert("Impossible de lire la carte！");
 					}
 				}
 		);
@@ -34,7 +34,7 @@ function setValue (json) {
 //	}
 	
 	if ((json.block1_answerToReset == "") && (json.block1_version == "")) {
-		alert("Secret key mismatching！");
+		alert("Disparité des clés secrètes！");
 		return;
 	}
 

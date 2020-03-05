@@ -1,14 +1,14 @@
 var $lang={
-errAlertMsg: "Invalid date or the date out of range,redo or not?",
+errAlertMsg: "Date non valide ou date hors plage, refaire ou non?",
 aWeekStr: ["wk", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-aLongWeekStr:["wk","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+aLongWeekStr:["wk","dimanche","Lundi","Mardi","Mercredi","Jeudi","vendredi","samedi","dimanche"],
 aMonStr: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-aLongMonStr: ["January","February","March","April","May","June","July","August","September","October","November","December"],
-clearStr: "Clear",
-todayStr: "Today",
+aLongMonStr: ["janvier","février","Mars","avril","Mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
+clearStr: "Clair",
+todayStr: "Aujourd'hui",
 okStr: "OK",
 updateStr: "OK",
-timeStr: "Time",
-quickStr: "Quick Selection",
-err_1: 'MinDate Cannot be bigger than MaxDate!'
+timeStr: "Temps",
+quickStr: "Sélection rapide",
+err_1: 'MinDate ne peut pas être plus grand que MaxDate!'
 }

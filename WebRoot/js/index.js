@@ -237,7 +237,7 @@ function chg_pwd(){
 }
 
 function logout(flag){
-	if(!flag && !confirm("Are you sure to cancel account?"))return;
+	if(!flag && !confirm("Voulez-vous vraiment annuler le compte?"))return;
 	
 	$.post("ajax/actLogin!logout.action", {result : flag}, function(data){
 		if(data.result == "success") {

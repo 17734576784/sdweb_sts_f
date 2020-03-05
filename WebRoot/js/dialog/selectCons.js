@@ -13,7 +13,7 @@ $(function(){
 });
 
 function initGrid(){
-	var gridHeader	 = "Serial No.,Name,&nbsp";
+	var gridHeader	 = "Numéro de série.,nom,&nbsp";
 	var gridwidth	 = "10,75,*";
 	var gridcolalign = "center,center,center";
 	var gridcoltype	 = "ro,ro,ro";
@@ -80,7 +80,5 @@ function doOnRowDbClicked(rid){
 	window.returnValue = backData;
 	window.close();
 }
-
-
 
 
