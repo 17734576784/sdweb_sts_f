@@ -27,7 +27,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script  src="<%=basePath%>js/dhtmlx/grid/dhtmlxgrid_srnd.js"></script>
 	<script  src="<%=basePath%>js/dyjc/report/gdmxb.js"></script>
 	<script  src="<%=basePath%>js/dyjc/tool/comm.js"></script>
-	<script  src="<%=basePath%>js/common/def.js"></script>
 	<script  src="<%=basePath%>js/common/loading.js"></script>
 	<script  src="<%=basePath%>js/common/jsonString.js"></script>
 	<script  src="<%=basePath%>js/common/DateFun.js"></script>
@@ -77,5 +76,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript">
 	$("#gridbox").height($(window).height() - $("#tabinfo").height() - 15);
 	</script>
+		<script  src="<%=basePath%>js/common/def.js"></script>
+	
   </body>
 </html>

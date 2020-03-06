@@ -93,20 +93,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</table>
 		<table width="100%" height="30" border="0"  cellpadding="0" cellspacing="1">
 		  <tr>
-		  	<td height="30" align="left" bgcolor="#FFFFFF">Service Name:</td>
+		  	<td height="30" align="left" bgcolor="#FFFFFF">Nom du service:</td>
 		  	<td align="left" id="orgDesc" bgcolor="#FFFFFF">服务名称</td>
 		  </tr>		  
 		  <tr>
-		  	<td height="30" align="left" width="30%" class="fontSize" bgcolor="#FFFFFF">Service Call:</td>
+		  	<td height="30" align="left" width="30%" class="fontSize" bgcolor="#FFFFFF">Appel de service:</td>
 		  	<td align="left" id="telno" bgcolor="#FFFFFF">服务电话</td>
 		  </tr>
 		  <tr>
-		  	<td height="30" align="left" class="fontSize" bgcolor="#FFFFFF">Sales Addr:</td>
+		  	<td height="30" align="left" class="fontSize" bgcolor="#FFFFFF">Adresse de vente:</td>
 		  	<td align="left" id="orgAddr" bgcolor="#FFFFFF">购电地址</td>
 		  </tr>		
 		</table>
 		<hr/>
-		Please keep the small ticket to prepare the query 
+		Veuillez conserver le petit ticket pour préparer la requête 
 		<br>	 
 	</div>
 	<!-- endprint1 -->

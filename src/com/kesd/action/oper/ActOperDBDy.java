@@ -717,7 +717,7 @@ public class ActOperDBDy extends ActionSupport{
 		OrgStsPara orgStsPara = stsComntService.getKMFParam(orgId);
 		if(orgStsPara.getET() == STSDef.STS_ET_HARDWARE){
 			JDBCDao jdbcDao = new JDBCDao();
-			String sql = "update mppay_state set pay_money=0, buy_times = 0,cus_state = 1, now_remain=0.0, kh_date = "+CommFunc.nowDateYmd()+",xh_date = " + CommFunc.nowDateYmd() + ", othjs_money=" + js_money + " where rtu_id = " + rtuId + " and mp_id = " + mpId;
+			String sql = "update mppay_state set pay_money=0, buy_times = 0,cus_state = 50, now_remain=0.0, kh_date = "+CommFunc.nowDateYmd()+",xh_date = " + CommFunc.nowDateYmd() + ", othjs_money=" + js_money + " where rtu_id = " + rtuId + " and mp_id = " + mpId;
 			if(!jdbcDao.executeUpdate(sql)){
 				return "";
 			}else{

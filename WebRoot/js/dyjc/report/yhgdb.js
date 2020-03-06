@@ -31,7 +31,7 @@ function initgrid(){
 	mygrid.setColTypes("ro,ro,ro,ro,ro,ro,ro,ro,ro,ro");
 	mygrid.enableSmartRendering(true);
 	mygrid.init();
-	mygrid.setSkin("modern");
+	mygrid.setSkin("light");
 	
 	var empty = "&nbsp;";
 	var footer = "<div id='hj'>Total：</div>,#cspan,#cspan,<div id='jfcs'>"+empty+"</div>,<div id='jfje'>"+empty+"</div>,<div id='zbje'>"+empty+"</div>,<div id='jsje'>"+empty+"</div>,&nbsp;,#cspan,#cspan,#cspan";

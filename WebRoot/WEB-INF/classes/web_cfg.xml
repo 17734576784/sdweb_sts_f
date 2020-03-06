@@ -170,7 +170,7 @@
 	<peaktime time1 = "8" time2 = "17" />
 	<!--qjl add 20150313 复费率峰时段时间end-->
 	
-	<EncryptModule commport="COM4" useflag="1" baudrate="9600" checkflag="0" databit="8" stopbit="1"></EncryptModule> 
+	<EncryptModule commport="COM3" useflag="1" baudrate="9600" checkflag="0" databit="8" stopbit="1"></EncryptModule> 
 	<!-- 返回TokenIdentifier分钟数 1=STS_BASEDATE_1993, 2=STS_BASEDATE_2014, 3=STS_BASEDATE_2035 -->
 	<sts_basedate value="1"/>
 

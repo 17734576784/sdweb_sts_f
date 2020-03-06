@@ -35,7 +35,7 @@ function initgrid(){
 	mygrid.enableSmartRendering(true);
 	
 	mygrid.init();
-	mygrid.setSkin("modern");
+	mygrid.setSkin("light");
 	var empty = "&nbsp;";
 	var footer = "<div id='hj'>Total：</div>,#cspan,#cspan,#cspan,#cspan,<div id='jfje'>"+empty+"</div>,<div id='zje'>"+empty+"</div>,<div id='jsje'>"+empty+"</div>,<div id='zdl'>"+empty+"</div>,&nbsp;,#cspan,#cspan,#cspan";
 	var foot_align = ["text-align:right;","text-align:right;","text-align:right;","text-align:right;","text-align:right;","text-align:right;","text-align:right;"];

@@ -26,7 +26,7 @@ function initgrid(){
 //				 "发行电费剩余金额2,阶梯切换执行时间,发行电费年月,发行电费数据日期,发行电费算费时间,报警1状态,报警2状态,分合闸状态,报警1改变时间,报警2改变时间," +
 //				 "分合闸改变时间,异常标志1,异常标志2,分闸时总表底,报警1短信,报警1声音,分合闸确认,报警2短信,报警2声音,分闸次数," +
 //				 "报警1短信时间,报警1声音时间,分合闸发送时间,报警2短信时间,报警2声音时间,成功分合闸时间,报警1短信UUID,报警2短信UUID,信息输出";
-	var header = "ID,Terminal,Customer ID,Meter Desc,Meter No,Nom du client,FeeType,FeectrlType,Type de transaction,Tariff Type,KRN,Customer State,Type d'opération,Date d'opération,Montant du paiement,Transfer Credit,Nombre d'achats,Opening Date,Info "
+	var header = "ID,Terminal,Numéro de client,Nom du compteur,Numéro du compteur,Nom du client,FeeType,FeectrlType,Type de transaction,Tariff Type,KRN,Customer State,Type d'opération,Date d'opération,Montant du paiement,Transfer Credit,Nombre d'achats,Opening Date,Info "
 	var datatype = "int,str,str,str,str,str,str,str,str,str,int,str,str,str,0.00,0.00,int,str,str";
 //	var datatype = "int";
 //	for ( var i = 1; i < 19; i++) {

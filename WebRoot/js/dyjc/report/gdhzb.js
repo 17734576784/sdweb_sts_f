@@ -30,7 +30,7 @@ function initgrid(){
 	mygrid.setColAlign("center,center,left,right,right,right,right");
 	mygrid.setColTypes("ro,ro,ro,ro,ro,ro,ro");
 	mygrid.init();
-	mygrid.setSkin("modern");
+	mygrid.setSkin("light");
 	
 	var empty = "&nbsp;";
 	var footer = "<div id='hj'>Total：</div>,#cspan,#cspan,<div id='jfcs'>"+empty+"</div>,<div id='jfje'>"+empty+"</div>,<div id='zje'>"+empty+"</div>,<div id='zdl'>"+empty+"</div>,&nbsp;,#cspan,#cspan,#cspan";
