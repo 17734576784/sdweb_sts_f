@@ -54,7 +54,7 @@
        </tr>
 	    <tr>
 			<td class="tdr">Utilitaire:</td><td><select id="orgId" name="orgId" onchange="getLineFzMan()"></select></td>
-		    <td class="tdr">ID du compteur:</td><td><input name="comm_addr" id="comm_addr" /></td>
+		    <td class="tdr">mètre ID:</td><td><input name="comm_addr" id="comm_addr" /></td>
 	    	<td class="tdr">Terminal:</td><td><input name="rtuName" id="rtuName" /></td>			  	       	
 	    </tr>	  
 	    <tr>

@@ -70,19 +70,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
            	<td>			
 			<input type="button" name="search" value="Aperçu" id="search"'/>&nbsp;&nbsp;
 			</td>
-  			<td width=80 align="left" nowrap>Nom de l'organisation:</td>
+  			<td width=130 align="left" nowrap>Nom de l'organisation:</td>
             <td width="120" align="left" nowrap>
 			<select id="orgname" style="width: 110px;" onchange = "initConsname();"><option value="-1">Tous</option></select>
             </td>
-            <td width="140" align="left" nowrap>Zone résidentielle:</td>
+            <td width="110" align="left" nowrap>Zone résidentielle:</td>
             <td width="120" align="left" nowrap>
 			<select id="consname" style="width: 110px;" onchange="initResidentname()"><option value="-1">Tous</option></select> 
             </td>
-            <td width="120" align="left" nowrap>Nom résident:</td>
+            <td width="90" align="left" nowrap>Nom résident:</td>
             <td width="120" align="left" nowrap>
 			<select id="residentname" style="width: 110px;"><option value="-1">Tous</option></select> 
             </td>
-            <td width="120" align="left" nowrap>Projet tarifaire:</td>
+            <td width="95" align="left" nowrap>Projet tarifaire:</td>
             <td width="130" align="left" nowrap>
 			<select id="tariffProject" style="width: 110px;"><option value="-1">Tous</option></select> 
             </td>

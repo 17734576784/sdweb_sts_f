@@ -63,7 +63,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <td width="120" align="left" nowrap>
 			<select name="opername" id="opername" style="width: 110px;"><option value="-1">Tous</option></select>
             </td>
-            <td width="100" align="left" nowrap>Type d'opérateur：</td>
+            <td width="110" align="left" nowrap>Type d'opérateur：</td>
             <td width="120" align="left" nowrap>
 			<select id="opertype" style="width: 110px;">
             <option value="-1">Tous</option>
@@ -74,8 +74,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <option value="4">JOURNAL_SUPPRIMER</option>
             <option value="5">JOURNAL_ENSEMBLE</option>
             </select> 
-  			<td width="70" align="left" nowrap>Heure de début：</td> <td width="150" align="left" nowrap><input type="text" name="sdate" id="sdate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
-            <td width="70" align="left" nowrap>Heure de fin：</td> <td width="150" align="left" nowrap><input type="text" name="edate" id="edate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
+  			<td width="110" align="left" nowrap>Heure de début：</td> <td width="150" align="left" nowrap><input type="text" name="sdate" id="sdate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
+            <td width="90" align="left" nowrap>Heure de fin：</td> <td width="150" align="left" nowrap><input type="text" name="edate" id="edate" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'%y-%M-%d %H:%m',isShowClear:'false'});" style="width:140px;"/></td>
            	<td>			
 			<input type="button" name="search" value="Enquête" id="search"'/>&nbsp;&nbsp;
 			</td>

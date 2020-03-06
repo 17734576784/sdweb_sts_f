@@ -43,7 +43,7 @@
 				height:100px;
 			}
 			.tdm{
-				width:150px;
+				width:300px;
 				padding-top: 5px; 
 				font-size: 12px;
 			}

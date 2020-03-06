@@ -18,7 +18,7 @@ function initDate(){
 }
 /**通用不传param时的grid初始化*/
 function initgrid(){
-	var gridHeader = "ID,Numéro de série,Terminal,N ° de client,Nom du client,Adresse,Type de fonctionnement,Date d'opération,Opératrice,Type de transaction,Montant du paiement,Montant total,Équilibre,Crédit de transfert (kWh),Nombre d'achats,Prix unitaire";
+	var gridHeader = "ID,Numéro de série,Terminal,Numéro client,Nom du client,Adresse,Type de fonctionnement,Date d'opération,Opératrice,Type de transaction,Montant du paiement,Montant total,Équilibre,Crédit de transfert (kWh),Nombre d'achats,Prix unitaire";
 	var datatype = "ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro,ro";
 	$("#vfreeze").val(1);
 	$("#hfreeze").val(0);
